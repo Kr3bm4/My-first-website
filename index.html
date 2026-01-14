@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Check if the user's browser language is Czech
+        var userLang = navigator.language || navigator.userLanguage; 
+        if (userLang.startsWith('cs')) {
+            window.location.href = "/cs/";
+        } else {
+            window.location.href = "/en/";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to / Přesměrování na <a href="/en/">krebslaboratories.eu</a>...</p>
+</body>
+</html>
