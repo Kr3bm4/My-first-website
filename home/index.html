@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Krebs Laboratories</title>
-        <style>
-            body {
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-                background-color: #fafafa; 
-                color: #8f8f8f; 
-                margin: 0; 
-                letter-spacing: 1px;
-                scroll-behavior: smooth;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Toto je moje webovka!</h1>
-        <p>TEST TEST ěščřžýáíéůú&</p>
-    </body>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krebs laboratories </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+
+    <div class="max-w-4xl mx-auto px-6 py-12 lg:py-20">
+        
+        <header class="mb-12 border-b border-gray-200 pb-8">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Krebs Laboratories</h1>
+            <p class="mt-4 text-xl text-gray-600 font-light">Learning project; Work in progress</p>
+        </header>
+
+        <section class="mb-12">
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">What is this?</h2>
+            <p class="text-lg text-gray-700">
+                A pet project where I try to learn HTML in my spare time. 
+            </p>
+        </section>
+
+        <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
+            © 2026 Martin Krebs • Thank you, Tailwind CSS <br>
+            This website is my hobby/learning project. Still in progress.
+        </footer>
+
+    </div>
+
+</body>
 </html>
