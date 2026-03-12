@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML | Krebs Laboratories </title>
+    <style>
+        body { display: flex; height: 100vh; margin: 0; font-family: sans-serif; }
+        textarea, iframe { width: 50%; height: 100%; border: none; padding: 10px; box-sizing: border-box; }
+        textarea { background: #1e1e1e; color: #d4d4d4; font-family: monospace; outline: none; }
+    </style>
+</head>
+<body>
+
+    <textarea id="Input" placeholder="Your HTML goes here..."></textarea>
+
+    <iframe id="Output"></iframe>
+
+    <script>
+        const vstup = document.getElementById('Input');
+        const vystup = document.getElementById('Output').contentWindow.document;
+
+        Input.addEventListener('keyup', () => {
+            Output.open();
+            Output.write(Input.value);
+            Output.close();
+        });
+    </script>
+</body>
+</html>
