@@ -1,26 +1,89 @@
 <!DOCTYPE html>
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diff Tool | Krebs Laboratories</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
     <style>
-        .copy-card:active { transform: scale(0.95); transition: 0.1s; }
+        body { font-family: 'Inter', sans-serif; }
+        .diff-added { background-color: #d1fae5; text-decoration: none; color: #065f46; }
+        .diff-removed { background-color: #fee2e2; text-decoration: line-through; color: #991b1b; }
+        .editor-box { min-height: 300px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 14px; }
+        pre { white-space: pre-wrap; word-wrap: break-word; font-family: inherit; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 leading-relaxed">
+<body class="bg-gray-50 text-gray-900 leading-relaxed min-h-screen flex flex-col">
 
-    <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
         <header class="mb-12">
             <a href="/home/" class="text-blue-600 hover:underline text-sm mb-4 inline-block">← Return home</a>
             <h1 class="text-4xl font-bold tracking-tight">Diff Tool</h1>
+            <p class="text-gray-500 mt-2">Vlož dva texty a porovnej jejich rozdíly v reálném čase.</p>
         </header>
 
-       
+        <main>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Původní text</label>
+                    <textarea id="text1" class="w-full editor-box p-4 border border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="Sem vlož původní verzi..."></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Upravený text</label>
+                    <textarea id="text2" class="w-full editor-box p-4 border border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="Sem vlož novou verzi..."></textarea>
+                </div>
+            </div>
+
+            <div class="flex justify-center mb-12">
+                <button onclick="compareTexts()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transform transition active:scale-95">
+                    Porovnat rozdíly
+                </button>
+            </div>
+
+            <div id="resultContainer" class="hidden">
+                <h2 class="text-xl font-bold mb-4">Výsledek porovnání</h2>
+                <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm overflow-x-auto">
+                    <pre id="output" class="text-sm leading-relaxed"></pre>
+                </div>
+                <div class="mt-4 flex gap-4 text-xs font-medium">
+                    <span class="flex items-center text-green-700"><span class="w-3 h-3 bg-green-200 border border-green-300 mr-2 rounded"></span> Přidáno</span>
+                    <span class="flex items-center text-red-700"><span class="w-3 h-3 bg-red-200 border border-red-300 mr-2 rounded"></span> Smazáno</span>
+                </div>
+            </div>
+        </main>
+
         <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
             © 2026 Built & Maintained by Martin Krebs.<br>
             Experimental Web Lab • Thank you, Tailwind CSS.
         </footer>      
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.1.0/diff.min.js"></script>
+    <script>
+        function compareTexts() {
+            const text1 = document.getElementById('text1').value;
+            const text2 = document.getElementById('text2').value;
+            const output = document.getElementById('output');
+            const resultContainer = document.getElementById('resultContainer');
+
+            const diff = Diff.diffChars(text1, text2);
+            
+            output.innerHTML = '';
+            resultContainer.classList.remove('hidden');
+
+            diff.forEach((part) => {
+                const span = document.createElement('span');
+                if (part.added) span.className = 'diff-added';
+                if (part.removed) span.className = 'diff-removed';
+                span.appendChild(document.createTextNode(part.value));
+                output.appendChild(span);
+            });
+        }
+    </script>
 </body>
+</html>
