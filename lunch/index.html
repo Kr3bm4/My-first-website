@@ -27,60 +27,66 @@
         </section>
 
         <script>
-            async function loadTodayMenu() {
-                const container = document.getElementById('menu-content');
-                const targetUrl = 'https://www.pivnicemasnyruzek.cz/menu-dne';
-                const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
+           async function loadTodayMenu() {
+    const container = document.getElementById('menu-content');
+    const targetUrl = 'https://www.pivnicemasnyruzek.cz/menu-dne';
+    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
 
-            try {
-                const response = await fetch(proxyUrl);
-                const data = await response.json();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(data.contents, 'text/html');
+    try {
+        const response = await fetch(proxyUrl);
+        const data = await response.json();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data.contents, 'text/html');
 
-                const today = new Date();
-                const day = today.getDate();
-                const month = today.getMonth() + 1;
-                const year = today.getFullYear();
-                const dateStr = `${day}.${month}.${year}`; 
+        // Najdeme přímo span s třídou "dnes"
+        const todaySpan = doc.querySelector('span.dnes');
+        let todayTable = null;
+
+        if (todaySpan) {
+            // Tabulka následuje hned po nadpisu h2, ve kterém je ten span
+            todayTable = todaySpan.closest('h2').nextElementSibling;
+        }
+
+        if (todayTable && todayTable.tagName === 'TABLE') {
+            container.innerHTML = '';
+            
+            const tableWrapper = document.createElement('div');
+            tableWrapper.className = "overflow-hidden border-t border-gray-100";
+            
+            // Pročištění a stylování řádků
+            todayTable.querySelectorAll('tr').forEach(tr => {
+                tr.className = "border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors flex justify-between items-center";
                 
+                // Vyndáme buňky a upravíme jejich obsah
+                const cells = tr.querySelectorAll('td');
+                if (cells.length >= 2) {
+                    const foodCell = cells[cells.length - 2]; // Předposlední je jídlo
+                    const priceCell = cells[cells.length - 1]; // Poslední je cena
 
-                const headers = doc.querySelectorAll('.content h2');
-                let todayTable = null;
+                    // Vyčistíme text od &nbsp; a přebytečných mezer
+                    const foodText = foodCell.textContent.replace(/\s+/g, ' ').trim();
+                    const priceText = priceCell.textContent.trim();
 
-                headers.forEach(h2 => {
-                if (h2.textContent.includes(todayStr)) {
-                    todayTable = h2.nextElementSibling;
+                    tr.innerHTML = `
+                        <td class="py-3 pr-4 text-gray-800 text-sm">${foodText}</td>
+                        <td class="py-3 text-right font-medium text-blue-600 whitespace-nowrap text-sm">${priceText}</td>
+                    `;
+                    tableWrapper.appendChild(tr);
                 }
             });
 
-            if (todayTable && todayTable.tagName === 'TABLE') {
-                container.innerHTML = '';
-                
-                const tableWrapper = document.createElement('div');
-                tableWrapper.className = "overflow-hidden border-t border-gray-100";
-                
-                todayTable.querySelectorAll('tr').forEach(tr => {
-                    tr.className = "border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors";
-                    
-                    tr.querySelectorAll('td').forEach((td, index) => {
-                        td.className = index === 0 ? "py-3 pr-4 text-gray-800" : "py-3 text-right font-medium text-blue-600 whitespace-nowrap";
-                    });
-                });
-
-                tableWrapper.appendChild(todayTable);
-                container.appendChild(tableWrapper);
-            } else {
-                container.innerHTML = `<p class="text-gray-500 italic">Load error... <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Check the website →</a></p>`;
-            }
-
-        } catch (error) {
-            container.innerHTML = `<p class="text-gray-500 italic">Connection failure. <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Check the website →</a></p>`;
-            console.error(error);
+            container.appendChild(tableWrapper);
+        } else {
+            container.innerHTML = `<p class="text-gray-500 italic">Dnešní menu nenalezeno... <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Zkus web restaurace →</a></p>`;
         }
-    }
 
-    loadTodayMenu();
+    } catch (error) {
+        container.innerHTML = `<p class="text-gray-500 italic">Chyba při načítání. <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Zkus web restaurace →</a></p>`;
+        console.error('Fetch error:', error);
+    }
+}
+
+loadTodayMenu();
 </script>
 
 
