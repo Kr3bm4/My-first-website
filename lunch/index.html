@@ -29,7 +29,8 @@
         <script>
            async function loadTodayMenu() {
     const container = document.getElementById('menu-content');
-    const targetUrl = 'https://www.pivnicemasnyruzek.cz/menu-dne';
+    // Použijeme přímo URL z iframe Menicka.cz
+    const targetUrl = 'https://www.menicka.cz/api/iframe/?id=6956';
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
 
     try {
@@ -38,55 +39,44 @@
         const parser = new DOMParser();
         const doc = parser.parseFromString(data.contents, 'text/html');
 
-        // Najdeme přímo span s třídou "dnes"
-        const todaySpan = doc.querySelector('span.dnes');
-        let todayTable = null;
+        // Menicka.cz dává dnešní menu do divu s třídou "menicka" 
+        // a první výskyt je obvykle aktuální den
+        const todayMenu = doc.querySelector('.menicka');
 
-        if (todaySpan) {
-            // Tabulka následuje hned po nadpisu h2, ve kterém je ten span
-            todayTable = todaySpan.closest('h2').nextElementSibling;
-        }
-
-        if (todayTable && todayTable.tagName === 'TABLE') {
+        if (todayMenu) {
             container.innerHTML = '';
-            
             const tableWrapper = document.createElement('div');
             tableWrapper.className = "overflow-hidden border-t border-gray-100";
+
+            // Najdeme všechny řádky s jídlem (li)
+            const items = todayMenu.querySelectorAll('li');
             
-            // Pročištění a stylování řádků
-            todayTable.querySelectorAll('tr').forEach(tr => {
-                tr.className = "border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors flex justify-between items-center";
-                
-                // Vyndáme buňky a upravíme jejich obsah
-                const cells = tr.querySelectorAll('td');
-                if (cells.length >= 2) {
-                    const foodCell = cells[cells.length - 2]; // Předposlední je jídlo
-                    const priceCell = cells[cells.length - 1]; // Poslední je cena
+            items.forEach(li => {
+                const foodName = li.querySelector('.nabidka')?.textContent.trim();
+                const price = li.querySelector('.cena')?.textContent.trim();
 
-                    // Vyčistíme text od &nbsp; a přebytečných mezer
-                    const foodText = foodCell.textContent.replace(/\s+/g, ' ').trim();
-                    const priceText = priceCell.textContent.trim();
-
-                    tr.innerHTML = `
-                        <td class="py-3 pr-4 text-gray-800 text-sm">${foodText}</td>
-                        <td class="py-3 text-right font-medium text-blue-600 whitespace-nowrap text-sm">${priceText}</td>
+                if (foodName) {
+                    const row = document.createElement('div');
+                    row.className = "py-3 border-b border-gray-50 last:border-0 flex justify-between items-center hover:bg-gray-50 transition-colors";
+                    
+                    row.innerHTML = `
+                        <span class="text-gray-800 text-sm pr-4">${foodName}</span>
+                        <span class="font-medium text-blue-600 whitespace-nowrap text-sm">${price || ''}</span>
                     `;
-                    tableWrapper.appendChild(tr);
+                    tableWrapper.appendChild(row);
                 }
             });
 
             container.appendChild(tableWrapper);
         } else {
-            container.innerHTML = `<p class="text-gray-500 italic">Dnešní menu nenalezeno... <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Zkus web restaurace →</a></p>`;
+            throw new Error('Menu nenalezeno');
         }
 
     } catch (error) {
-        container.innerHTML = `<p class="text-gray-500 italic">Chyba při načítání. <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic">Zkus web restaurace →</a></p>`;
+        container.innerHTML = `<p class="text-gray-500 italic">Dnešní menu nenalezeno nebo nastala chyba. <br> <a href="${targetUrl}" target="_blank" class="text-blue-500 not-italic underline">Zobrazit na Menicka.cz →</a></p>`;
         console.error('Fetch error:', error);
     }
 }
-
-loadTodayMenu();
 </script>
 
 
