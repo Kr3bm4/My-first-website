@@ -21,90 +21,13 @@
             <div>
                 <h2 class="text-sm font-semibold uppercase text-gray-500 mb-4">Masný růžek</h2>
                 <div id="menu-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-gray-400 animate-pulse">Loading...</p>
+                    <p class="text-gray-400 animate-pulse">Not implemented yet</p>
+                    <div class="text-sm">
+                        <a href="https://www.pivnicemasnyruzek.cz/menu-dne" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <script>
-          async function loadTodayMenu() {
-    const container = document.getElementById('menu-content');
-    const targetUrl = 'https://www.menicka.cz/api/iframe/?id=6956';
-    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
-
-    // 1. Nastavíme Loading stav hned na začátku
-    container.innerHTML = `
-        <div class="flex items-center space-x-3 animate-pulse">
-            <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
-            <p class="text-gray-500 italic text-sm">Hledám dnešní speciality...</p>
-        </div>
-    `;
-
-    try {
-        const response = await fetch(proxyUrl);
-        if (!response.ok) throw new Error('Síťová chyba');
-        
-        const data = await response.json();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(data.contents, 'text/html');
-
-        // Menicka.cz struktura: Dnešní menu je v divu .menicka
-        const todayMenu = doc.querySelector('.menicka');
-
-        if (todayMenu) {
-            // 2. Vymažeme loading a vložíme data
-            container.innerHTML = '';
-            const tableWrapper = document.createElement('div');
-            tableWrapper.className = "divide-y divide-gray-100";
-
-            const items = todayMenu.querySelectorAll('li');
-            
-            if (items.length === 0) {
-                container.innerHTML = `<p class="text-gray-500 italic text-sm">Dnes zatím nebylo vloženo menu.</p>`;
-                return;
-            }
-
-            items.forEach(li => {
-                const foodName = li.querySelector('.nabidka')?.textContent.trim();
-                const price = li.querySelector('.cena')?.textContent.trim();
-
-                if (foodName) {
-                    const row = document.createElement('div');
-                    row.className = "py-3 flex justify-between items-start hover:bg-gray-50 transition-colors px-2 -mx-2 rounded-lg";
-                    
-                    row.innerHTML = `
-                        <span class="text-gray-800 text-sm leading-snug pr-4">${foodName}</span>
-                        <span class="font-semibold text-blue-600 whitespace-nowrap text-sm">${price || ''}</span>
-                    `;
-                    tableWrapper.appendChild(row);
-                }
-            });
-
-            container.appendChild(tableWrapper);
-        } else {
-            throw new Error('Menu nenalezeno v HTML');
-        }
-
-    } catch (error) {
-        // 3. Ošetření chyby (včetně zmizení loadingu)
-        container.innerHTML = `
-            <div class="text-sm">
-                <p class="text-red-400 mb-2">Nepodařilo se načíst menu automaticky.</p>
-                <a href="https://www.pivnicemasnyruzek.cz/menu-dne" target="_blank" 
-                   class="text-blue-500 hover:underline font-medium">
-                   Zobrazit lístek na webu restaurace →
-                </a>
-            </div>
-        `;
-        console.error('Fetch error:', error);
-    }
-}
-
-// Spustíme po načtení DOMu
-document.addEventListener('DOMContentLoaded', loadTodayMenu);
-</script>
-
-
                 
         <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
             © 2026 Built & Maintained by Martin Krebs.  <br>
