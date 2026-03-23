@@ -71,8 +71,8 @@
 
             diff.forEach((part) => {
                 const span = document.createElement('span');
-                if (part.added) span.className = 'diff-added';
-                if (part.removed) span.className = 'diff-removed';
+                if (part.added) span.className = 'bg-green-200 text-green-800';
+                if (part.removed) span.className = 'bg-red-200 text-red-800';
                 span.appendChild(document.createTextNode(part.value));
                 output.appendChild(span);
             });
