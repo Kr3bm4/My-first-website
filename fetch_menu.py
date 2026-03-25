@@ -1,28 +1,34 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+from datetime import datetime
 
 def get_menu():
-    # Použijeme tvou lepší adresu pro iframe
     url = "https://www.menicka.cz/api/iframe/?id=6956"
     headers = {'User-Agent': 'Mozilla/5.0'}
-    
+    dni = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
+    dnesni_den = dni[datetime.now().weekday()]
+
     try:
         response = requests.get(url, headers=headers)
         response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
         
         items = []
+        den_blocks = soup.find_all('div', class_='menicka')
         
-        menu_list = soup.find('ul')
-        if menu_list:
-            for li in menu_list.find_all('li'):
-                text = li.get_text(strip=True)
-                if text:
-                    items.append(text)
-        
+        for block in den_blocks:
+            datum_div = block.find('div', class_='datum')
+            if datum_div and dnesni_den in datum_div.get_text():
+                li_items = block.find_all('li')
+                for li in li_items:
+                    text = li.get_text(strip=True)
+                    if text:
+                        items.append(text)
+                break 
+
         if not items:
-            return {"restaurant": "Masný růžek", "items": ["Dnes menu nebylo zadáno nebo je vyprodáno."]}
+            return {"restaurant": "Masný růžek", "items": [f"Pro den {dnesni_den} nebylo menu nalezeno."]}
             
         return {"restaurant": "Masný růžek", "items": items}
 
