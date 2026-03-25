@@ -81,7 +81,6 @@
     if (!container) return;
 
     try {
-        // Načtení dat z vygenerovaného JSONu
         const response = await fetch('/menu.json');
         if (!response.ok) throw new Error('Nepodařilo se načíst menu');
         const data = await response.json();
@@ -90,13 +89,9 @@
             let html = '<div class="space-y-4">';
 
             data.items.forEach((item, index) => {
-                // Rozdělení textu na jídlo a cenu pomocí oddělovače " — "
                 let [dish, price] = item.split(' — ');
                 
-                // Vyčištění textu od zbytečných uvozovek a lomítek (escapování z JSONu)
                 dish = dish.replace(/\\"/g, '"').replace(/^"+|"+$/g, '').trim();
-
-                // První dvě položky v Masném růžku jsou obvykle polévky
                 const isSoup = index < 2;
 
                 html += `
@@ -130,8 +125,6 @@
         container.innerHTML = '<p class="text-red-400 text-sm">Chyba při načítání menu. Zkuste to později.</p>';
     }
 }
-
-// Spuštění po načtení stránky
 document.addEventListener('DOMContentLoaded', loadMenu);
 </script>
 </body>
