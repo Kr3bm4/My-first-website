@@ -1,35 +1,25 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from datetime import datetime
 
 def get_menu():
     url = "https://www.menicka.cz/api/iframe/?id=6956"
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    
-    # Seznam hledaných výrazů bez diakritiky pro jistotu
-    dni_search = ["pond", "ter", "stred", "ctvrt", "patek", "sobot", "nedel"]
-    dnesni_index = datetime.now().weekday()
-    hledany_den = dni_search[dnesni_index]
 
     try:
         response = requests.get(url, headers=headers)
-        # Vynutíme správné kódování hned na začátku
         response.encoding = 'utf-8' 
-        
         soup = BeautifulSoup(response.text, 'html.parser')
         
         items = []
-        vsechny_h2 = soup.find_all('h2')
+        # Najdeme všechny nadpisy h2
+        headers_h2 = soup.find_all('h2')
         
         target_table = None
-        for h2 in vsechny_h2:
-            # Hledáme den bez ohledu na diakritiku a velikost písmen
-            text_h2 = h2.get_text().lower()
-            # Odstraníme z textu neplechu, kterou tam vidíme v debugu
-            text_h2 = text_h2.replace('', 'r').replace('', 'u') 
-            
-            if hledany_den in text_h2 or "dnes" in text_h2:
+        for h2 in headers_h2:
+            # Hledáme slovo "dnes" bez ohledu na velikost písmen
+            if "dnes" in h2.get_text().lower():
+                # Našli jsme dnešek, vezmeme tabulku hned pod tím
                 target_table = h2.find_next('table', class_='menu')
                 break
 
@@ -38,14 +28,23 @@ def get_menu():
             for row in rows:
                 food_td = row.find('td', class_='food')
                 prize_td = row.find('td', class_='prize')
+                
                 if food_td:
+                    # Vyčistíme text od uvozovek a zbytečných mezer
                     food_text = food_td.get_text(" ", strip=True).strip('"„“ ')
                     prize_text = prize_td.get_text(strip=True) if prize_td else ""
+                    
                     if food_text:
                         items.append(f"{food_text} — {prize_text}")
 
         if not items:
-            return {"restaurant": "Masný růžek", "items": ["Menu pro dnešek nenalezeno."], "debug": [h.get_text() for h in vsechny_h2]}
+            # Debug info pro případ, že by slovo "dnes" zmizelo
+            available_headers = [h.get_text(strip=True) for h in headers_h2]
+            return {
+                "restaurant": "Masný růžek", 
+                "items": ["Menu pro dnešní den nebylo v systému označeno slovem 'dnes'."],
+                "debug": available_headers
+            }
             
         return {"restaurant": "Masný růžek", "items": items}
 
