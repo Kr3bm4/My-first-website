@@ -79,48 +79,54 @@
     <script>
 async function fetchMasnyRuzek() {
     const container = document.getElementById('masny-ruzek-content');
-    // Použijeme "hex" verzi allorigins, která nedeformuje diakritiku
-    const proxyUrl = 'https://api.allorigins.win/get?url=';
-    const targetUrl = encodeURIComponent('https://www.menicka.cz/6956-pivnice-masny-ruzek.html');
+    
+    // Změna proxy na corsproxy.io - bývá průchodnější
+    const targetUrl = 'https://www.menicka.cz/6956-pivnice-masny-ruzek.html';
+    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
 
     try {
-        const response = await fetch(`${proxyUrl}${targetUrl}`);
-        if (!response.ok) throw new Error('Nepodařilo se připojit k proxy.');
+        const response = await fetch(proxyUrl);
+        if (!response.ok) throw new Error('Proxy server neodpovídá');
         
-        const data = await response.json();
-        const htmlString = data.contents;
-        
+        const html = await response.text();
         const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlString, 'text/html');
+        const doc = parser.parseFromString(html, 'text/html');
         
-        // Cílíme na první výskyt třídy "menicka", která obsahuje dnešní datum
+        // Hledáme blok s denním menu
         const menuBlock = doc.querySelector('.menicka');
 
         if (menuBlock) {
-            // VYČIŠTĚNÍ: Odstraníme obrázky nebo mapy, pokud by tam byly
-            const images = menuBlock.querySelectorAll('img');
-            images.forEach(img => img.remove());
-
-            // VLOŽENÍ: Vezmeme vnitřní HTML a vložíme ho k nám
-            // Přidáme třídu 'parsed-menu' pro snadnější styling
-            container.innerHTML = `<div class="parsed-menu">${menuBlock.innerHTML}</div>`;
+            // Smažeme nepotřebné věci (obrázky, prázdné spany)
+            menuBlock.querySelectorAll('img, script, style').forEach(el => el.remove());
             
-            // Zachování odkazu na zdroj (nepovinné)
-            container.innerHTML += `
-                <div class="mt-4 pt-4 border-t border-gray-100">
-                    <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-xs text-blue-400 hover:underline">Zdroj: Meníčka.cz</a>
-                </div>`;
+            // Vložíme čistý obsah
+            container.innerHTML = `
+                <div class="extracted-menu text-gray-700">
+                    ${menuBlock.innerHTML}
+                </div>
+            `;
             
-            container.classList.remove('text-gray-400');
+            // Stylistický bonus: aby ceny nebyly nalepené na jídle
+            container.querySelectorAll('.cena').forEach(el => {
+                el.style.float = 'right';
+                el.style.fontWeight = 'bold';
+            });
+            
         } else {
-            container.innerHTML = "Dnes nevaří nebo menu ještě nebylo vypsáno.";
+            container.innerHTML = "<p class='text-amber-600 font-medium'>Dnešní menu zatím nebylo zveřejněno.</p>";
         }
     } catch (error) {
-        console.error('Detail chyby:', error);
-        container.innerHTML = `<p class="text-red-500 text-sm">Chyba: ${error.message}</p>`;
+        console.error('Chyba při fetchování:', error);
+        container.innerHTML = `
+            <div class="text-red-500 text-sm p-2 bg-red-50 rounded">
+                <strong>Chyba načítání:</strong> ${error.message}<br>
+                <span class="text-xs opacity-70">Zkuste vypnout AdBlock nebo použít Live Server ve VS Code.</span>
+            </div>
+        `;
     }
 }
 
+// Spustíme
 fetchMasnyRuzek();
 </script>
-
+</body>
