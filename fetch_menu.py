@@ -5,7 +5,8 @@ from datetime import datetime
 
 def get_menu():
     url = "https://www.menicka.cz/api/iframe/?id=6956"
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+    
     dni = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
     dnesni_den = dni[datetime.now().weekday()]
 
@@ -15,20 +16,28 @@ def get_menu():
         soup = BeautifulSoup(response.text, 'html.parser')
         
         items = []
-        den_blocks = soup.find_all('div', class_='menicka')
+        headers_h2 = soup.find_all('h2')
+        target_table = None
         
-        for block in den_blocks:
-            datum_div = block.find('div', class_='datum')
-            if datum_div and dnesni_den in datum_div.get_text():
-                li_items = block.find_all('li')
-                for li in li_items:
-                    text = li.get_text(strip=True)
-                    if text:
-                        items.append(text)
-                break 
+        for h2 in headers_h2:
+            if dnesni_den in h2.get_text():
+                target_table = h2.find_next('table', class_='menu')
+                break
+
+        if target_table:
+            rows = target_table.find_all('tr')
+            for row in rows:
+                food_td = row.find('td', class_='food')
+                prize_td = row.find('td', class_='prize')
+                
+                if food_td:
+                    food_text = food_td.get_text(strip=True)
+                    prize_text = prize_td.get_text(strip=True) if prize_td else ""
+                    
+                    items.append(f"{food_text} — {prize_text}")
 
         if not items:
-            return {"restaurant": "Masný růžek", "items": [f"Pro den {dnesni_den} nebylo menu nalezeno."]}
+            return {"restaurant": "Masný růžek", "items": [f"Pro den {dnesni_den} menu nenalezeno."]}
             
         return {"restaurant": "Masný růžek", "items": items}
 
