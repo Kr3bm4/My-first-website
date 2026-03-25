@@ -1,13 +1,15 @@
 {
     "restaurant": "Masný růžek",
     "items": [
-        "Dnes (Středa) menu není."
+        "Menu pro dnešek nenalezeno."
     ],
-    "debug_found_headers": [
+    "debug": [
         "Pond�l� 23.3.2026 ",
         "�ter� 24.3.2026 ",
         "St�eda 25.3.2026 « dnes",
         "�tvrtek 26.3.2026 ",
-        "P�tek 27.3.2026 "
+        "P�tek 27.3.2026 ",
+        "Sobota 28.3.2026 ",
+        "Ned�le 29.3.2026 "
     ]
 }
