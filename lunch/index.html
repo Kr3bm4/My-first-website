@@ -74,4 +74,26 @@
             Experimental Web Lab • Thank you, Tailwind CSS.
         </footer>
     </div>
+
+    <script>
+    async function loadMenu() {
+        try {
+            const response = await fetch('/menu.json');
+            const data = await response.json();
+            const container = document.getElementById('masnyruzek-content');
+            
+            if (data.items && data.items.length > 0) {
+                let html = '<ul class="space-y-2 mb-4 text-gray-700">';
+                data.items.forEach(item => {
+                    html += `<li class="border-b border-gray-50 pb-1">${item}</li>`;
+                });
+                html += '</ul>';
+                container.innerHTML = html + container.innerHTML; 
+            }
+        } catch (e) {
+            console.error("Nepodařilo se načíst menu", e);
+        }
+    }
+    loadMenu();
+</script>
 </body>
