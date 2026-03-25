@@ -20,10 +20,10 @@
         <section class="space-y-8">
             <div>
                 <h2 class="text-sm font-semibold uppercase text-gray-500 mb-4">Masný růžek</h2>
-                <div id="menu-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-gray-400">Not implemented yet</p>
-                    <div class="text-sm">
-                        <a href="https://www.pivnicemasnyruzek.cz/menu-dne" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
+                <div id="masny-ruzek-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-400 animate-pulse">Načítám dnešní menu...</p>
+                    <div class="text-sm mt-4">
+                        <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-blue-500 hover:underline font-medium">Zdroj: Meníčka.cz →</a>
                     </div>
                 </div>
             </div>
@@ -74,5 +74,53 @@
             Experimental Web Lab • Thank you, Tailwind CSS.
         </footer>
     </div>
-</body>
+
+
+    <script>
+async function fetchMasnyRuzek() {
+    const container = document.getElementById('masny-ruzek-content');
+    // Použijeme "hex" verzi allorigins, která nedeformuje diakritiku
+    const proxyUrl = 'https://api.allorigins.win/get?url=';
+    const targetUrl = encodeURIComponent('https://www.menicka.cz/6956-pivnice-masny-ruzek.html');
+
+    try {
+        const response = await fetch(`${proxyUrl}${targetUrl}`);
+        if (!response.ok) throw new Error('Nepodařilo se připojit k proxy.');
+        
+        const data = await response.json();
+        const htmlString = data.contents;
+        
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlString, 'text/html');
+        
+        // Cílíme na první výskyt třídy "menicka", která obsahuje dnešní datum
+        const menuBlock = doc.querySelector('.menicka');
+
+        if (menuBlock) {
+            // VYČIŠTĚNÍ: Odstraníme obrázky nebo mapy, pokud by tam byly
+            const images = menuBlock.querySelectorAll('img');
+            images.forEach(img => img.remove());
+
+            // VLOŽENÍ: Vezmeme vnitřní HTML a vložíme ho k nám
+            // Přidáme třídu 'parsed-menu' pro snadnější styling
+            container.innerHTML = `<div class="parsed-menu">${menuBlock.innerHTML}</div>`;
+            
+            // Zachování odkazu na zdroj (nepovinné)
+            container.innerHTML += `
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-xs text-blue-400 hover:underline">Zdroj: Meníčka.cz</a>
+                </div>`;
+            
+            container.classList.remove('text-gray-400');
+        } else {
+            container.innerHTML = "Dnes nevaří nebo menu ještě nebylo vypsáno.";
+        }
+    } catch (error) {
+        console.error('Detail chyby:', error);
+        container.innerHTML = `<p class="text-red-500 text-sm">Chyba: ${error.message}</p>`;
+    }
+}
+
+fetchMasnyRuzek();
+</script>
 
