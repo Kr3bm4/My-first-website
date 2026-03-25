@@ -1,15 +1,13 @@
 {
     "restaurant": "Masný růžek",
     "items": [
-        "Menu pro dnešek nenalezeno."
-    ],
-    "debug": [
-        "Pond�l� 23.3.2026 ",
-        "�ter� 24.3.2026 ",
-        "St�eda 25.3.2026 « dnes",
-        "�tvrtek 26.3.2026 ",
-        "P�tek 27.3.2026 ",
-        "Sobota 28.3.2026 ",
-        "Ned�le 29.3.2026 "
+        "0, 25l Mexick� pikantn� pol�vka Sopa Azteca — 30 K�",
+        "0, 25l Hov�z� v�var s j�trov�m knedl��kem, nudlemi  a ko�enovou zeleninou — 30 K�",
+        "180g  Anglick� vep�ov� j�tra, americk� brambory, tatarsk� om��ka — 159 K�",
+        "135g Vep�ov� ra�ni�i s paprikou a cibul�, op�kan� brambory s major�nkou, �esnekov� dip ze zakysan�  smetany — 169 K�",
+        "140g Ku�ec� steak  pln�n� baby �pen�tem a ricotou, pe�en� bramborov� ka�e s mu�k�tov�m o��kem — 169 K�",
+        "200g Sma�en� vep�ov�  ��zek \"\"P�ES CEL� TAL��\"\", bramborov� sal�t s majon�zou — 179 K�",
+        "135g Double cheese burger, Red Cheddar, anglick� slanina, raj�e,  jalape�os, nakl�dan� okurek, sma�en� cibulka, americk� dresink, dom�c� bulka, hranolky — 189 K�",
+        "180g Hov�z� sv��kov� na smetan�, houskov� knedl�k, brusinkov� ter��k s �erstvou �leha�kou a  citr�nem — 229 K�"
     ]
 }
