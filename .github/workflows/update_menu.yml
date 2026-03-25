@@ -1,0 +1,33 @@
+name: Update Lunch Menu
+on:
+  schedule:
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+        
+      - name: Run scraper
+        run: python fetch_menu.py
+        
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Menu Bot"
+          git config --global user.email "bot@github.com"
+          git add menu.json
+          git commit -m "Update daily menu" || exit 0
+          git push
