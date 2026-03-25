@@ -8,18 +8,15 @@ def get_menu():
 
     try:
         response = requests.get(url, headers=headers)
-        response.encoding = 'utf-8' 
-        soup = BeautifulSoup(response.text, 'html.parser')
+        response.encoding = response.apparent_encoding 
+        soup = BeautifulSoup(response.content, 'html.parser', from_encoding='utf-8')
         
         items = []
-        # Najdeme všechny nadpisy h2
         headers_h2 = soup.find_all('h2')
         
         target_table = None
         for h2 in headers_h2:
-            # Hledáme slovo "dnes" bez ohledu na velikost písmen
             if "dnes" in h2.get_text().lower():
-                # Našli jsme dnešek, vezmeme tabulku hned pod tím
                 target_table = h2.find_next('table', class_='menu')
                 break
 
@@ -28,24 +25,12 @@ def get_menu():
             for row in rows:
                 food_td = row.find('td', class_='food')
                 prize_td = row.find('td', class_='prize')
-                
                 if food_td:
-                    # Vyčistíme text od uvozovek a zbytečných mezer
                     food_text = food_td.get_text(" ", strip=True).strip('"„“ ')
                     prize_text = prize_td.get_text(strip=True) if prize_td else ""
-                    
                     if food_text:
                         items.append(f"{food_text} — {prize_text}")
 
-        if not items:
-            # Debug info pro případ, že by slovo "dnes" zmizelo
-            available_headers = [h.get_text(strip=True) for h in headers_h2]
-            return {
-                "restaurant": "Masný růžek", 
-                "items": ["Menu pro dnešní den nebylo v systému označeno slovem 'dnes'."],
-                "debug": available_headers
-            }
-            
         return {"restaurant": "Masný růžek", "items": items}
 
     except Exception as e:
