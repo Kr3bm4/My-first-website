@@ -77,23 +77,61 @@
 
     <script>
     async function loadMenu() {
-        try {
-            const response = await fetch('/menu.json');
-            const data = await response.json();
-            const container = document.getElementById('masnyruzek-content');
-            
-            if (data.items && data.items.length > 0) {
-                let html = '<ul class="space-y-2 mb-4 text-gray-700">';
-                data.items.forEach(item => {
-                    html += `<li class="border-b border-gray-50 pb-1">${item}</li>`;
-                });
-                html += '</ul>';
-                container.innerHTML = html + container.innerHTML; 
-            }
-        } catch (e) {
-            console.error("Nepodařilo se načíst menu", e);
+    const container = document.getElementById('masnyruzek-content');
+    if (!container) return;
+
+    try {
+        // Načtení dat z vygenerovaného JSONu
+        const response = await fetch('/menu.json');
+        if (!response.ok) throw new Error('Nepodařilo se načíst menu');
+        const data = await response.json();
+
+        if (data.items && data.items.length > 0) {
+            let html = '<div class="space-y-4">';
+
+            data.items.forEach((item, index) => {
+                // Rozdělení textu na jídlo a cenu pomocí oddělovače " — "
+                let [dish, price] = item.split(' — ');
+                
+                // Vyčištění textu od zbytečných uvozovek a lomítek (escapování z JSONu)
+                dish = dish.replace(/\\"/g, '"').replace(/^"+|"+$/g, '').trim();
+
+                // První dvě položky v Masném růžku jsou obvykle polévky
+                const isSoup = index < 2;
+
+                html += `
+                    <div class="flex justify-between items-start border-b border-gray-100 pb-2">
+                        <div class="flex-grow pr-4">
+                            <span class="text-xs text-gray-400 mr-2">${isSoup ? '🥣' : (index - 1) + '.'}</span>
+                            <span class="${isSoup ? 'italic text-gray-600' : 'text-gray-800 font-medium'}">${dish}</span>
+                        </div>
+                        <div class="text-right whitespace-nowrap font-bold text-gray-900">
+                            ${price}
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                <div class="mt-6 pt-4 border-t border-gray-200 text-center">
+                    <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" 
+                       class="text-xs text-blue-500 hover:text-blue-700 transition-colors italic">
+                        Zdroj dat: menicka.cz
+                    </a>
+                </div>
+            </div>`;
+
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<p class="text-gray-500 italic">Dnes menu nebylo zadáno.</p>';
         }
+    } catch (error) {
+        console.error('Chyba při načítání menu:', error);
+        container.innerHTML = '<p class="text-red-400 text-sm">Chyba při načítání menu. Zkuste to později.</p>';
     }
-    loadMenu();
+}
+
+// Spuštění po načtení stránky
+document.addEventListener('DOMContentLoaded', loadMenu);
 </script>
 </body>
