@@ -14,6 +14,13 @@
         <header class="mb-12">
             <a href="/home/" class="text-blue-600 hover:underline text-sm mb-4 inline-block">← Return home</a>
             <h1 class="text-4xl font-bold tracking-tight">Notation & Symbols</h1>
+
+            <div class="mt-6">
+                <label for="text1" class="block text-xs font-semibold uppercase text-gray-400 mb-2">Scratchpad / Preview</label>
+                <textarea id="text1" 
+                    class="w-full h-32 p-4 border border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white transition-all" 
+                    placeholder="Symbols are copied to clipboard individually, or you can select more and copy them from this textbox"></textarea>
+            </div>
         </header>
 
         <section class="space-y-8">
@@ -213,12 +220,19 @@
                 toast.classList.remove('opacity-0');
                 setTimeout(() => toast.classList.add('opacity-0'), 1500);
             });
+
+            const textarea = document.getElementById('text1');
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const currentText = textarea.value;
+            
+            textarea.value = currentText.substring(0, start) + text + currentText.substring(end);
         }
+
         function showError() {
             const errorToast = document.getElementById('toast-error');
             errorToast.classList.remove('opacity-0');
             setTimeout(() => {errorToast.classList.add('opacity-0');}, 1500);
-}
-        
+        }
     </script>
 </body>
