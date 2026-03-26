@@ -18,13 +18,13 @@
         </header>
 
         <section class="space-y-8">
-            <div>
-                <h2 class="text-sm font-semibold uppercase text-gray-500 mb-4">Masný růžek</h2>
-                <div id="masny-ruzek-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-gray-400 animate-pulse">Work in progress...</p>
-                    <div class="text-sm">
-                        <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu→</a>
-                    </div>
+            <div id="masny-ruzek-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div id="masny-ruzek-list" class="space-y-4 mb-4">
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
+                </div>
+    
+                <div class="text-sm">
+                    <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
                 </div>
             </div>
             
@@ -75,56 +75,49 @@
         </footer>
     </div>
 
+
     <script>
     async function loadMenu() {
-    const container = document.getElementById('masnyruzek-content');
-    if (!container) return;
+        try {
+            const response = await fetch('menu.json');
+            const data = await response.json();
+            const container = document.getElementById('masny-ruzek-list');
+            
+            if (!data.items || data.items.length === 0) {
+                container.innerHTML = '<p class="text-red-400">NO data!</p>';
+                return;
+            }
 
-    try {
-        const response = await fetch('/menu.json');
-        if (!response.ok) throw new Error('Nepodařilo se načíst menu');
-        const data = await response.json();
-
-        if (data.items && data.items.length > 0) {
-            let html = '<div class="space-y-4">';
+            let html = '';
 
             data.items.forEach((item, index) => {
-                let [dish, price] = item.split(' — ');
+
+                let [name, price] = item.split(' — ');
                 
-                dish = dish.replace(/\\"/g, '"').replace(/^"+|"+$/g, '').trim();
-                const isSoup = index < 2;
+
+                name = name.replace(/0,\s+25l/, '0,25l');
+
+
+                if (index === 0) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
+                if (index === 2) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main</h3>';
+
 
                 html += `
-                    <div class="flex justify-between items-start border-b border-gray-100 pb-2">
-                        <div class="flex-grow pr-4">
-                            <span class="text-xs text-gray-400 mr-2">${isSoup ? '🥣' : (index - 1) + '.'}</span>
-                            <span class="${isSoup ? 'italic text-gray-600' : 'text-gray-800 font-medium'}">${dish}</span>
-                        </div>
-                        <div class="text-right whitespace-nowrap font-bold text-gray-900">
-                            ${price}
-                        </div>
+                    <div class="flex justify-between items-start gap-4">
+                        <span class="text-gray-700 text-sm md:text-base">${name}</span>
+                        <span class="font-semibold text-gray-900 whitespace-nowrap text-sm md:text-base">${price}</span>
                     </div>
                 `;
             });
 
-            html += `
-                <div class="mt-6 pt-4 border-t border-gray-200 text-center">
-                    <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" 
-                       class="text-xs text-blue-500 hover:text-blue-700 transition-colors italic">
-                        Zdroj dat: menicka.cz
-                    </a>
-                </div>
-            </div>`;
-
             container.innerHTML = html;
-        } else {
-            container.innerHTML = '<p class="text-gray-500 italic">Dnes menu nebylo zadáno.</p>';
+
+        } catch (error) {
+            console.error('Loading error', error);
+            document.getElementById('masny-ruzek-list').innerHTML = 
+                '<p class="text-red-500 text-sm">Invalid menu.json.</p>';
         }
-    } catch (error) {
-        console.error('Chyba při načítání menu:', error);
-        container.innerHTML = '<p class="text-red-400 text-sm">Chyba při načítání menu. Zkuste to později.</p>';
     }
-}
-document.addEventListener('DOMContentLoaded', loadMenu);
+    loadMenu();
 </script>
 </body>
