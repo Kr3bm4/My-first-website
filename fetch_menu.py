@@ -28,7 +28,6 @@ def get_menu_data(res_id, res_name, manual_prices=None):
                 
                 if food_td:
                     food_text = food_td.get_text(" ", strip=True).strip('"„“ ')
-                    # Pokud máme fixní ceny (pro druhou restauraci)
                     if manual_prices and idx < len(manual_prices):
                         prize_text = manual_prices[idx]
                     else:
