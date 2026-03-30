@@ -28,7 +28,6 @@ def get_menu_data(res_id, res_name, manual_prices=None):
                 
                 if food_td:
                     food_text = food_td.get_text(" ", strip=True).strip('"„“ ')
-                    # Pokud máme fixní ceny (pro druhou restauraci)
                     if manual_prices and idx < len(manual_prices):
                         prize_text = manual_prices[idx]
                     else:
@@ -45,7 +44,8 @@ if __name__ == "__main__":
 
     restaurants = [
         {"id": "6956", "name": "Masný růžek", "prices": None},
-        {"id": "4108", "name": "Veg8 Cafe", "prices": ["40 Kč", "130 Kč", "150 Kč"]}
+        {"id": "4108", "name": "Veg8 Cafe", "prices": ["40 Kč", "130 Kč", "150 Kč"]},
+        {"id": "8722", "name": "Deli-Tree", "prices": None},
     ]
     
     final_data = {}
