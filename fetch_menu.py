@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 
 def get_menu_data(res_id, res_name, manual_prices=None):
     url = f"https://www.menicka.cz/api/iframe/?id={res_id}"
@@ -28,13 +29,16 @@ def get_menu_data(res_id, res_name, manual_prices=None):
                 
                 if food_td:
                     food_text = food_td.get_text(" ", strip=True).strip('"„“ ')
+                    
+                    food_text = re.sub(r'0,\s*25l', '0.25l', food_text)
+                    
                     if manual_prices and idx < len(manual_prices):
                         prize_text = manual_prices[idx]
                     else:
                         prize_text = prize_td.get_text(strip=True) if prize_td else ""
                     
                     if food_text:
-                        items.append(f"{food_text} — {prize_text}")
+                        items.append({"name": food_text, "price": prize_text})
 
         return {"name": res_name, "items": items}
     except Exception as e:
