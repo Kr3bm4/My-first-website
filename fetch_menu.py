@@ -44,7 +44,7 @@ def get_menu_data(res_id, res_name, manual_prices=None):
 if __name__ == "__main__":
     restaurants = [
         {"id": "6956", "name": "Masný růžek", "prices": None},
-        {"id": "4108", "name": "Vegalité", "prices": ["40 Kč", "130 Kč", "150 Kč"]}
+        {"id": "4108", "name": "Veg8 Cafe", "prices": ["40 Kč", "130 Kč", "150 Kč"]}
     ]
     
     final_data = {}
