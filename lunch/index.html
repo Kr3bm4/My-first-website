@@ -30,7 +30,9 @@
             
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-base font-semibold uppercase text-gray-500 mb-4">Annapurna</h2>
-                <p class="text-gray-400 mb-4">Not implemented yet</p>
+                <div id="annapurna-items" class="space-y-4 mb-4">
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
+                </div>
                 <div class="text-sm border-t pt-4">
                     <a href="https://www.indicka-restaurace-annapurna.cz/brno/cz/weekly.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
                 </div>
@@ -99,21 +101,14 @@
 
             let html = '';
             
-            // Záhlaví pro polévky
             html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
 
             data.items.forEach((item, index) => {
-                // 1. Rozdělení jména a ceny
                 let [name, price] = item.split(' — ');
                 
-                // 2. Čištění textu (uvozovky, emoji, mezery u objemu)
-                name = name.replace(/""/g, '"').replace(/^"|"$/g, '').trim();
-                // Odstraní emoji
-                name = name.replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, ''); 
-                // Opraví 0, 25 na 0,25
+                name = name.replace(/^[^a-zA-Z0-9ěščřžýáíéóúůďťňĚŠČŘŽÝÁÍÉÓÚŮĎŤŇ]+/, '').trim();
                 name = name.replace(/0,\s+25/g, '0,25');
 
-                // 3. Logika pro vložení nadpisu Hlavní chod
                 if (index === soupCount) {
                     html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main Course</h3>';
                 }
@@ -139,6 +134,7 @@
     loadMenu('6956', 'masny-ruzek-items', 2);
     loadMenu('4108', 'veg8-cafe-items', 1);
     loadMenu('8722', 'deli-tree-items', 2);    
+    loadmenu('annapurna', 'annapurna-items', 2);    
 </script>
 </body>
 </html>
