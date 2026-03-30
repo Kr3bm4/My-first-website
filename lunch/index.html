@@ -85,29 +85,30 @@
     async function loadMenu(resId, containerId) {
         try {
             const response = await fetch('../menu.json?t=' + new Date().getTime());
-            if (!response.ok) throw new Error('Could not find menu.json');
-            
             const allData = await response.json();
             const data = allData[resId];
             const container = document.getElementById(containerId);
             
             if (!data || !data.items || data.items.length === 0) {
-                container.innerHTML = '<p class="text-gray-400">Menu not found.</p>';
+                container.innerHTML = '<p class="text-gray-400">Dnes není menu k dispozici.</p>';
                 return;
             }
 
             let html = '';
-            data.items.forEach((item, index) => {
-                let [name, price] = item.split(' — ');
-                name = name.replace(/""/g, '"').replace(/^"|"$/g, '').trim();
+            
+            const soupCount = resId === '6956' ? 2 : 1;
 
-                if (index === 0) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
-                if (index === 1) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main course</h3>';
+            data.items.forEach((item, index) => {
+                if (index === 0) {
+                    html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
+                } else if (index === soupCount) {
+                    html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main Course</h3>';
+                }
 
                 html += `
                     <div class="flex justify-between items-start gap-4 py-1">
-                        <span class="text-gray-700 text-sm md:text-base leading-tight">${name}</span>
-                        <span class="font-semibold text-gray-900 whitespace-nowrap text-sm md:text-base">${price || ''}</span>
+                        <span class="text-gray-700 text-sm md:text-base leading-tight">${item.name}</span>
+                        <span class="font-semibold text-gray-900 whitespace-nowrap text-sm md:text-base">${item.price || ''}</span>
                     </div>
                 `;
             });
@@ -116,12 +117,10 @@
 
         } catch (error) {
             console.error('Logic Error:', error);
-            document.getElementById(containerId).innerHTML = 
-                `<p class="text-red-500 text-sm italic">Loading error</p>`;
         }
     }
 
-    loadMenu('6956', 'masny-ruzek-content');
+    loadMenu('6956', '"masny-ruzek-content');
     loadMenu('4108', 'veg8-cafe-content');
 </script>
 </body>
