@@ -65,12 +65,13 @@
             <div>
                 <h2 class="text-sm font-semibold uppercase text-gray-500 mb-4">Veg8 cafe</h2>
                 <div id="veg8-cafe-content" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-gray-400">Not implemented yet</p>
-                    <div class="text-sm">
-                        <a href="https:/https://www.menicka.cz/4108-veg8cafe.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
+                    <div id="masny-ruzek-list" class="space-y-4 mb-4">
+                        <p class="text-gray-400 animate-pulse">Loading...</p>
                     </div>
+                        <a href="https:/https://www.menicka.cz/4108-veg8cafe.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
                 </div>
             </div>
+        </div>
         </section>
                 
         <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
@@ -81,53 +82,46 @@
 
 
     <script>
-    async function loadMenu() {
-    try {
-
-        const response = await fetch('../menu.json?t=' + new Date().getTime());
-        
-        if (!response.ok) throw new Error('Could not find menu.json');
-        
-        const data = await response.json();
-        const container = document.getElementById('masny-ruzek-list');
-        
-        if (!data.items || data.items.length === 0) {
-            container.innerHTML = '<p class="text-gray-400">No menu items found for today.</p>';
-            return;
-        }
-
-        let html = '';
-
-        data.items.forEach((item, index) => {
-
-            let [name, price] = item.split(' — ');
+    async function loadMenu(resId, containerId) {
+        try {
+            const response = await fetch('../menu.json?t=' + new Date().getTime());
+            if (!response.ok) throw new Error('Could not find menu.json');
             
+            const allData = await response.json();
+            const data = allData[resId];
+            const container = document.getElementById(containerId);
+            
+            if (!data || !data.items || data.items.length === 0) {
+                container.innerHTML = '<p class="text-gray-400">Menu not found.</p>';
+                return;
+            }
 
-            name = name.replace(/""/g, '"').replace(/^"|"$/g, '').trim();
+            let html = '';
+            data.items.forEach((item, index) => {
+                let [name, price] = item.split(' — ');
+                name = name.replace(/""/g, '"').replace(/^"|"$/g, '').trim();
 
-            name = name.replace(/0,\s+25l/, '0.25l');
+                if (index === 0) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
+                if (index === 1) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main course</h3>';
 
+                html += `
+                    <div class="flex justify-between items-start gap-4 py-1">
+                        <span class="text-gray-700 text-sm md:text-base leading-tight">${name}</span>
+                        <span class="font-semibold text-gray-900 whitespace-nowrap text-sm md:text-base">${price || ''}</span>
+                    </div>
+                `;
+            });
 
-            if (index === 0) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Soup</h3>';
-            if (index === 2) html += '<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 mt-6">Main Course</h3>';
+            container.innerHTML = html;
 
-            html += `
-                <div class="flex justify-between items-start gap-4 py-1">
-                    <span class="text-gray-700 text-sm md:text-base leading-tight">${name}</span>
-                    <span class="font-semibold text-gray-900 whitespace-nowrap text-sm md:text-base">${price || ''}</span>
-                </div>
-            `;
-        });
-
-        container.innerHTML = html;
-
-    } catch (error) {
-        console.error('Logic Error:', error);
-        document.getElementById('masny-ruzek-list').innerHTML = 
-            `<p class="text-red-500 text-sm italic">Error: ${error.message}. <br> Make sure menu.json is valid and located in the root.</p>`;
+        } catch (error) {
+            console.error('Logic Error:', error);
+            document.getElementById(containerId).innerHTML = 
+                `<p class="text-red-500 text-sm italic">Loading error</p>`;
+        }
     }
-}
 
-loadMenu();
+    loadMenu('6956', 'masny-ruzek-content');
+    loadMenu('4108', 'veg8-cafe-content');
 </script>
 </body>
