@@ -3,32 +3,38 @@
         "name": "Masný růžek",
         "items": [
             "0,  25l Staročeská fazolová s kořenovou zeleninou — 30 Kč",
-            "0,  25l Česneková polévka s vejcem a praženou šunkou, chlebové krutony — 30 Kč",
-            "130g Kuřecí KUNG PAO,  restované čínské nudle — 159 Kč",
-            "120g Smažený sýr se šunkou,  vařené brambory, domácí tatarská omáčka — 169 Kč",
-            "150g Grilovaný kuřecí špíz s anglickou slaninou,  červenou cibulí a klobásou, bouchaný brambor,  bylinkovo - česnekový dip — 159 Kč",
-            "150g Špalík marinované vepřové panenky s pepřovou omáčkou,  pečené brambůrky Grenaille — 179 Kč",
-            "140g Bacon Burger – hovězí maso zapečené chedarem,  pečená křupavá slanina, zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka, domácí bulka, hranolky — 189 Kč",
-            "160g Španělský vepřový ptáček s uzeninou, vejcem, špekem a okurkem,  divoká rýže, smažená cibulka — 179 Kč"
+            "0, 25l Česneková polévka s vejcem a praženou šunkou,  chlebové krutony — 30 Kč",
+            "130g Kuřecí KUNG PAO, restované  čínské nudle — 159 Kč",
+            "120g Smažený  sýr se šunkou, vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "150g  Grilovaný kuřecí špíz s anglickou slaninou,  červenou cibulí a klobásou, bouchaný brambor, bylinkovo - česnekový dip — 159 Kč",
+            "150g Špalík  marinované vepřové panenky s pepřovou omáčkou, pečené brambůrky Grenaille — 179 Kč",
+            "140g Bacon Burger – hovězí maso zapečené chedarem, pečená křupavá slanina,  zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka, domácí bulka, hranolky — 189 Kč",
+            "160g Španělský vepřový ptáček s uzeninou, vejcem, špekem a  okurkem, divoká rýže, smažená cibulka — 179 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Květákový krém  (BZL) — 40 Kč",
+            "Květákový krém (BZL) — 40 Kč",
             "Citronové noky s hráškem, špenátem a sušenými rajčaty (1a) 1 — 130 Kč",
-            "Mango karí s tofu  a jasmínovou rýží + černý sezam (BZL) (6, 11) 6 11 — 150 Kč"
+            "Mango karí s tofu a jasmínovou rýží + černý sezam  (BZL) (6, 11) 6 11 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵  Bramborový krém, medvědí česnek — 49 Kč",
-            "🍵 Hovězí vývar  - nudle, maso, kořenová zelenina — 49 Kč",
-            "🔸Pomalu tažený vepřový bok na hruškách. čočka beluga, kořenová  zelenina, silná hrušková jus, hráškové výhonky — 199 Kč",
-            "🔸Smažené kuřecí stripsy v cornflakes marinované v podmáslí  a česneku, pečená brambora, zakysaná smetana, coleslaw — 189 Kč",
-            "🔸Delitree bramborové gnocchi, smetanový špenát, 16 měsíců vyzrálý kozí sýr  Gran Caprotto — 179 Kč",
-            "🔸Spaghetti Aglio olio e peperoncino - čerstvé vaječné těstoviny, česnek, chilli, petrželka,  Grana Padano, olivový olej — 179 Kč"
+            "🍵 Bramborový krém, medvědí  česnek — 49 Kč",
+            "🍵 Hovězí vývar - nudle, maso,  kořenová zelenina — 49 Kč",
+            "🔸Pomalu tažený vepřový bok na hruškách. čočka beluga, kořenová zelenina, silná  hrušková jus, hráškové výhonky — 199 Kč",
+            "🔸Smažené kuřecí stripsy v cornflakes marinované v podmáslí a česneku, pečená brambora, zakysaná smetana, coleslaw — 189 Kč",
+            "🔸Delitree bramborové gnocchi, smetanový  špenát, 16 měsíců vyzrálý kozí sýr Gran Caprotto — 179 Kč",
+            "🔸Spaghetti Aglio olio e peperoncino - čerstvé vaječné  těstoviny, česnek, chilli, petrželka, Grana Padano, olivový olej — 179 Kč"
+        ]
+    },
+    "annapurna": {
+        "name": "Annapurna",
+        "items": [
+            "Menu not found — "
         ]
     }
 }
