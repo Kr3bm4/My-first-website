@@ -49,7 +49,7 @@ def get_annapurna_data():
     days_map = {0: "mon", 1: "tue", 2: "wed", 3: "thu", 4: "fri"}
     current_day_idx = datetime.now().weekday()
     
-    if current_day_idx > 4: 
+    if current_day_idx > 4:
         return {"name": res_name, "items": ["Weekend - Closed — "]}
 
     day_key = days_map[current_day_idx]
@@ -61,30 +61,39 @@ def get_annapurna_data():
         day_container = soup.find('div', {'mc-data': day_key, 'mc-target': 'weeklyMenuTab'})
         
         if not day_container:
-            return {"name": res_name, "items": ["Menu not found — "]}
+            return {"name": res_name, "items": ["Menu container not found — "]}
 
         items = []
         
 
         soup_items = day_container.find_all('div', {'mc-template': 'soup'})
         for s in soup_items:
-            en_name = s.find('span', class_='weekly-menu-text18').get_text(strip=True)
-            cs_desc = s.find('span', class_='weekly-menu-text22').get_text(strip=True)
-            price = s.find('span', class_='weekly-menu-text20').get_text(strip=True)
+
+            en_name = s.find('span', {'mc-text': True, 'class': 'MenuItemTitle'}).get_text(strip=True)
+            cs_desc = s.find('span', {'class': 'mc-second-font'}).get_text(strip=True)
+            price = s.find('span', {'class': 'weekly-menu-text20'}).get_text(strip=True) 
             items.append(f"{en_name} ≅ {cs_desc} — {price} Kč")
 
 
         main_items = day_container.find_all('div', {'mc-template': 'main'})
         for m in main_items:
-            en_name = m.find('span', class_='weekly-menu-text28').get_text(strip=True)
-            cs_desc = m.find('span', class_='weekly-menu-text32').get_text(strip=True)
-            price = m.find('span', class_='weekly-menu-text30').get_text(strip=True)
+
+            en_name_el = m.find('span', {'mc-text': lambda x: x and 'MEALNAME' in x})
+            en_name = en_name_el.get_text(strip=True) if en_name_el else "Unknown Dish"
+            
+
+            cs_desc_el = m.find('span', {'mc-text': lambda x: x and 'MEALDESCRIPTION' in x})
+            cs_desc = cs_desc_el.get_text(strip=True) if cs_desc_el else ""
+            
+
+            price_el = m.find('span', {'class': 'weekly-menu-text30'})
+            price = price_el.get_text(strip=True) if price_el else "144"
+            
             items.append(f"{en_name} ≅ {cs_desc} — {price} Kč")
 
         return {"name": res_name, "items": items}
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": []}
-
 if __name__ == "__main__":
 
     menicka_res = [
