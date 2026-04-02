@@ -155,20 +155,32 @@ def get_sargam_data():
 
 
 if __name__ == "__main__":
-
-    menicka_res = [
-        {"id": "6956", "name": "Masný růžek", "prices": None},
-        {"id": "4108", "name": "Veg8 Cafe", "prices": ["40 Kč", "130 Kč", "150 Kč"]},
-        {"id": "8722", "name": "Deli-Tree", "prices": None},
-    ]
+    current_day_idx = datetime.now().weekday()
     
-    final_data = {}
+    if current_day_idx == 5:
+        final_data = {
+            "status": "weekend",
+            "message": "Menu's not checked on weekends",
+            "items": ["Menu's not checked on weekends — "]
+        }
 
-    for res in menicka_res:
-        final_data[res['id']] = get_menicka_data(res['id'], res['name'], res['prices'])
+        res_ids = ["6956", "4108", "8722", "annapurna", "sargam"]
+        final_data = {rid: {"name": "Weekend", "items": ["Menu's not checked on weekends — "]} for rid in res_ids}
+        
+    else:
+        menicka_res = [
+            {"id": "6956", "name": "Masný růžek", "prices": None},
+            {"id": "4108", "name": "Veg8 Cafe", "prices": ["40 Kč", "130 Kč", "150 Kč"]},
+            {"id": "8722", "name": "Deli-Tree", "prices": None},
+        ]
+        
+        final_data = {}
 
-    final_data['annapurna'] = get_annapurna_data()
-    final_data['sargam'] = get_sargam_data()
+        for res in menicka_res:
+            final_data[res['id']] = get_menicka_data(res['id'], res['name'], res['prices'])
+
+        final_data['annapurna'] = get_annapurna_data()
+        final_data['sargam'] = get_sargam_data()
 
     with open('menu.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=4)
