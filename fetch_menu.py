@@ -153,7 +153,7 @@ def get_sargam_data():
 
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": []}
-
+"""
 def get_aroha_data():
     res_name = "Aroha Cafe"
     items = []
@@ -186,7 +186,7 @@ def get_aroha_data():
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": ["Chyba při načítání FB — "]}
 
-
+"""
 
 
 if __name__ == "__main__":
@@ -216,7 +216,7 @@ if __name__ == "__main__":
 
         final_data['annapurna'] = get_annapurna_data()
         final_data['sargam'] = get_sargam_data()
-        final_data['aroha'] = get_aroha_data()
+   """     final_data['aroha'] = get_aroha_data()"""
 
     with open('menu.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=4)
