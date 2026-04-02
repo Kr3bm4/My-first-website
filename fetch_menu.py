@@ -104,7 +104,7 @@ def get_sargam_data():
     current_day_idx = datetime.now().weekday()
     
     if current_day_idx > 4:
-        return {"name": res_name, "items": ["Víkend - Zavřeno — "]}
+        return {"name": res_name, "items": ["Closed — "]}
 
     target_day_id = days_map[current_day_idx]
 
@@ -115,10 +115,9 @@ def get_sargam_data():
         
         day_header = soup.find('div', id=target_day_id)
         if not day_header:
-            return {"name": res_name, "items": ["Dnešní menu nenalezeno — "]}
+            return {"name": res_name, "items": ["Menu not found — "]}
 
         parent_row = day_header.find_parent('div', class_='row')
-        
         items = []
 
         soup_name_el = parent_row.find('div', class_='dish-name')
@@ -126,17 +125,21 @@ def get_sargam_data():
         
         if soup_name_el:
             s_name = soup_name_el.get_text(strip=True)
-            s_price = soup_price_el.get_text(strip=True) if soup_price_el else "45 Kč"
-            items.append(f"Polévka: {s_name} — {s_price}")
+            s_price = soup_price_el.get_text(strip=True) if soup_price_el else ""
+            items.append(f"{s_name} — {s_price}")
 
         main_dishes = parent_row.find_all('div', class_='dish-container')
+        
         for dish in main_dishes:
             name_el = dish.find('div', class_='dish-name')
-            price_el = dish.find('div', class_='dish-number flex-grow-1')
-            
             if name_el:
                 m_name = name_el.get_text(strip=True)
-                m_price = price_el.get_text(strip=True) if price_el else "150 Kč"
+                
+                if "all you can eat" in m_name.lower():
+                    continue
+                
+                price_el = dish.find('div', class_='dish-number flex-grow-1')
+                m_price = price_el.get_text(strip=True) if price_el else ""
                 items.append(f"{m_name} — {m_price}")
 
         return {"name": res_name, "items": items}
