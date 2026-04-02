@@ -157,7 +157,7 @@ def get_sargam_data():
 if __name__ == "__main__":
     current_day_idx = datetime.now().weekday()
     
-    if current_day_idx == 5:
+    if current_day_idx == 3:
         final_data = {
             "status": "weekend",
             "message": "Menu's not checked on weekends",
