@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
+from facebook_scraper import get_posts
 
 def get_menicka_data(res_id, res_name, manual_prices=None):
     url = f"https://www.menicka.cz/api/iframe/?id={res_id}"
@@ -153,6 +154,41 @@ def get_sargam_data():
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": []}
 
+def get_aroha_data():
+    res_name = "Aroha Cafe"
+    items = []
+    try:
+        # Přidat cookies="cookies.json"
+        for post in get_posts('Arohabistrocafe', pages=1):
+            text = post['text']
+            
+
+            today_str = datetime.now().strftime("%d.%m")
+            if today_str not in text and "Denní menu" not in text:
+                continue
+
+            soup_match = re.search(r"Polévka:\s*(.*)", text)
+            if soup_match:
+                items.append(f"{soup_match.group(1).strip()} — 0 Kč") 
+
+            matches = re.findall(r"(\d\.\s*.*?)\s*(\d{3},-)", text)
+            for food_text, price in matches:
+                clean_food = food_text.replace('\n', ' ').strip()
+                items.append(f"{clean_food} — {price}")
+            
+            if items:
+                break 
+
+        if not items:
+            return {"name": res_name, "items": ["Menu pro dnešek nenalezeno na FB — "]}
+            
+        return {"name": res_name, "items": items}
+
+    except Exception as e:
+        return {"name": res_name, "error": str(e), "items": ["Chyba při načítání FB — "]}
+
+
+
 
 if __name__ == "__main__":
     current_day_idx = datetime.now().weekday()
@@ -181,6 +217,7 @@ if __name__ == "__main__":
 
         final_data['annapurna'] = get_annapurna_data()
         final_data['sargam'] = get_sargam_data()
+        final_data['aroha'] = get_aroha_data()
 
     with open('menu.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=4)
