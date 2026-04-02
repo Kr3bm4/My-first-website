@@ -62,7 +62,7 @@ def get_annapurna_data():
         day_container = soup.find('div', {'mc-data': day_key})
         
         if not day_container:
-            return {"name": res_name, "items": ["Menu pro tento den nebylo nalezeno — "]}
+            return {"name": res_name, "items": ["Menu not found — "]}
 
         items = []
 
@@ -104,7 +104,7 @@ def get_sargam_data():
     current_day_idx = datetime.now().weekday()
     
     if current_day_idx > 4:
-        return {"name": res_name, "items": ["Closed — "]}
+        return {"name": res_name, "items": ["Weekend - Closed — "]}
 
     target_day_id = days_map[current_day_idx]
 
@@ -121,12 +121,14 @@ def get_sargam_data():
         items = []
 
         soup_name_el = parent_row.find('div', class_='dish-name')
+        soup_desc_el = parent_row.find('div', class_='dish-info')
         soup_price_el = parent_row.find('div', class_='dish-number flex-grow-1')
         
         if soup_name_el:
             s_name = soup_name_el.get_text(strip=True)
+            s_desc = soup_desc_el.get_text(strip=True) if soup_desc_el else ""
             s_price = soup_price_el.get_text(strip=True) if soup_price_el else "45 Kč"
-            items.append(f"{s_name} — {s_price}")
+            items.append(f"{s_name} ≅ {s_desc} — {s_price}")
 
         main_dishes = parent_row.find_all('div', class_='dish-container')
         
@@ -138,9 +140,13 @@ def get_sargam_data():
                 if "all you can eat" in m_name.lower():
                     continue
                 
+                desc_el = dish.find('div', class_='dish-info')
+                m_desc = desc_el.get_text(strip=True) if desc_el else ""
+                
                 price_el = dish.find('div', class_='dish-number flex-grow-1')
                 m_price = price_el.get_text(strip=True) if price_el else "150 Kč"
-                items.append(f"{m_name} — {m_price}")
+                
+                items.append(f"{m_name} ≅ {m_desc} — {m_price}")
 
         return {"name": res_name, "items": items}
 
