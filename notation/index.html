@@ -222,17 +222,13 @@
             });
 
             const textarea = document.getElementById('text1');
-            const start = textarea.selectionStart;
-            const end = textarea.selectionEnd;
-            const currentText = textarea.value;
-            
-            textarea.value = currentText.substring(0, start) + text + currentText.substring(end);
-        }
+            textarea.value += text;
+            }
 
-        function showError() {
-            const errorToast = document.getElementById('toast-error');
-            errorToast.classList.remove('opacity-0');
-            setTimeout(() => {errorToast.classList.add('opacity-0');}, 1500);
-        }
+            function showError() {
+                const errorToast = document.getElementById('toast-error');
+                errorToast.classList.remove('opacity-0');
+                setTimeout(() => {errorToast.classList.add('opacity-0');}, 1500);
+            }
     </script>
 </body>
