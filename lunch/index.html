@@ -21,7 +21,7 @@
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-base font-semibold uppercase text-gray-500 mb-4">Masný růžek</h2>
                 <div id="masny-ruzek-items" class="space-y-4 mb-4">
-                    <p class="text-gray-400">Fetch not working</p>
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
                 </div>
                 <div class="text-sm border-t pt-4">
                     <a href="https://www.menicka.cz/6956-pivnice-masny-ruzek.html" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
@@ -103,7 +103,7 @@
             if (data.items[0].includes("not checked on weekends")) {
                 container.innerHTML = `
                     <div class="py-2">
-                        <p class="text-gray-500 italic text-sm md:text-base">
+                        <p class="text-gray-400">
                             ${data.items[0].split(' — ')[0]}
                         </p>
                     </div>`;
