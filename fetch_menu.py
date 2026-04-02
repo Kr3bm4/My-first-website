@@ -158,8 +158,7 @@ def get_aroha_data():
     res_name = "Aroha Cafe"
     items = []
     try:
-        # Přidat cookies="cookies.json"
-        for post in get_posts('Arohabistrocafe', pages=1):
+        for post in get_posts('Arohabistrocafe', pages=1, cookies="cookies.json"):
             text = post['text']
             
 
