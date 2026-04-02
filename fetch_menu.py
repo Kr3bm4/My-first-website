@@ -159,6 +159,7 @@ if __name__ == "__main__":
         final_data[res['id']] = get_menicka_data(res['id'], res['name'], res['prices'])
 
     final_data['annapurna'] = get_annapurna_data()
+    final_data['sargam'] = get_sargam_data()
 
     with open('menu.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=4)
