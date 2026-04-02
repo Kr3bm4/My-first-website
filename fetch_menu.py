@@ -66,10 +66,8 @@ def get_annapurna_data():
 
         items = []
 
-        # 2. POLÉVKY (hledáme jen uvnitř day_container)
         soup_items = day_container.find_all('div', {'mc-template': 'soup'})
         for s in soup_items:
-            # Hledáme anglický název a český popis
             en_name_el = s.find('span', {'mc-text': lambda x: x and 'meal_name' in x})
             cs_desc_el = s.find('span', {'mc-text': lambda x: x and 'meal_description' in x})
             price_el = s.find('span', class_='weekly-menu-text20')
@@ -80,10 +78,8 @@ def get_annapurna_data():
             
             items.append(f"{en_name} ≅ {cs_desc} — {price} Kč")
 
-        # 3. HLAVNÍ JÍDLA (hledáme jen uvnitř day_container)
         main_items = day_container.find_all('div', {'mc-template': 'main'})
         for m in main_items:
-            # Hledáme elementy podle tvého popisu struktury
             en_name_el = m.find('span', {'mc-text': lambda x: x and 'MEALNAME' in x})
             cs_desc_el = m.find('span', {'mc-text': lambda x: x and 'MEALDESCRIPTION' in x})
             price_el = m.find('span', class_='weekly-menu-text30')
@@ -98,6 +94,57 @@ def get_annapurna_data():
         
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": []}
+
+def get_sargam_data():
+    url = "https://sargamrestaurace.cz/Sargam2/DMenuItems"
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    res_name = "Sargam 2"
+    
+    days_map = {0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday"}
+    current_day_idx = datetime.now().weekday()
+    
+    if current_day_idx > 4:
+        return {"name": res_name, "items": ["Víkend - Zavřeno — "]}
+
+    target_day_id = days_map[current_day_idx]
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.encoding = 'utf-8'
+        soup = BeautifulSoup(response.content, 'html.parser')
+        
+        day_header = soup.find('div', id=target_day_id)
+        if not day_header:
+            return {"name": res_name, "items": ["Dnešní menu nenalezeno — "]}
+
+        parent_row = day_header.find_parent('div', class_='row')
+        
+        items = []
+
+        soup_name_el = parent_row.find('div', class_='dish-name')
+        soup_price_el = parent_row.find('div', class_='dish-number flex-grow-1')
+        
+        if soup_name_el:
+            s_name = soup_name_el.get_text(strip=True)
+            s_price = soup_price_el.get_text(strip=True) if soup_price_el else "45 Kč"
+            items.append(f"Polévka: {s_name} — {s_price}")
+
+        main_dishes = parent_row.find_all('div', class_='dish-container')
+        for dish in main_dishes:
+            name_el = dish.find('div', class_='dish-name')
+            price_el = dish.find('div', class_='dish-number flex-grow-1')
+            
+            if name_el:
+                m_name = name_el.get_text(strip=True)
+                m_price = price_el.get_text(strip=True) if price_el else "150 Kč"
+                items.append(f"{m_name} — {m_price}")
+
+        return {"name": res_name, "items": items}
+
+    except Exception as e:
+        return {"name": res_name, "error": str(e), "items": []}
+
+
 if __name__ == "__main__":
 
     menicka_res = [
