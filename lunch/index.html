@@ -40,8 +40,9 @@
 
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-base font-semibold uppercase text-gray-500 mb-4">Aroha Cafe</h2>
-                <p class="text-gray-400">Not implemented yet</p>
-                <p class="text-xs text-gray-400 mb-4">Why, Facebook. Why</p>
+                <div id="aroha-items" class="space-y-4 mb-4">
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
+                </div>
                 <div class="text-sm border-t pt-4">
                     <a href="https://www.facebook.com/Arohabistrocafe/" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
                 </div>
@@ -151,6 +152,7 @@
     loadMenu('8722', 'deli-tree-items', 2);    
     loadMenu('annapurna', 'annapurna-items', 2);
     loadMenu('sargam', 'sargam-items', 1);
+    loadMenu('aroha', 'aroha-items', 1);
 </script>
 </body>
 </html>
