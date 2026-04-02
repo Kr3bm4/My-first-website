@@ -49,7 +49,9 @@
 
              <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-base font-semibold uppercase text-gray-500 mb-4">Sargam 2</h2>
-                <p class="text-gray-400">Not implemented yet</p>
+                <div id="sargam-items" class="space-y-4 mb-4">
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
+                </div>
                 <div class="text-sm border-t pt-4">
                     <a href="https://sargamrestaurace.cz/Sargam2/DMenuItems" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
                 </div>
@@ -130,11 +132,11 @@
         }
     }
 
-    // Volání s parametry: (ID restaurace, ID kontejneru, Počet polévek)
     loadMenu('6956', 'masny-ruzek-items', 2);
     loadMenu('4108', 'veg8-cafe-items', 1);
     loadMenu('8722', 'deli-tree-items', 2);    
-    loadMenu('annapurna', 'annapurna-items', 2);    
+    loadMenu('annapurna', 'annapurna-items', 2);
+    loadMenu('sargam', 'sargam-items', 1);
 </script>
 </body>
 </html>
