@@ -42,7 +42,7 @@ def get_menicka_data(res_id, res_name, manual_prices=None):
         return {"name": res_name, "error": str(e), "items": []}
 
 def get_annapurna_data():
-    url = "https://www.indicka-restaurace-annapurna.cz/brno/cz/weekly.html"
+    url = "https://www.indicka-restaurace-annapurna.cz/MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz"
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     res_name = "Annapurna"
     
@@ -56,42 +56,46 @@ def get_annapurna_data():
 
     try:
         response = requests.get(url, headers=headers)
+        response.encoding = 'utf-8' 
         soup = BeautifulSoup(response.content, 'html.parser')
         
-        day_container = soup.find('div', {'mc-data': day_key, 'mc-target': 'weeklyMenuTab'})
+        day_container = soup.find('div', {'mc-data': day_key})
         
         if not day_container:
-            return {"name": res_name, "items": ["Menu container not found — "]}
+            return {"name": res_name, "items": ["Menu pro tento den nebylo nalezeno — "]}
 
         items = []
-        
 
+        # 2. POLÉVKY (hledáme jen uvnitř day_container)
         soup_items = day_container.find_all('div', {'mc-template': 'soup'})
         for s in soup_items:
-
-            en_name = s.find('span', {'mc-text': True, 'class': 'MenuItemTitle'}).get_text(strip=True)
-            cs_desc = s.find('span', {'class': 'mc-second-font'}).get_text(strip=True)
-            price = s.find('span', {'class': 'weekly-menu-text20'}).get_text(strip=True) 
+            # Hledáme anglický název a český popis
+            en_name_el = s.find('span', {'mc-text': lambda x: x and 'meal_name' in x})
+            cs_desc_el = s.find('span', {'mc-text': lambda x: x and 'meal_description' in x})
+            price_el = s.find('span', class_='weekly-menu-text20')
+            
+            en_name = en_name_el.get_text(strip=True) if en_name_el else "Soup"
+            cs_desc = cs_desc_el.get_text(strip=True) if cs_desc_el else ""
+            price = price_el.get_text(strip=True) if price_el else "20"
+            
             items.append(f"{en_name} ≅ {cs_desc} — {price} Kč")
 
-
+        # 3. HLAVNÍ JÍDLA (hledáme jen uvnitř day_container)
         main_items = day_container.find_all('div', {'mc-template': 'main'})
         for m in main_items:
-
+            # Hledáme elementy podle tvého popisu struktury
             en_name_el = m.find('span', {'mc-text': lambda x: x and 'MEALNAME' in x})
-            en_name = en_name_el.get_text(strip=True) if en_name_el else "Unknown Dish"
-            
-
             cs_desc_el = m.find('span', {'mc-text': lambda x: x and 'MEALDESCRIPTION' in x})
-            cs_desc = cs_desc_el.get_text(strip=True) if cs_desc_el else ""
+            price_el = m.find('span', class_='weekly-menu-text30')
             
-
-            price_el = m.find('span', {'class': 'weekly-menu-text30'})
+            en_name = en_name_el.get_text(strip=True) if en_name_el else "Main Dish"
+            cs_desc = cs_desc_el.get_text(strip=True) if cs_desc_el else ""
             price = price_el.get_text(strip=True) if price_el else "144"
             
             items.append(f"{en_name} ≅ {cs_desc} — {price} Kč")
 
         return {"name": res_name, "items": items}
+        
     except Exception as e:
         return {"name": res_name, "error": str(e), "items": []}
 if __name__ == "__main__":
