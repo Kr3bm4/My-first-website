@@ -125,7 +125,7 @@ def get_sargam_data():
         
         if soup_name_el:
             s_name = soup_name_el.get_text(strip=True)
-            s_price = soup_price_el.get_text(strip=True) if soup_price_el else ""
+            s_price = soup_price_el.get_text(strip=True) if soup_price_el else "45 Kč"
             items.append(f"{s_name} — {s_price}")
 
         main_dishes = parent_row.find_all('div', class_='dish-container')
@@ -139,7 +139,7 @@ def get_sargam_data():
                     continue
                 
                 price_el = dish.find('div', class_='dish-number flex-grow-1')
-                m_price = price_el.get_text(strip=True) if price_el else ""
+                m_price = price_el.get_text(strip=True) if price_el else "150 Kč"
                 items.append(f"{m_name} — {m_price}")
 
         return {"name": res_name, "items": items}
