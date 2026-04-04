@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
-from facebook_scraper import get_posts
 
 def get_menicka_data(res_id, res_name, manual_prices=None):
     url = f"https://www.menicka.cz/api/iframe/?id={res_id}"
@@ -158,7 +157,7 @@ def get_sargam_data():
 if __name__ == "__main__":
     current_day_idx = datetime.now().weekday()
     
-    if current_day_idx == 5:
+    if current_day_idx >= 5:
         final_data = {
             "status": "weekend",
             "message": "Menu's not checked on weekends",
