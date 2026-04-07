@@ -2,113 +2,89 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aroha Cafe </title>
+    <title>Admin | Aroha Cafe</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .bg-pastel-green { background-color: #f0f7f4; }
-        .accent-green { color: #7fb685; }
-        .bg-accent-green { background-color: #7fb685; }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 leading-relaxed">
-
-    <div class="bg-pastel-green border-b border-green-100">
-        <header class="max-w-4xl mx-auto px-6 py-16 text-center">
-            <h1 class="text-5xl font-light tracking-tight text-gray-900 mb-2">Aroha <span class="font-bold accent-green">Cafe</span></h1>
-            <p class="text-gray-500 italic">Káva, klid a dobré jídlo.</p>
-        </header>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
+        <h1 class="text-xl font-bold mb-4">Editace denního menu</h1>
+        
+        <div class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium">GitHub Token (Heslo)</label>
+                <input type="password" id="ghToken" class="w-full border p-2 rounded" placeholder="ghp_xxx...">
+            </div>
+            <hr>
+            <div>
+                <label class="block text-sm">Polévka</label>
+                <input type="text" id="polevka" class="w-full border p-2 rounded">
+            </div>
+            <div>
+                <label class="block text-sm">Hlavní jídlo 1</label>
+                <input type="text" id="jidlo1" class="w-full border p-2 rounded">
+                <input type="number" id="cena1" class="w-full border p-2 rounded mt-1" placeholder="Cena">
+            </div>
+            <button onclick="saveMenu()" id="saveBtn" class="w-full bg-green-600 text-white py-2 rounded font-bold">
+                Uložit a publikovat
+            </button>
+            <p id="status" class="text-sm text-center mt-2"></p>
+        </div>
     </div>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        
-        <section class="mb-16">
-            <div class="flex items-center justify-between mb-8">
-                <h2 class="text-2xl font-semibold">Dnešní polední menu</h2>
-                <span class="bg-accent-green text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">11:00-14:00</span>
-            </div>
-            
-            <div class="space-y-6">
-                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Moravská cibulačka</h3>
-                        <p class="text-gray-500 text-sm">Popis jídla</p>
-                    </div>
-                    <span class="font-semibold ml-4">V ceně meníčka</span>
-                </div>
+    <script>
+        const OWNER = 'TVOJE_GITHUB_JMENO';
+        const REPO = 'NAZEV_REPOZITARE';
+        const PATH = 'aroha/aroha.json'; // Cesta k souboru v repu
 
-                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Restovaná kuřecí játra na cibulce, rýže</h3>
-                        <p class="text-gray-500 text-sm">Popis jídla</p>
-                    </div>
-                    <span class="font-semibold ml-4">149</span>
-                </div>
+        async function saveMenu() {
+            const token = document.getElementById('ghToken').value;
+            const btn = document.getElementById('saveBtn');
+            const status = document.getElementById('status');
 
-                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Smažený hermelín, vařený brambor, tatarka</h3>
-                        <p class="text-gray-500 text-sm">Popis jídla</p>
-                    </div>
-                    <span class="font-semibold ml-4">149</span>
-                </div>
+            if(!token) return alert('Zadej token!');
 
-                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Těstovinový salát s kuřecím masem, bazalkovým pestem, sušenými rajčaty a parmezánem</h3>
-                        <p class="text-gray-500 text-sm">Popis jídla</p>
-                    </div>
-                    <span class="font-semibold ml-4">149</span>
-                </div>
+            btn.disabled = true;
+            status.innerText = 'Pracuji na tom...';
 
-                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Pečený filet z lososa, citrónová omáčka, hranolky</h3>
-                        <p class="text-gray-500 text-sm">Popis jídla</p>
-                    </div>
-                    <span class="font-semibold ml-4">159</span>
-                </div>
-            </div>
-            <div class="text-center space-y-2">
-                <p class="text-xs text-gray-400">Informace o alergenech vám ráda poskytne obsluha.</p>
-                <p class="text-xs text-gray-400">Všechny ceny jsou uvedeny v CZK.</p>
-            </div>
+            try {
+                // 1. Musíme získat SHA souboru (GitHub to vyžaduje pro update)
+                const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`);
+                const data = await res.json();
+                const sha = data.sha;
 
-            
-            <div class="mt-8 text-center">
-                <a href="/aroha/menu" class="inline-block border border-gray-300 px-6 py-2 rounded-full text-sm hover:bg-gray-100 transition">Kompletní menu →</a>
-            </div>
-        </section>
+                // 2. Připravíme nová data
+                const newContent = {
+                    polevka: document.getElementById('polevka').value,
+                    jidlo1: document.getElementById('jidlo1').value,
+                    cena1: document.getElementById('cena1').value
+                    // ...atd
+                };
 
-        <hr class="border-gray-200 mb-16">
+                // 3. Pošleme update na GitHub
+                const updateRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: "Aktualizace menu přes admin",
+                        content: btoa(unescape(encodeURIComponent(JSON.stringify(newContent, null, 2)))),
+                        sha: sha
+                    })
+                });
 
-        <section class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-400 text-sm">Kávové speciality</h2>
-                <ul class="space-y-4">
-                    <li class="flex justify-between"><span>Espresso</span> <span class="text-gray-400">45</span></li>
-                    <li class="flex justify-between"><span>Flat White</span> <span class="text-gray-400">75</span></li>
-                    <li class="flex justify-between"><span>Batch Brew</span> <span class="text-gray-400">65</span></li>
-                    <li class="flex justify-between"><span>Cappuccino</span> <span class="text-gray-400">60</span></li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-400 text-sm">Něco k zakousnutí</h2>
-                <ul class="space-y-4">
-                    <li class="flex justify-between"><span>Domácí banánový chlebíček</span> <span class="text-gray-400">55</span></li>
-                    <li class="flex justify-between"><span>Avokádový toast</span> <span class="text-gray-400">145</span></li>
-                    <li class="flex justify-between"><span>Denní výběr dortů</span> <span class="text-gray-400">85</span></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs pb-12">
-        © 2026 Built & Maintained by <a href="https://linkedin.com/in/martin-krebs" class="accent-green hover:underline">Martin Krebs</a>.  <br>
-        Experimental Web Lab • Thank you, Tailwind CSS.
-    </footer>
-
+                if(updateRes.ok) {
+                    status.innerText = '✅ Menu uloženo! Projeví se za cca 1-2 minuty.';
+                } else {
+                    status.innerText = '❌ Chyba při ukládání.';
+                }
+            } catch (err) {
+                status.innerText = '❌ Došlo k chybě: ' + err.message;
+            } finally {
+                btn.disabled = false;
+            }
+        }
+    </script>
 </body>
 </html>
