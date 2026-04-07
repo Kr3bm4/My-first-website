@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroha Cafe </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-pastel-green { background-color: #f0f7f4; }
+        .accent-green { color: #7fb685; }
+        .bg-accent-green { background-color: #7fb685; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
 
+    <div class="bg-pastel-green border-b border-green-100">
+        <header class="max-w-4xl mx-auto px-6 py-16 text-center">
+            <h1 class="text-5xl font-light tracking-tight text-gray-900 mb-2">Aroha <span class="font-bold accent-green">Cafe</span></h1>
+            <p class="text-gray-500 italic">Káva, klid a dobré jídlo.</p>
+        </header>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <section class="mb-16">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-semibold">Dnešní polední menu</h2>
+                <span class="bg-accent-green text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">11:00-14:00</span>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Moravská cibulačka</h3>
+                        <p class="text-gray-500 text-sm">Popis jídla</p>
+                    </div>
+                    <span class="font-semibold ml-4">V ceně meníčka</span>
+                </div>
+
+                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Restovaná kuřecí játra na cibulce, rýže</h3>
+                        <p class="text-gray-500 text-sm">Popis jídla</p>
+                    </div>
+                    <span class="font-semibold ml-4">149</span>
+                </div>
+
+                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Smažený hermelín, vařený brambor, tatarka</h3>
+                        <p class="text-gray-500 text-sm">Popis jídla</p>
+                    </div>
+                    <span class="font-semibold ml-4">149</span>
+                </div>
+
+                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Těstovinový salát s kuřecím masem, bazalkovým pestem, sušenými rajčaty a parmezánem</h3>
+                        <p class="text-gray-500 text-sm">Popis jídla</p>
+                    </div>
+                    <span class="font-semibold ml-4">149</span>
+                </div>
+
+                <div class="flex justify-between items-start border-b border-gray-100 pb-4">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Pečený filet z lososa, citrónová omáčka, hranolky</h3>
+                        <p class="text-gray-500 text-sm">Popis jídla</p>
+                    </div>
+                    <span class="font-semibold ml-4">159</span>
+                </div>
+            </div>
+            <div class="text-center space-y-2">
+                <p class="text-xs text-gray-400">Informace o alergenech vám ráda poskytne obsluha.</p>
+                <p class="text-xs text-gray-400">Všechny ceny jsou uvedeny v CZK.</p>
+            </div>
+
+            
+            <div class="mt-8 text-center">
+                <a href="/aroha/menu" class="inline-block border border-gray-300 px-6 py-2 rounded-full text-sm hover:bg-gray-100 transition">Kompletní menu →</a>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 mb-16">
+
+        <section class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-400 text-sm">Kávové speciality</h2>
+                <ul class="space-y-4">
+                    <li class="flex justify-between"><span>Espresso</span> <span class="text-gray-400">45</span></li>
+                    <li class="flex justify-between"><span>Flat White</span> <span class="text-gray-400">75</span></li>
+                    <li class="flex justify-between"><span>Batch Brew</span> <span class="text-gray-400">65</span></li>
+                    <li class="flex justify-between"><span>Cappuccino</span> <span class="text-gray-400">60</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-400 text-sm">Něco k zakousnutí</h2>
+                <ul class="space-y-4">
+                    <li class="flex justify-between"><span>Domácí banánový chlebíček</span> <span class="text-gray-400">55</span></li>
+                    <li class="flex justify-between"><span>Avokádový toast</span> <span class="text-gray-400">145</span></li>
+                    <li class="flex justify-between"><span>Denní výběr dortů</span> <span class="text-gray-400">85</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs pb-12">
+        © 2026 Built & Maintained by <a href="https://linkedin.com/in/martin-krebs" class="accent-green hover:underline">Martin Krebs</a>.  <br>
+        Experimental Web Lab • Thank you, Tailwind CSS.
+    </footer>
+
+</body>
+</html>
