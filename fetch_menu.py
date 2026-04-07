@@ -55,7 +55,10 @@ def get_annapurna_data():
     day_key = days_map[current_day_idx]
 
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, verify=False, timeout=15)
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        
         response.encoding = 'utf-8' 
         soup = BeautifulSoup(response.content, 'html.parser')
         
