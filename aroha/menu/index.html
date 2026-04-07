@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Aroha Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-pastel-green { background-color: #f0f7f4; }
+        .accent-green { color: #7fb685; }
+        .border-pastel { border-color: #e2eee7; }
+        .menu-dots { border-bottom: 1px dotted #d1d5db; flex-grow: 1; margin: 0 8px; position: relative; top: -4px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="max-w-3xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <a href="/aroha" class="accent-green hover:underline text-sm mb-4 inline-block">← Zpět do kavárny</a>
+            <h1 class="text-4xl font-bold tracking-tight mb-2">Menu</h1>
+            <div class="w-12 h-1 bg-accent-green mx-auto rounded-full"></div>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-sm uppercase tracking-[0.2em] text-gray-400 font-bold mb-8 text-center">Snídaně & Brunch</h2>
+            <div class="space-y-6">
+                <div class="flex justify-between items-end">
+                    <div class="max-w-[75%]">
+                        <h3 class="font-semibold">Vejce Benedict na loupáčku</h3>
+                        <p class="text-xs text-gray-500 italic">2 zastřená vejce, šunka od kosti, holandská omáčka</p>
+                    </div>
+                    <div class="menu-dots"></div>
+                    <span class="font-medium">185</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div class="max-w-[75%]">
+                        <h3 class="font-semibold">Avokádový chleba s dukkah</h3>
+                        <p class="text-xs text-gray-500 italic">Kváskový chléb, zastřené vejce, chilli vločky, oříšky</p>
+                    </div>
+                    <div class="menu-dots"></div>
+                    <span class="font-medium">165</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div class="max-w-[75%]">
+                        <h3 class="font-semibold">Lívance s borůvkami</h3>
+                        <p class="text-xs text-gray-500 italic">Tvarohový krém, javorový sirup, čerstvé ovoce</p>
+                    </div>
+                    <div class="menu-dots"></div>
+                    <span class="font-medium">145</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-pastel-green p-8 rounded-3xl border border-pastel">
+            <h2 class="text-sm uppercase tracking-[0.2em] text-gray-400 font-bold mb-8 text-center">Výběrová Káva</h2>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div class="flex justify-between"><span>Espresso / Lungo</span> <b>48</b></div>
+                <div class="flex justify-between"><span>Cappuccino</span> <b>62</b></div>
+                <div class="flex justify-between"><span>Flat White</span> <b>78</b></div>
+                <div class="flex justify-between"><span>Batch Brew</span> <b>65</b></div>
+                <div class="flex justify-between"><span>V60 (dle nabídky)</span> <b>85</b></div>
+                <div class="flex justify-between"><span>Espresso Tonic</span> <b>95</b></div>
+            </div>
+            <p class="text-[10px] text-center mt-8 text-gray-400 uppercase tracking-widest">Zrna odebíráme z lokálních pražíren</p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-sm uppercase tracking-[0.2em] text-gray-400 font-bold mb-8 text-center">Bistro Menu</h2>
+            <div class="space-y-6">
+                <div class="flex justify-between items-end">
+                    <div class="max-w-[75%]">
+                        <h3 class="font-semibold">Quiche se špenátem a fetou</h3>
+                        <p class="text-xs text-gray-500 italic">Podávaný s malým listovým salátkem</p>
+                    </div>
+                    <div class="menu-dots"></div>
+                    <span class="font-medium">115</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div class="max-w-[75%]">
+                        <h3 class="font-semibold">Pastrami Sandwich</h3>
+                        <p class="text-xs text-gray-500 italic">Domácí foccacia, hořčičná mayo, kyselá okurka</p>
+                    </div>
+                    <div class="menu-dots"></div>
+                    <span class="font-medium">195</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center space-y-2">
+            <p class="text-xs text-gray-400">Informace o alergenech vám ráda poskytne obsluha.</p>
+            <p class="text-xs text-gray-400">Všechny ceny jsou uvedeny v CZK.</p>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
+            © 2026 Built & Maintained by <a href="https://linkedin.com/in/martin-krebs" class="accent-green hover:underline">Martin Krebs</a>.  <br>
+            Experimental Web Lab • Thank you, Tailwind CSS.
+        </footer>
+    </div>
+
+</body>
+</html>
