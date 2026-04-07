@@ -2,44 +2,39 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Bramborový krém s medvědím česnekem, chlebové krutony — 30 Kč",
+            "0, 25l Bramborový krém s medvědím česnekem, chlebové  krutony — 30 Kč",
             "0, 25l Drůbeží vývar s masem,  zeleninou a celestinskými nudlemi — 30 Kč",
-            "350g Pečené kuřecí paličky na domácí Sweet chilli omáčce, pečené  bramborové půlky, Coleslaw — 159 Kč",
+            "350g Pečené kuřecí paličky  na domácí Sweet chilli omáčce, pečené bramborové půlky, Coleslaw — 159 Kč",
             "120g Smažený sýr Cheddar se slaninou, vařené brambory,  domácí tatarská omáčka — 169 Kč",
-            "300g Tortilla plněná kuřecím Gyrosem, ledovým salátem s rajčátky, okurkem, paprikou a bylinkovým dipem, podávaná s  řeckými tzatziky — 159 Kč",
-            "150g Filovaný steak z vepřové panenky, fazolové lusky se slaninou a česnekem,  brambůrky Grenaille, omáčka demi glace — 179 Kč",
-            "150g Hovězí  American burger, domácí bulka, rajče, nakládaný okurek, sýr cheddar, pečená slanina, zauzená majonéza, smažené hranolky — 189 Kč",
-            "200g Grilovaný steak  z vepřové kotlety, pepřová omáčka, steakové hranolky — 179 Kč"
+            "300g Tortilla plněná kuřecím Gyrosem, ledovým salátem s rajčátky, okurkem, paprikou a bylinkovým dipem, podávaná s řeckými tzatziky — 159 Kč",
+            "150g Filovaný  steak z vepřové panenky, fazolové lusky se slaninou a česnekem, brambůrky Grenaille, omáčka demi glace — 179 Kč",
+            "150g Hovězí American burger,  domácí bulka, rajče, nakládaný okurek, sýr cheddar, pečená slanina, zauzená majonéza, smažené hranolky — 189 Kč",
+            "200g Grilovaný steak z vepřové kotlety,  pepřová omáčka, steakové hranolky — 179 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Červeno-čočkový krém (BZL) — 40 Kč",
+            "Semolinové špagety aglio e olio s rajčaty a vegan parmazánem 1 — 130 Kč",
+            "Čevabčiči ze sójové sekané s hořčicí a cibulí, vařené brambory s pažitkou (BZL) 6 10 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
             "🍵  Česnekový krém, krutony — 49 Kč",
-            "🍵 Hovězí vývar - nudle,  maso, kořenová zelenina — 49 Kč",
-            "🔸Hovězí bourguignon - pomalu tažený hovězí pupek, bramborová  kaše, kořenová zelenina, silná vinná hovězí jus — 199 Kč",
-            "🔸Butter  Chicken z kuřecích prsou v krémové rajčatové omáčce, basmati rýže, koriander — 189 Kč",
-            "🔸Smažený květák, vařené brambory s  máslem a petrželkou, tatarka s kapary a koprem, mix listových salátů — 179 Kč",
-            "🔸Spaghetti Carbonara - pancetta, Grana  Padano, žloutek, pepř — 179 Kč"
+            "🍵 Hovězí vývar -  nudle, maso, kořenová zelenina — 49 Kč",
+            "🔸Hovězí bourguignon - pomalu  tažený hovězí pupek, bramborová kaše, kořenová zelenina, silná vinná hovězí jus — 199 Kč",
+            "🔸Butter Chicken z kuřecích prsou v krémové rajčatové omáčce, basmati rýže,  koriander — 189 Kč",
+            "🔸Smažený květák, vařené brambory  s máslem a petrželkou, tatarka s kapary a koprem, mix listových salátů — 179 Kč",
+            "🔸Spaghetti Carbonara -  pancetta, Grana Padano, žloutek, pepř — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "items": [
-            "Dal soup ≅ Indická čočková polévka. — 20 Kč",
-            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Chicken Korma ≅ Kuřecí kousky s smetanovou omáčkou. — 144 Kč",
-            "Chicken Tikka ≅ Grilované kuřecí kousky. — 144 Kč",
-            "Chana Massala ≅ Indická cizrna s omáčkou. — 144 Kč",
-            "Veg Curry ≅ Zeleninová směs s kari omáčkou. — 144 Kč",
-            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 174 Kč"
-        ]
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "items": []
     },
     "sargam": {
         "name": "Sargam 2",
