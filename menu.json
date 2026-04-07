@@ -2,7 +2,14 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "ZAVŘENO - PŘEJEME PŘÍJEMNÉ PROŽITÍ  VELIKONOČNÍCH SVÁTKU — "
+            "0, 25l Bramborový krém s medvědím česnekem, chlebové krutony — 30 Kč",
+            "0, 25l Drůbeží vývar s masem,  zeleninou a celestinskými nudlemi — 30 Kč",
+            "350g Pečené kuřecí paličky na domácí Sweet chilli omáčce, pečené  bramborové půlky, Coleslaw — 159 Kč",
+            "120g Smažený sýr Cheddar se slaninou, vařené brambory,  domácí tatarská omáčka — 169 Kč",
+            "300g Tortilla plněná kuřecím Gyrosem, ledovým salátem s rajčátky, okurkem, paprikou a bylinkovým dipem, podávaná s  řeckými tzatziky — 159 Kč",
+            "150g Filovaný steak z vepřové panenky, fazolové lusky se slaninou a česnekem,  brambůrky Grenaille, omáčka demi glace — 179 Kč",
+            "150g Hovězí  American burger, domácí bulka, rajče, nakládaný okurek, sýr cheddar, pečená slanina, zauzená majonéza, smažené hranolky — 189 Kč",
+            "200g Grilovaný steak  z vepřové kotlety, pepřová omáčka, steakové hranolky — 179 Kč"
         ]
     },
     "4108": {
@@ -14,28 +21,33 @@
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "Pro tento den nebylo zadáno menu. — "
+            "🍵  Česnekový krém, krutony — 49 Kč",
+            "🍵 Hovězí vývar - nudle,  maso, kořenová zelenina — 49 Kč",
+            "🔸Hovězí bourguignon - pomalu tažený hovězí pupek, bramborová  kaše, kořenová zelenina, silná vinná hovězí jus — 199 Kč",
+            "🔸Butter  Chicken z kuřecích prsou v krémové rajčatové omáčce, basmati rýže, koriander — 189 Kč",
+            "🔸Smažený květák, vařené brambory s  máslem a petrželkou, tatarka s kapary a koprem, mix listových salátů — 179 Kč",
+            "🔸Spaghetti Carbonara - pancetta, Grana  Padano, žloutek, pepř — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
         "items": [
-            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
+            "Dal soup ≅ Indická čočková polévka. — 20 Kč",
             "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Chicken Madras ≅ Kuřecí kousky s pálivou červenou omáčkou. — 144 Kč",
-            "Chicken Malai Kabab ≅ Jemně kořeněné kuřecí kousky. — 144 Kč",
+            "Chicken Korma ≅ Kuřecí kousky s smetanovou omáčkou. — 144 Kč",
+            "Chicken Tikka ≅ Grilované kuřecí kousky. — 144 Kč",
+            "Chana Massala ≅ Indická cizrna s omáčkou. — 144 Kč",
             "Veg Curry ≅ Zeleninová směs s kari omáčkou. — 144 Kč",
-            "Shahi Paneer ≅ Sýrové kousky s jemnou pikantní omáčkou. — 144 Kč",
             "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 174 Kč"
         ]
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
