@@ -52,4 +52,15 @@
             "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
         ]
     }
+    ,
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Slovenská kapustnica — v ceně",
+            "Kuřecí plátek na pepři, rýže — 149 Kč",
+            "Čevabčiči na grilu, vařený brambor, tatarka, hořčice — 149 Kč",
+            "⁠Pražská hovězí roláda, šťouchaný brambor — 149 Kč",
+            "⁠Řecké kuřecí souvlaki, hranolky, tzatziki — 159 Kč"
+        ]
+    }
 }
