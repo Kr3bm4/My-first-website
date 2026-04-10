@@ -51,5 +51,15 @@
             "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
             "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Hovězí vývar s kapáním — ",
+            "Buchtičky s krémem — 149 Kč",
+            "Dančí guláš 1/2 knedlík a 1/2 bramboráčky — 149 Kč",
+            "Smažený vepřový řízek, bramborový salát s majonézou — 149 Kč",
+            "⁠Vepřový steak se sázeným vejcem a šunkou, hranolky, tatarka — 159 Kč"
+        ]
     }
 }
