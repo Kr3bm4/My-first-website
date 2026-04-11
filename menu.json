@@ -1,65 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Zelná  polévka s uzeninou a bramborem — 30 Kč",
-            "0, 25l Drůbeží  vývar s masem, zeleninou a celestinskými nudlemi — 30 Kč",
-            "350g Šunkofleky (zapečené těstoviny s uzeným masem a sýrem), sterilované okurky — 159 Kč",
-            "160g Smažený holandský řízek se sýrem, bramborová kaše, rajčatový  salát — 169 Kč",
-            "220g Gnocchi s restovanou šunkou a kuřecím masem,  smetanou, žampiony s bílým vínem, sypané sýrem — 169 Kč",
-            "150g Přírodní kuřecí  kapsa plněná hermelínem a šunkou, smažené hranolky, tatarská omáčka — 169 Kč",
-            "150g Kachní prsa po  Sečuánsku, jasmínová rýže — 179 Kč",
-            "200g Grilovaný steak z vepřové  kotlety, pepřová omáčka, steakové hranolky — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Celerový krém s  jablky (BZL) 9 — 40 Kč",
-            "Kapustový kotlík s celerovým špekem a domácí cibulový  chléb (BZL) 9 11 — 130 Kč",
-            "Mrkvové  karbanátky s kurkumou a šťouchané brambory (BZL) 10 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Česnekový krém, krutony — 49 Kč",
-            "🍵 Hovězí vývar - nudle, maso, kořenová zelenina — 49 Kč",
-            "🔸Hovězí bourguignon - pomalu tažený hovězí pupek, bramborová kaše, kořenová zelenina, silná vinná hovězí jus — 199 Kč",
-            "🔸Butter Chicken  z kuřecích prsou v krémové rajčatové omáčce, basmati rýže, koriander — 189 Kč",
-            "🔸Smažený květák, vařené brambory s máslem a petrželkou,  tatarka s kapary a koprem, mix listových salátů — 179 Kč",
-            "🔸Spaghetti Carbonara - pancetta,  Grana Padano, žloutek, pepř — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
+        "name": "Weekend",
         "items": [
-            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
-            "Chicken Mango ≅ Kuřecí kousky s omáčkou chuti mango. — 144 Kč",
-            "Lamb Curry ≅ Jehněčí kousky s curry omáčkou. — 185 Kč",
-            "Kuřecí stehna. Byranies ≅ Indická rýže a Kuřecí stehna. — 144 Kč",
-            "Shahi Paneer ≅ Sýrové kousky s jemnou pikantní omáčkou. — 144 Kč",
-            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 204 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
-        ]
-    },
-    "aroha": {
-        "name": "Aroha",
-        "items": [
-            "Hovězí vývar s kapáním — ",
-            "Buchtičky s krémem — 149 Kč",
-            "Dančí guláš 1/2 knedlík a 1/2 bramboráčky — 149 Kč",
-            "Smažený vepřový řízek, bramborový salát s majonézou — 149 Kč",
-            "⁠Vepřový steak se sázeným vejcem a šunkou, hranolky, tatarka — 159 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
