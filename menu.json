@@ -50,4 +50,15 @@
             "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
+    ,
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Čočková s uzeninou — ",
+            "Vepřové dušené v kapustě, vařený brambor — 149 Kč",
+            "Smažená mozzarella, hranolky, tatarka — 149 Kč",
+            "Nadívaná kuřecí roláda s medvědím česnekem, bramborová kaše, okurek — 149 Kč",
+            "Hovězí tokáň, rýže — 159 Kč"
+        ]
+    }
 }
