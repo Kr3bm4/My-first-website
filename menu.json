@@ -1,32 +1,53 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "0, 25l Kulajda s houbami, bramborem a  vejcem — 30 Kč",
+            "0, 25l Masový vývar s kořenovou zeleninou, bylinkovo-šunkovým  knedlíčkem — 30 Kč",
+            "130g Indické kuřecí nudličky  s kořením Tandoori Masala a zeleninou, jasmínová rýže — 159 Kč",
+            "120g Smažené sýrové duo (eidam, olomoucké tvarůžky), vařené brambory,  tatarská omáčka — 169 Kč",
+            "140g Filovaná panenka sous - vide, bretaňská zelenina na másle, lanýžová omáčka, restované brambory  s paprikou — 179 Kč",
+            "220g Italské těstoviny penne s grilovaným lososem a smetanovým špenátem, sypané sýrem Grana  padano — 179 Kč",
+            "150g Chilli con carne z hovězího masa,  kukuřice, červených a černých fazolí, chilli a loupaných rajčat sypané sýrem cheddar, hranolky — 189 Kč",
+            "1/4 Pečené kachny, dušené červené zelí, domácí bramborový knedlík, masový výpek, smažená cibulka — 179 Kč"
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵 Čočková polévka — 49 Kč",
+            "🍵 Hovězí vývar - nudle, maso, kořenová zelenina — 49 Kč",
+            "🔸Fish & Chips - treska smažená v křupavém pivním těstíčku, hranolky, hráškové pyré, chilli majonéza — 199 Kč",
+            "🔸Kuřecí roláda plněná nádivkou s medvědím česnekem, brambory grenaille s  máslem a petrželkou, silná kuřecí jus — 189 Kč",
+            "🔸Grilovaný camembert, pečená kořenová zelenina (mrkev, pastyňák, červená řepa), mix listových salátů, medovou-hořčičná  zálivka, kváskový chléb Káčko — 179 Kč",
+            "🔸Spaghetti Carbonara - pancetta,  Grana Padano, žloutek, pepř — 179 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
+        "name": "Annapurna",
         "items": [
-            "Menu's not checked on weekends — "
+            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
+            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
+            "Chicken Madras ≅ Kuřecí kousky s pálivou červenou omáčkou. — 144 Kč",
+            "Garlic Tikka ≅ Česnekové grilované kuřecí prsní kousky se salátem. — 144 Kč",
+            "Paneer Masala ≅ Sýrové kousky s omáčkou. — 144 Kč",
+            "Annapurna Royal Vegetable ≅ Zeleninová směs se špenátem a nepálským kořením. — 144 Kč",
+            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 174 Kč"
         ]
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
