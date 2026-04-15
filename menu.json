@@ -51,5 +51,15 @@
             "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
             "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Žampionová (1,7) — ",
+            "Kuřecí prsa na paprice, těstoviny (1,7) — 149 Kč",
+            "⁠Holandský řízek special, bramborový salát (1,3,7) — 149 Kč",
+            "⁠Rybí filé po mlynářsku, vařený brambor, tatarka (1) — 149 Kč",
+            "Italský kuřecí steak (sušené rajče, šunka, gouda), hranolky, slaninová majonéza (1,7) — 159 Kč"
+        ]
     }
 }
