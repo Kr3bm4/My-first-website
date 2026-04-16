@@ -2,33 +2,33 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0,  25l Frankfurtská s párkem a bramborem — 30 Kč",
-            "0, 25l Masový vývar s kořenovou  zeleninou, bylinkovo-šunkovým knedlíčkem — 30 Kč",
-            "350g Srbské vepřové rizoto se zeleninou, sypané sýrem, sterilovaný okurek — 159 Kč",
-            "150g Smažená kuřecí kapsa plněná sýrem Ementál a anglickou slaninou, máslové brambory s petrželkou,  tatarská omáčka — 169 Kč",
-            "200g Koprová omáčka, 2ks vařené vejce,  brambůrky grenaille — 159 Kč",
-            "150g Grilovaný špalík z vepřové panenky, smažené  americké brambory, liškové ragů, pečená slanina — 179 Kč",
-            "130g Svratecký guláš z výzrálého hovězího masa, čerstvé žampiony, paprika, červená cibulka,  domácí bramboráčky — 189 Kč",
-            "1/4  Pečené kachny, dušené červené zelí, domácí bramborový knedlík, masový výpek, smažená cibulka — 179 Kč"
+            "0, 25l Frankfurtská s párkem a  bramborem — 30 Kč",
+            "0, 25l Masový vývar s kořenovou zeleninou,  bylinkovo-šunkovým knedlíčkem — 30 Kč",
+            "350g Srbské vepřové rizoto se zeleninou,  sypané sýrem, sterilovaný okurek — 159 Kč",
+            "150g Smažená kuřecí kapsa plněná sýrem Ementál a anglickou slaninou,  máslové brambory s petrželkou, tatarská omáčka — 169 Kč",
+            "200g Koprová  omáčka, 2ks vařené vejce, brambůrky grenaille — 159 Kč",
+            "150g Grilovaný špalík z vepřové panenky, smažené americké  brambory, liškové ragů, pečená slanina — 179 Kč",
+            "130g Svratecký guláš z výzrálého hovězího masa, čerstvé žampiony, paprika,  červená cibulka, domácí bramboráčky — 189 Kč",
+            "1/4 Pečené kachny, dušené červené zelí, domácí  bramborový knedlík, masový výpek, smažená cibulka — 179 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Zeleninová písmenková  polévka (BZL) — 40 Kč",
-            "Čočka na kyselo s celerovým,, špekem\", nakládaným okurkem a domácím  semínkovým chlebem (BZL) 9 11 — 130 Kč",
-            "Robi gyros s česnekovo - citronovým dipem,  zeleninou a vegan sýrem, zapečený v tortille 1 6 — 150 Kč"
+            "Zeleninová písmenková polévka (BZL) — 40 Kč",
+            "Čočka na kyselo s celerovým,, špekem\", nakládaným okurkem a domácím semínkovým chlebem (BZL) 9 11 — 130 Kč",
+            "Robi gyros s česnekovo - citronovým dipem, zeleninou a vegan sýrem, zapečený  v tortille 1 6 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Čočková  polévka — 49 Kč",
+            "🍵 Čočková polévka — 49 Kč",
             "🍵 Hovězí vývar - nudle,  maso, kořenová zelenina — 49 Kč",
-            "🔸Fish  & Chips - treska smažená v křupavém pivním těstíčku, hranolky, hráškové pyré, chilli majonéza — 199 Kč",
-            "🔸Kuřecí roláda plněná nádivkou s medvědím česnekem, brambory grenaille s  máslem a petrželkou, silná kuřecí jus — 189 Kč",
-            "🔸Grilovaný camembert, pečená kořenová zelenina (mrkev, pastyňák, červená řepa), mix listových salátů,  medovou-hořčičná zálivka, kváskový chléb Káčko — 179 Kč",
-            "🔸Spaghetti Carbonara -  pancetta, Grana Padano, žloutek, pepř — 179 Kč"
+            "🔸Fish & Chips - treska smažená v křupavém pivním těstíčku, hranolky, hráškové pyré, chilli  majonéza — 199 Kč",
+            "🔸Kuřecí roláda plněná nádivkou s  medvědím česnekem, brambory grenaille s máslem a petrželkou, silná kuřecí jus — 189 Kč",
+            "🔸Grilovaný camembert, pečená kořenová zelenina (mrkev, pastyňák, červená řepa), mix listových salátů, medovou-hořčičná zálivka,  kváskový chléb Káčko — 179 Kč",
+            "🔸Spaghetti Carbonara  - pancetta, Grana Padano, žloutek, pepř — 179 Kč"
         ]
     },
     "annapurna": {
@@ -44,16 +44,5 @@
             "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
             "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
-    },
-    "aroha": {
-        "name": "Aroha",
-        "items": [
-            "Česnečka (3) — ",
-            "Kuřecí rizoto, okurek (7) — 149 Kč",
-            "Vietnamský karamelizovaný bůček, šťouchaný brambor (1,6) — 149 Kč",
-            "Grilovaný kuřecí špíz sypaný sýrem gouda, hranolky, tatarka (7) — 149 Kč",
-            "Žampionové ragú s telecím masem, tagliatelle (7) — 159 Kč"
-        ]
     }
-    
 }
