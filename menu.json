@@ -44,5 +44,16 @@
             "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
             "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Česnečka (3) — ",
+            "Kuřecí rizoto, okurek (7) — 149 Kč",
+            "Vietnamský karamelizovaný bůček, šťouchaný brambor (1,6) — 149 Kč",
+            "Grilovaný kuřecí špíz sypaný sýrem gouda, hranolky, tatarka (7) — 149 Kč",
+            "Žampionové ragú s telecím masem, tagliatelle (7) — 159 Kč"
+        ]
     }
+    
 }
