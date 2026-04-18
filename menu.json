@@ -1,65 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l  Masový vývar s kořenovou zeleninou, bylinkovo-šunkovým knedlíčkem — 30 Kč",
-            "0, 25l Kmínová polévka s vejcem — 30 Kč",
-            "130g Kuřecí steak Capresse zapečený s rajčetem a sýrem Mozzarela, bazalkové pesto, šťouchané brambory s jarní cibulkou — 159 Kč",
-            "150g Smažený vepřový řízek z marinované krkovice, vídeňský  bramborový salát — 169 Kč",
-            "150g Kachní prsa na Pekingský způsob s medem, jasmínová  rýže sypaná sezamem — 169 Kč",
-            "300g Uzené vepřové koleno bez kosti  na černém pivu v BBQ marinádě, chléb, salát Coleslaw — 179 Kč",
-            "160g Medailonky z vepřové kotlety, fazolové lusky se slaninou a česnekem, pepřová omáčka, smažené bramborové  hranolky — 169 Kč",
-            "1/4 Pečené  kachny, dušené červené zelí, domácí bramborový knedlík, masový výpek, smažená cibulka — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Pórková polévka (BZL) — 40 Kč",
-            "Brokolice v žampionové omáčce s červenočočkovými těstovinami (BZL) — 130 Kč",
-            "Červené zelí s rozinkami,  seitanem a houskovým knedlíkem 1 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Čočková  polévka — 49 Kč",
-            "🍵 Hovězí vývar - nudle, maso,  kořenová zelenina — 49 Kč",
-            "🔸Fish & Chips - treska smažená v křupavém pivním  těstíčku, hranolky, hráškové pyré, chilli majonéza — 199 Kč",
-            "🔸Kuřecí  roláda plněná nádivkou s medvědím česnekem, brambory grenaille s máslem a petrželkou, silná kuřecí jus — 189 Kč",
-            "🔸Grilovaný camembert, pečená kořenová zelenina (mrkev, pastyňák, červená řepa), mix listových  salátů, medovou-hořčičná zálivka, kváskový chléb Káčko — 179 Kč",
-            "🔸Spaghetti Carbonara - pancetta,  Grana Padano, žloutek, pepř — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
+        "name": "Weekend",
         "items": [
-            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
-            "Chicken Vindaloo ≅ Kuřecí kousky s palivou omáčkou. — 144 Kč",
-            "Lamb Mango ≅ Jehněčí kousky v omáčce s chutí manga. — 185 Kč",
-            "Chicken Malai Kabab ≅ Jemně kořeněné kuřecí kousky. — 144 Kč",
-            "Veg Jalfreji ≅ Směs zeleniny s ostrou kari omáčkou. — 144 Kč",
-            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 204 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
-        ]
-    },
-    "aroha": {
-        "name": "Aroha",
-        "items": [
-            "Čínská kuřecí (3) — ",
-            "Krkonošské sejkorky se zakysanou smetanou a medem (1,3,7) — 149 Kč",
-            "Chalupářský guláš, chléb (1) — 149 Kč",
-            "⁠Smažený kuřecí stehenní řízek, bramborová kaše (1,3,7) — 149 Kč",
-            "Grilovaná filovaná panenka, pepřová omáčka, hranolky (7) — 159 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
