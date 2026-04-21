@@ -44,5 +44,15 @@
             "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
             "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
+    },
+    "sargam": {
+        "name": "Sargam 2",
+        "items": [
+            "Kulajda (1,3,7) — ",
+            "Moravský vrabec, zelí, knedlík (1) — 149 Kč",
+            "Brynzové halušky se slaninou (1,3,7) — 149 Kč",
+            "Grilované kuřecí špalíčky na BBQ, bramborová kaše (7) — 149 Kč",
+            "Kuřecí steak, grilované fazolky se slaninou, hranolky, americká majonéza — 159 Kč"
+        ]
     }
 }
