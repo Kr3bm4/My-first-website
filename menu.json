@@ -2,32 +2,31 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l  Italská tomatová polévka s čerstvou bazalkou — 30 Kč",
-            "0, 25l Staročeský uzený vývar s masem, zeleninou,  kroupami a bramborem — 30 Kč",
-            "130g Kuřecí Thai WOK,  restované čínské nudle — 159 Kč",
-            "200g Steak z vepřové kotlety,  omáčka z lesních hub, opékané brambůrky grenaille — 169 Kč",
-            "130g Domácí  pečená sekaná, bramborová kaše, silná masová šťáva, sterilovaný okurek — 159 Kč",
-            "150g Kuřecí steak gratinovaný  cheddarem, slaninový chips, máslová omáčka, bramborové krokety, zeleninový salátek z čerstvé zeleniny — 169 Kč",
-            "180g Fish & chips, hráškové pyré,  citronová majonéza, steakové hranolky — 189 Kč",
-            "150g Plzeňský hovězí guláš  zdobený čerstvou cibulí a chilli papričkou, houskový knedlík — 189 Kč"
+            "0, 25l Staročeský uzený vývar s masem, zeleninou, kroupami a  bramborem — 30 Kč",
+            "0, 25l Bramboračka  s hříbky a čerstvou majoránkou — 30 Kč",
+            "150g Smažený kuřecí stehenní řízek obalované v  cornflakes strouhance, hranolky, BBQ majonéza, zeleninový salátek — 159 Kč",
+            "150g Přírodní vepřová  kapsa plněná sýrem a anglickou slaninou, mačkané brambory, masový výpek — 169 Kč",
+            "130g Čočka na kyselo, 2ks sázené vejce, vídeňská cibulka, sterilovaný okurek,  chléb — 159 Kč",
+            "150g Filovaná kachní prsíčka, restovaná čerstvá kapusta s česnekem, Beurre noir  omáčka — 179 Kč",
+            "150g Vyzrálý hovězí Rump steak Uruguay,  fazolové lusky se slaninou a česnekem,  steakové  hranolky, demi glace — 239 Kč",
+            "150g Plzeňský hovězí guláš zdobený čerstvou cibulí a chilli  papričkou, houskový knedlík — 189 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Česneková s vegan,,  vajíčkem\" (BZL) 6 — 40 Kč",
-            "Červená čočka se zeleninou na  kokosovém mléce, jasmínová rýže (BZL) — 130 Kč",
-            "Bun bo  Nam Bo - vietnamský salát s rýžovými nudlemi a tempehem + čerstvý koriandr (BZL) 5 6 11 — 150 Kč"
+            "Zeleninový vývar se slzovkou (BZL) 9 — 40 Kč",
+            "Dýňové jáhloto s  černými olivami, sypané konopnými semínky (BZL) Pečený seitan s okurkovou omáčkou s koprem, houskový knedlík 1 6 — 130 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
             "🍵 Kukuřičný  krém, krutony — 49 Kč",
-            "🍵 Hovězí vývar -  nudle, maso, kořenová zelenina — 49 Kč",
-            "🔸Kuřecí Saltimbocca -  kuřecí prso obalené ve vyzrálé parmské šunce, smažená polenta, mix listových salátů — 199 Kč",
-            "🔸Holandský řízek s italským pařeným  kravským sýrem Provolone, šťouchané brambory, nakládaný okurek — 189 Kč",
-            "🔸Veggie Koprovka - koprové  veloutté, vejce na hniličku, brambory grenaille — 179 Kč",
+            "🍵 Hovězí vývar - nudle,  maso, kořenová zelenina — 49 Kč",
+            "🔸Kuřecí Saltimbocca - kuřecí prso obalené ve  vyzrálé parmské šunce, smažená polenta, mix listových salátů — 199 Kč",
+            "🔸Holandský řízek s italským  pařeným kravským sýrem Provolone, šťouchané brambory, nakládaný okurek — 189 Kč",
+            "🔸Veggie Koprovka - koprové veloutté, vejce na hniličku,  brambory grenaille — 179 Kč",
             "🔸Spaghetti Carbonara - pancetta,  Grana Padano, žloutek, pepř — 179 Kč"
         ]
     },
@@ -39,20 +38,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
-            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
-            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
-            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
-        ]
-    },
-    "aroha": {
-        "name": "Aroha",
-        "items": [
-            "Kulajda (1,3,7) — ",
-            "Moravský vrabec, zelí, knedlík (1) — 149 Kč",
-            "Brynzové halušky se slaninou (1,3,7) — 149 Kč",
-            "Grilované kuřecí špalíčky na BBQ, bramborová kaše (7) — 149 Kč",
-            "Kuřecí steak, grilované fazolky se slaninou, hranolky, americká majonéza — 159 Kč"
+            "fazolova polevka ≅ cerveny fazole maslo zazvor a trtadicny polevka — 45 Kč",
+            "chicken mango ≅ kureci maso a mango s tredicny nepalivy omacka — 150 Kč",
+            "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
+            "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
         ]
     }
 }
