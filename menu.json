@@ -1,32 +1,46 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "0, 25l  Kuřecí vývar s masem, kořenovou zeleninou a těstovinou — 30 Kč",
+            "0, 25l Moravská gulášová polévka — 30 Kč",
+            "130g Thajské kuřecí Red curry s kokosovým mlékem, zeleninou, chilli papričkou a  koriandrem, jasmínová rýže — 159 Kč",
+            "120g Smažený sýr se šunkou, vařené brambory,  domácí tatarská omáčka — 169 Kč",
+            "220g Špagety „ Carbonara‘‘ anglická slanina, vejce, smetana,  sypané parmazánem — 159 Kč",
+            "160g Pfeffer steak z vepřové kotlety s  omáčkou z barevného pepře, steakové hranolky — 169 Kč",
+            "140g Jack Daniels´Burger,  vyzrálé hovězí maso, anglická slanina, Jack Daniels´ Smooth BBQ, cheddar, rajče, salát, červená cibule, steakové hranolky, salát coleslaw — 189 Kč",
+            "120g  Anglický roastbeef, pečené brambůrky Grenaille, demi glace, tatarská omáčka — 199 Kč"
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵 Minestrone - italská  zeleninová polévka — 49 Kč",
+            "🍵 Hovězí vývar - nudle, maso, kořenová  zelenina — 49 Kč",
+            "🔸Vepřová líčka na víně a rozmarýnu, zeleninový  bulgur, hráškové výhonky, silná vepřová jus — 199 Kč",
+            "🔸Kuřecí curry s kokosovým mlékem, pečená brokolice, basmati  rýže, smažená cibulka, arašídy — 189 Kč",
+            "🔸Smažené květákové karbanátky, vařené brambory s máslem a pažitkou, okurková  majonéza, mix listových salátů — 179 Kč",
+            "🔸Spaghetti s lanýžovým krémem - lanýžový krém, žampiony, smetana, Grana  Padano — 179 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
-        "items": [
-            "Menu's not checked on weekends — "
-        ]
+        "name": "Annapurna",
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "items": []
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
