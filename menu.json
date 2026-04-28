@@ -51,5 +51,15 @@
             "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
             "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Bramboračka (1,3,7) — ",
+            "Grilované masové kuličky, rajská omáčka, knedlík (1,7) — 149 Kč",
+            "⁠Pečené kuřecí stehno ála bažant, rýže — 149 Kč",
+            "Rybí filet na rožni, vařený brambor, tatarka (1) — 149 Kč",
+            "Pikantní⁠ masová směs, hranolky — 159 Kč"
+        ]
     }
 }
