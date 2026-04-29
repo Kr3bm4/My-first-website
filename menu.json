@@ -51,5 +51,15 @@
             "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
             "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Polévka — ",
+            "1 — 149 Kč",
+            "2 — 149 Kč",
+            "3 — 149 Kč",
+            "4 — 159 Kč"
+        ]
     }
 }
