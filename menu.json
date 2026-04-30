@@ -51,5 +51,15 @@
             "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
             "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
+    },
+    "sargam": {
+        "name": "Sargam 2",
+        "items": [
+            "Kuřecí vývar s kapáním (1,3) — ",
+            "Francouzské brambory, okurek (7) — 149 Kč",
+            "Holandský řízek, vařený brambor, tatarka (1,3,7) — 149 Kč",
+            "Hříbkové ragú s panenkou, tagliatelle (1,7) — 149 Kč",
+            "Kuřecí nudličky v chilli omáčce, hranolky — 159 Kč"
+        ]
     }
 }
