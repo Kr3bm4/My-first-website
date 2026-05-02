@@ -1,51 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Čočková polévka s kořenovou zelenonou, bramborem a  uzeninou — 45 Kč",
-            "0, 25l Tomatová s bazalkovým  pestem a těstovinou — 45 Kč",
-            "130g Thajské kuřecí Red curry s kokosovým mlékem, zeleninou, chilli papričkou a koriandrem, jasmínová rýže — 159 Kč",
-            "250g Domácí bramborové knedlíky plněné uzeným masem, bílé kysané zelí,  smažená cibulka — 169 Kč",
-            "160g Rajská omáčka, plněný paprikový lusk, domácí houskový knedlík — 169 Kč",
-            "180g Vepřová játra na cibulce,  dušená rýže — 159 Kč",
-            "150g Kuřecí prsní steak na grilu  zapečený šunkou a sýrem, šťouchané brambory se slaninou a jarní cibulkou, bylinkový dip — 169 Kč",
-            "3ks  Smažené tvarůžky s poličanem, vařené brambory, tatarská omáčka — 159 Kč",
-            "160g Filovaný steak z vepřové panenky přelitý omáčkou z Diane (šalotka,  česnek, hořčice dijon, žampiony a smetana), pečené brambůrky Grenaille — 189 Kč",
-            "120g Anglický  roastbeef, pečené brambůrky Grenaille, demi glace, tatarská omáčka — 199 Kč",
-            "90g,, Kuřízek\" (smažený  kuřecí řízek), hranolky, kečup — 120 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Státní svátek — 40 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "Pro tento den nebylo zadáno menu. — "
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
+        "name": "Weekend",
         "items": [
-            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
-            "Chicken Mango ≅ Kuřecí kousky s omáčkou chuti mango. — 144 Kč",
-            "Lamb Vindaloo ≅ Jehněčí kousky s pikantní omáčkou. — 185 Kč",
-            "Garlic Tikka ≅ Česnekové grilované kuřecí prsní kousky se salátem. — 144 Kč",
-            "Veg Curry ≅ Zeleninová směs s kari omáčkou. — 144 Kč",
-            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 204 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
