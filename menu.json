@@ -2,47 +2,54 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Boršč se  zakysanou smetanou — 30 Kč",
-            "0, 25l Jarní zeleninová polévka s bylinkovým kapáním — 30 Kč",
-            "135g Kuřecí ražniči s paprikou a cibulí, opékané brambory s majoránkou, česnekový dip ze zakysané  smetany — 159 Kč",
-            "180g Steak z vysoké krkovice  s houbovou omáčkou portobello, smažené steakové hranolky — 169 Kč",
-            "160g Grilovaná kachní prsa, teriyaki omáčka  s kořenovou zeleninou a arašídy, restované čínské nudle — 169 Kč",
-            "200g Smažené řízkové duo (vepřová kotleta, kuřecí  prsa), bramborový salát s majonézou — 179 Kč",
-            "170g  Hrachová kaše, grilovaná klobása, vídeňská cibulka, sterilovaný okurek, chléb — 169 Kč",
-            "200g Vyzrálý hovězí  Rump steak Uruguay, sázené vejce, americké brambory se saturejkou, omáčka z pečené cibule — 239 Kč"
+            "0, 25l Kari krém  s květákem a kuřecím masem — 30 Kč",
+            "0, 25l Jarní  zeleninová polévka s bylinkovým kapáním — 30 Kč",
+            "150g Vepřová játra na roštu se slaninou,  smažené hranolky, tatarská omáčka — 159 Kč",
+            "150g Smažené kuřecí stripsy obalované v panko strouhance,  omáčka z modréhu sýru, steakové hranolky — 169 Kč",
+            "130g Pomalu pečená vepřová  krkovička, dušené bílé zelí, bramborový knedlík, vídeňská cibulka — 159 Kč",
+            "150g Grilovaný steak z vepřové panenky pokládaný na  restovaném čerstvém pórku, lanýžové demi glace, pečené bramborové čtvrtky s čerstvými bylinkami — 179 Kč",
+            "120g Quesadillas plněná kuřecím masem, sýrem cheddar, mexickou chilli salsou, zeleninou, zakysaná smetana a quacamole — 169 Kč",
+            "200g Vyzrálý hovězí Rump steak Uruguay, sázené vejce, americké brambory se saturejkou, omáčka  z pečené cibule — 239 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Žampiónový krém s  rýžovou smetanou (BZL) — 40 Kč",
-            "Grilovaný květák s hummusem a  bramborami (BZL) — 130 Kč",
-            "Tortilla plněná pečeným seitanem, čerstvou zeleninou a  červenočočkovým dipem 1a 6 — 150 Kč"
+            "Italská tomatová s bazalkou a mušličkami (BZL) — 40 Kč",
+            "Marocká  cizrna s goji a zeleninovým kuskusem 1a — 130 Kč",
+            "Tempeh v arašídové omáčce se zeleninou a  opečenou kari rýží (BZL) 5 6 11 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Bramborový krém,  krutony — 49 Kč",
-            "🍵 Hovězí vývar - nudle, maso, kořenová zelenina — 49 Kč",
-            "🔸Smažené řízečky z vepřové panenky, lehký bramborový salát se zakysanou smetanou, červená cibule, okurky, jarní  cibulka — 199 Kč",
-            "🔸Pečené kuřecí stehno na rozmarýnu, česneku a rajčatech, basmati  rýže — 189 Kč",
+            "🍵 Bramborový  krém, krutony — 49 Kč",
+            "🍵 Hovězí vývar - nudle, maso,  kořenová zelenina — 49 Kč",
+            "🔸Smažené řízečky z vepřové panenky, lehký bramborový  salát se zakysanou smetanou, červená cibule, okurky, jarní cibulka — 199 Kč",
+            "🔸Pečené kuřecí stehno na rozmarýnu, česneku a  rajčatech, basmati rýže — 189 Kč",
             "🔸Veggie čočka na kyselo zastřené vejce, hash  brown, restované žampiony, křupavá cibulka, okurek, kváskový chléb Káčko — 179 Kč",
-            "🔸Spaghetti s lanýžovým krémem - lanýžový krém, žampiony, smetana,  Grana Padano — 179 Kč"
+            "🔸Spaghetti s lanýžovým krémem -  lanýžový krém, žampiony, smetana, Grana Padano — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "items": []
+        "items": [
+            "Dal palak soup ≅ Indická čočková polévka se špenátem. — 20 Kč",
+            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
+            "Chicken Butter ≅ Kuřecí kousky s omáčkou. — 144 Kč",
+            "Green Tikka ≅ Pálivé kuřecí kousky se salátem. — 144 Kč",
+            "Sabji Miloni ≅ Zeleninová směs ve špenátové omáčce. — 144 Kč",
+            "Paneer Mango ≅ Sýrové kousky s omáčkou chuti mango. — 144 Kč",
+            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 174 Kč"
+        ]
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "fazolova polevka ≅ cerveny fazole maslo zazvor a trtadicny polevka — 45 Kč",
-            "chicken mango ≅ kureci maso a mango s tredicny nepalivy omacka — 150 Kč",
-            "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
-            "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
+            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
+            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
+            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
+            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
     }
 }
