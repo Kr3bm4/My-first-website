@@ -1,40 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 35l Boršč se zakysanou  smetanou — 45 Kč",
-            "0, 35l Jarní zeleninová polévka s bylinkovým kapáním — 45 Kč",
-            "150g  Vepřová játra na roštu se slaninou, smažené hranolky, tatarská omáčka — 159 Kč",
-            "150g  Smažené kuřecí stripsy obalované v panko strouhance, omáčka z modréhu sýru, steakové hranolky — 169 Kč",
-            "130g Trhaná vepřová krkovička, dušené bílé zelí, bramborový knedlík,  vídeňská cibulka — 159 Kč",
-            "150g Grilovaný steak z vepřové panenky pokládaný na restovaném čerstvém pórku, lanýžové demi glace, pečené  bramborové čtvrtky s čerstvými bylinkami — 179 Kč",
-            "90g,, Kuřízek\" (smažený kuřecí řízek),  hranolky, kečup — 120 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Státní  svátek — 40 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "Pro tento den nebylo zadáno menu. — "
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
