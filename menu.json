@@ -42,5 +42,15 @@
             "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
             "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Z červené čočky  — ",
+            "Marinované pečené kolínko, špenát, vařený brambor (1) — 149 Kč",
+            "Smažený hermelín, hranolky, tatarka (1,3,7) — 149 Kč",
+            "Čevabčiči, opékaný brambor, hořčice, bylinková majonéza  (1,10) — 149 Kč",
+            "Hovězí kostky na houbách, rýže (1) — 159 Kč"
+        ]
     }
 }
