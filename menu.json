@@ -37,5 +37,15 @@
             "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
             "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Zelňačka — ",
+            "Karbenátky na grilu, bramborová kaše, okurkový salát (1,3,7) — 149 Kč",
+            "Těstovinový salát s kuřecím masem a bazalkovým  pestem, sušená rajčátka a parmezán — 149 Kč",
+            "⁠Vepřové nudličky po sečuánsku s rýží — 149 Kč",
+            "Italský kuřecí steak, zapečený mozzarellou a rajčetem, hranolky, slaninová majonéza (7) — 159 Kč"
+        ]
     }
 }
