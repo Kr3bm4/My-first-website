@@ -31,7 +31,7 @@
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h2 class="text-base font-semibold uppercase text-gray-500 mb-4">Aroha Cafe</h2>
                 <div id="aroha-items" class="space-y-4 mb-4">
-                    <p class="text-gray-400">Facebook import is not working. </p>
+                    <p class="text-gray-400 animate-pulse">Loading...</p>
                 </div>
                 <div class="text-sm border-t pt-4">
                     <a href="https://www.facebook.com/Arohabistrocafe/" target="_blank" class="text-blue-500 hover:underline font-medium">External Menu →</a>
@@ -98,7 +98,7 @@
             const container = document.getElementById(containerId);
             
             if (!data || !data.items || data.items.length === 0) {
-                container.innerHTML = '<p class="text-gray-400">No Menu</p>';
+                container.innerHTML = '<p class="text-gray-400">No Menu (Load error or missing data, check External Menu)</p>';
                 return;
             }
             if (data.items[0].includes("not checked on weekends")) {
