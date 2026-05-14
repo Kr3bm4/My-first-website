@@ -44,5 +44,15 @@
             "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
             "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
+    },
+    "aroha": {
+        "name": "Aroha",
+        "items": [
+            "Polévka — ",
+            "1 — 149 Kč",
+            "2 — 149 Kč",
+            "3 — 149 Kč",
+            "4 — 159 Kč"
+        ]
     }
 }
