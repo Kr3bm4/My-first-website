@@ -2,48 +2,55 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Špenátový krém s  krutony — 30 Kč",
-            "0, 25l Francouzská cibulačka s  bílým vínem, krutony — 30 Kč",
-            "130g Szegedinský guláš zjemněný smetanou,  houskový knedlík — 159 Kč",
-            "150g Kuřecí steak s hermelínovo - slaninovou omáčkou, smažené hranolky — 169 Kč",
-            "200g Smažený vepřový řízek \"\"SLONÍ UCHO\"\", bramborový  salát s majonézou — 179 Kč",
-            "350g Caesar salát s grilovaným kuřecím masem, ančovičkovým dresinkem, krutony, slanina, parmazán — 169 Kč",
-            "150g Losos v  papilotě s čerstvou zeleninou a bylinkami, pečená brambora se zakysanou smetanou a pažitkou — 199 Kč",
-            "200g Vyzrálý hovězí Rump steak Uruguay, pepřová  omáčka,  americké brambory — 229 Kč"
+            "0,  25l Jarní krémová se zeleninou — 30 Kč",
+            "0,  25l Francouzská cibulačka s bílým vínem, krutony — 30 Kč",
+            "200g  Koprová omáčka, 2ks vařené vejce, vařené brambory — 159 Kč",
+            "150g Smažené kuřecí řízečky obalované v cornflakes strouhance, hranolky, BBQ majonéza, zeleninový  salátek — 169 Kč",
+            "120g  Medailonky z vepřové kotlety, na olivovém oleji, bramborové hranolky, restovaný česnek, kaparová omáčka se šalotkou — 169 Kč",
+            "130g Námořnický vepřový guláš, bramboráčky se  slaninou — 159 Kč",
+            "150g Grilované krůtí medailonky balené ve  slanině, jemná omáčka z hub, ragú z červené cibule, brambůrky Grenaille — 179 Kč",
+            "200g Vyzrálý hovězí Rump  steak Uruguay, pepřová omáčka,  americké brambory — 229 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Kapustová  s bramborem (BZL) — 40 Kč",
-            "Dýňové zelí  s celerovým \"špekem\" a jáhlovými kopečky (BZL) (9) 9 — 130 Kč",
-            "Domácí  celozrnný burger s kari květákovým karbanátkem a batátovo-bramborovými hranolky (1a, 6, 10, 11) 1 6 10 11 — 150 Kč"
+            "Řepový krém  s křenem (BZL) — 40 Kč",
+            "Zelené fazolky na kokosovém mléce s barevnou  rýží (BZL) — 130 Kč",
+            "Enchiladas se zeleninou, fazolemi a  vegan sýrem (1a) 1 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Hráškový  krém, krutony — 49 Kč",
-            "🍵 Hovězí vývar -  těstovinová rýže Orzo, hovězí maso, kořenová zelenina — 49 Kč",
+            "🍵 Hráškový krém, krutony — 49 Kč",
+            "🍵 Hovězí vývar - těstovinová  rýže Orzo, hovězí maso, kořenová zelenina — 49 Kč",
             "🔸Teryiaki  losos - sushi rýže, ananasová salsa, mrkev, sezamová semínka, arašídy, mungo, jarní cibulka, sojová omáčka — 259 Kč",
-            "🔸Pappardelle  se zvěřinovým ragů - tomatové ragů z mletého srnčího a jeleního masa, petržlka, pecorino — 219 Kč",
-            "🔸Kuřecí Cordon Bleu - plněný italskou dušenou šunkou  Paganini a sýrem provola, brambory grenaille s máslem a petrželkou, lanýžová mayo — 199 Kč",
-            "🔸Huevos rancheros  - fazolové ragú, vejce, hash brown, rajče, mačkané avokádo, limetkový jogurt, kváskový chléb Káčko — 189 Kč",
-            "🔸Steak  z vepřové kotlety, hranolky, sweet chilli majonéza, mix listových salátů — 179 Kč"
+            "🔸Pappardelle se zvěřinovým ragů - tomatové ragů z mletého srnčího  a jeleního masa, petržlka, pecorino — 219 Kč",
+            "🔸Kuřecí Cordon Bleu -  plněný italskou dušenou šunkou Paganini a sýrem provola, brambory grenaille s máslem a petrželkou, lanýžová mayo — 199 Kč",
+            "🔸Huevos rancheros - fazolové ragú, vejce, hash brown, rajče, mačkané avokádo,  limetkový jogurt, kváskový chléb Káčko — 189 Kč",
+            "🔸Steak z vepřové  kotlety, hranolky, sweet chilli majonéza, mix listových salátů — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "items": []
+        "items": [
+            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
+            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
+            "Chicken Mango ≅ Kuřecí kousky s omáčkou chuti mango. — 144 Kč",
+            "Lamb Curry ≅ Jehněčí kousky s curry omáčkou. — 185 Kč",
+            "Chicken Malai Kabab ≅ Jemně kořeněné kuřecí kousky. — 144 Kč",
+            "Palak Paneer ≅ Sýrové kousky se špenátem. — 144 Kč",
+            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 204 Kč"
+        ]
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
-            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
-            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
-            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
+            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
+            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
+            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
+            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
         ]
     }
 }
