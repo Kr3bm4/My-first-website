@@ -1,32 +1,47 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "0, 25l Italská polévka  Minestrone — 30 Kč",
+            "0, 25l Kuřecí vývar s masem,  kořenovou zeleninou a těstovinou — 30 Kč",
+            "250g Milánské špagety s kuřecím masem, pomodorem, kořenovou zeleninou a provensálkým kořením,  sypané sýrem — 159 Kč",
+            "120g Smažený sýr se šunkou, vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "150g Grilovaný steak z vepřové panenky, pečený lilek a cuketa, omáčka z modrého sýru,  americké brambory s majoránkou — 179 Kč",
+            "150g Kuřecí steak přelitý  bazalkovo - rajčatovou omáčkou, mačkané brambory s jarní cibulkou — 169 Kč",
+            "140g Bacon Burger – hovězí maso zapečené chedarem, pečená křupavá slanina, zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka, domácí  bulka, hranolky — 189 Kč",
+            "150g Plzeňský hovězí guláš zdobený čerstvou cibulí a  chilli papričkou, domácí bramboráčky — 189 Kč"
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵 Čočková s kokosovým mlékem — 49 Kč",
+            "🍵 Kuřecí vývar - nudle, kuřecí maso,  kořenová zelenina — 49 Kč",
+            "🔸Trhané teryiaki hovězí - 16 hod tažený hověží pupek na teryiaki a zázvoru, jasmínová rýže, mungo klíčky, mrkev, jarní  cibulka, sezam, křupavá cibulka — 219 Kč",
+            "🔸Superfood mísa - batáty, quinoa, cizrnový hummus, zastřené vejce,  feta, avokádo, slunečnicové a dýňové semínka — 219 Kč",
+            "🔸Řízek z vepřové panenky v parmazánové strouhance, vídeňský bramborový salát bez majonézy, polníček, nakládaná červená  cibule — 199 Kč",
+            "🔸Linguine Genovese s  kuřecím prsem, bazalkové pesto, Grana Padano — 189 Kč",
+            "🔸Pomalu tažená vepřová krkovice, hranolky,  česneková majonéza, mix listových salátů — 179 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
-        "items": [
-            "Menu's not checked on weekends — "
-        ]
+        "name": "Annapurna",
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "items": []
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
