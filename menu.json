@@ -2,53 +2,48 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Hráškový krém s krutony — 30 Kč",
-            "0, 25l Jarní zeleninová polévka s  bylinkovým kapáním — 30 Kč",
-            "120g Těstovinový salát s grilovaným kuřecím masem, čerstvou zeleninou  a jogurtovo bylinkovým dresinkem — 159 Kč",
-            "100g Smažený hermelín plněný poličanem, vařené brambory s petrželkou, domácí tatarská omáčka — 169 Kč",
-            "150g Medailonky z vepřové panenky po myslivecku se žampióny, anglickou slaninou a rozmarýnem, divoké koření, americké  brambory — 179 Kč",
-            "350g Srbské vepřové rizoto se zeleninou, sypané sýrem, sterilovaný  okurek — 159 Kč",
-            "150g Jalapenos cheese burger, vyzrálé hovězí maso, jalapeňos  papričky, chilli majonéza, pečená anglická slanina, sýr Cheddar, rucola, smažené hranolky — 189 Kč",
-            "160g Filovaný steak z vepřové panenky přelitý omáčkou z Diane (šalotka, česnek,  hořčice dijon, žampiony a smetana), pečené brambůrky Grenaille — 189 Kč"
+            "0, 25l Valašská kyselice s klobásou a  bramborem — 30 Kč",
+            "0, 25l  Jarní zeleninová polévka s bylinkovým kapáním — 30 Kč",
+            "350g Pečené  kuřecí paličky na domácí Sweet chilli omáčce, pečené bramborové půlky, Coleslaw — 159 Kč",
+            "130g Cordon-Bleu (smažená kuřecí kapsa plněná šunkou a sýrem), vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "130g Švédské masové kuličky s krémovou omáčkou, hráškem a  brusinkami, pečené bramborové půlky — 159 Kč",
+            "200g Konfitované hovězí hrudí na rozmarýnu, kořenové zelenině a červeném víně, bramborové  pyré — 229 Kč",
+            "160g Grilovaná vepřová krkovice s chilli, petrželkou a česnekem, buffalo omáčka,  americké brambory — 169 Kč",
+            "160g Filovaný steak z  vepřové panenky přelitý omáčkou z Diane (šalotka, česnek, hořčice dijon, žampiony a smetana), pečené brambůrky Grenaille — 189 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Okroška - studená  okurková — 40 Kč",
+            "Hummus z cizrny s grilovanými rajčátky a olivovým olejem a domácí  semínkový chléb — 130 Kč",
+            "Mrkvové karbanátky s kurkumou a šťouchané  brambory s pažitkou — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Česnekový  krém, krutony — 49 Kč",
-            "🍵 Hovězí vývar - těstovina, hovězí maso, kořenová zelenina — 49 Kč",
-            "🔸Salát se smaženou mozzarellou a grilovanou broskví - nakládaná  červená cibule, dýňová a slunečnicová semínka, krutony, medovo-hořčičný dresink — 219 Kč",
-            "🔸Roastbeef - grenaille s  máslem a petrželkou, pečená kořenová zelenina, salsa verde, křenová zakysačka — 249 Kč",
-            "🔸Sticky sweet chilli kuřecí  prso, jasmínová rýže, asijský mungo salát, sójovo-limetová sweet chili glazura se zázvorem, koriandr, pražené arašídy — 199 Kč",
-            "🔸Zapékané brambory s italskými uzeninami a hovězím masem,  mortadella, pancetta, hovězí ragů, bešamel, Grana Padano, okurek, mix listových salátů — 189 Kč",
-            "🔸Meatballs  linguine - masové kuličky z hovězího a vepřového masa v tomatové omáčce, linguine, Grana padano — 179 Kč"
+            "🍵 Česnekový krém, krutony — 49 Kč",
+            "🍵 Hovězí vývar  - těstovina, hovězí maso, kořenová zelenina — 49 Kč",
+            "🔸Salát se smaženou mozzarellou a grilovanou broskví - nakládaná červená cibule, dýňová a slunečnicová semínka,  krutony, medovo-hořčičný dresink — 219 Kč",
+            "🔸Roastbeef - grenaille s máslem a petrželkou, pečená kořenová zelenina,  salsa verde, křenová zakysačka — 249 Kč",
+            "🔸Sticky sweet chilli kuřecí prso, jasmínová rýže, asijský  mungo salát, sójovo-limetová sweet chili glazura se zázvorem, koriandr, pražené arašídy — 199 Kč",
+            "🔸Zapékané brambory s italskými uzeninami a hovězím masem, mortadella, pancetta, hovězí ragů, bešamel, Grana Padano, okurek,  mix listových salátů — 189 Kč",
+            "🔸Meatballs linguine - masové kuličky z hovězího a vepřového masa v  tomatové omáčce, linguine, Grana padano — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "items": [
-            "Tomato soup ≅ Nepálská rajská polévka — 20 Kč",
-            "Chicken soup ≅ Kuřecí indická polévka. — 20 Kč",
-            "Chicken Curry ≅ Kuřecí kousky s kari omáčkou. — 144 Kč",
-            "Garlic Tikka ≅ Česnekové grilované kuřecí prsní kousky se salátem. — 144 Kč",
-            "Paneer Masala ≅ Sýrové kousky s omáčkou. — 144 Kč",
-            "Veg Vindaloo ≅ Zeleninová směs s velmi ostrou omáčkou. — 144 Kč",
-            "Annapurna mix Thali ≅ Kombinace jídel 1 - 4 — 174 Kč"
-        ]
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
