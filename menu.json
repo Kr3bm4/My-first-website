@@ -2,7 +2,14 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "pondělí 6. 7. 2026                                                                                                 STÁTNÍ SVÁTEK - ZAVŘENO — "
+            "0, 25l Kapustová s uzeninou a bramborem — 30 Kč",
+            "0, 25l Česneková polévka s vejcem, šunkou a bramborem,  chlebové krutony — 30 Kč",
+            "130g  Kuřecí Thai WOK, restované čínské nudle — 159 Kč",
+            "120g  Smažený sýr se šunkou, vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "150g Grilované medailonky  z vepřové panenky s bylinkovou omáčkou, americké brambory — 179 Kč",
+            "350g Caesar salát  s grilovaným kuřecím masem, ančovičkovým dresinkem, krutony, slanina, parmazán — 169 Kč",
+            "150g Cheese burger, hovězí vyzrálé  maso, cibulové chutney, jalapeňos mayo, sýr Cheddar a rukola, hranolky — 189 Kč",
+            "200g Vyzrálý hovězí Rump steak Uruguay, pepřová  omáčka,  americké brambory — 229 Kč"
         ]
     },
     "4108": {
@@ -14,21 +21,26 @@
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "Pro tento den nebylo zadáno menu. — "
+            "🍵 Sicilská  krémová cibulačka — 49 Kč",
+            "🍵  Kuřecí vývar - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Cuketová fritáta s ricottou - nadýchaný vaječný zápek z cukety, ricotty a Grana Padano, mix listových salátů, kváskový chléb — 179 Kč",
+            "🔸Steak z tuňáka marinovaný v teryiaki,  jasmínová rýže, asijský mungo salát s mango-limetkovým dresingem, sezam, koriander, arašídy — 249 Kč",
+            "🔸Tagliatelle se srnčím ragů - pomalu tažené srnčí tagů na červeném víně, rajčetech a divokých bylinkách, čerstvé vaječné tagliatelle, Grana  Padano — 219 Kč",
+            "🔸Pulled pork - 16 hod tažené  marinované vepřové plecko, hranolky, cheddarový dip, okurek, mix listových salátů — 199 Kč",
+            "🔸Řízek z kuřecího stehna marinovaný v podmáslí a česneku, nové brambory s  máslem a petrželkou, coleslaw — 189 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
         "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
