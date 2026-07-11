@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Brokolicový krém s krutony — 30 Kč",
-            "0,  25l Česneková polévka s vejcem, šunkou a bramborem, chlebové krutony — 30 Kč",
-            "150g Bún  ch? – grilovaný vietnamský bůček s jasmínovou rýží — 159 Kč",
-            "180g Špíz z krůtích prsou se klobáskou, paprikou a cibulí,  pečená brambora  s bylinkovým dipem — 169 Kč",
-            "150g Smažená vepřová kapsa plněná sýrem a anglickou slaninou,  mačkané brambory, tatarská omáčka — 169 Kč",
-            "1/4 Pečeného kuřátka, bramborová  kaše, sterilovaný okurek, silný masový výpek — 159 Kč",
-            "150g Grilované biftečky, fazolové lusky se slaninou, smažené bramborové  dolary, hořčičná omáčka — 169 Kč",
-            "200g  Vyzrálý hovězí Rump steak Uruguay, pepřová omáčka,  americké brambory — 229 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Hráškový krém s kukuřičnými kuličkami — 40 Kč",
-            "O prázdninových pátcích jedeme na pohodu - jen  jedno menu, ale pořádně nadupané. A navíc bez lepku :) — 130 Kč",
-            "Zeleninový špíz s marinovaným tofu  a bramborovou kaší (BZL) 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵  Sicilská krémová cibulačka — 49 Kč",
-            "🍵 Kuřecí vývar  - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
-            "🔸Cuketová fritáta s ricottou - nadýchaný vaječný zápek z cukety,  ricotty a Grana Padano, mix listových salátů, kváskový chléb — 179 Kč",
-            "🔸Steak z tuňáka marinovaný v teryiaki, jasmínová rýže, asijský mungo salát s mango-limetkovým dresingem, sezam, koriander,  arašídy — 249 Kč",
-            "🔸Tagliatelle se srnčím ragů - pomalu tažené srnčí tagů na červeném víně, rajčetech  a divokých bylinkách, čerstvé vaječné tagliatelle, Grana Padano — 219 Kč",
-            "🔸Pulled pork - 16 hod tažené marinované vepřové plecko, hranolky, cheddarový dip, okurek, mix listových salátů — 199 Kč",
-            "🔸Řízek z kuřecího stehna marinovaný v podmáslí a česneku, nové  brambory s máslem a petrželkou, coleslaw — 189 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
