@@ -1,32 +1,39 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — "
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵 Čočková polévka - brambory, kořenová  zelenina — 49 Kč",
+            "🍵 Kuřecí vývar  - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Caesar s křupavými kalamáry, římský salát, smažené kalamáry, cherry rajčata, Grana Padano, krutony z  kváskového chleba, citronovo-parmazánový dresink — 229 Kč",
+            "🔸Hoisin vepřový bok  - jasmínová rýže, mungo, mrkev, čínské zelí, chilli, koriander, jarní cibulka, arašídy — 209 Kč",
+            "🔸Řízečky z vepřové panenky  - řecký bramborový salát (nové brambory, okurek, kopr, česnek, jogurt, olivy) — 199 Kč",
+            "🔸Delitree Kuřecí Twister - grilované kuřecí prso v tortille, ledový salát, rajče, sweet chilli majonéza, nachos, mix listových  salátů — 189 Kč",
+            "🔸Dýňová  Carbonara - guanciale, dýňové pyré, žloutek, grana padano, máslo, čerstvé vaječné spaghetti — 179 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
-        "items": [
-            "Menu's not checked on weekends — "
-        ]
+        "name": "Annapurna",
+        "items": []
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
