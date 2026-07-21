@@ -2,32 +2,34 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0,  25 l Bramboračka s hříbky a čerstvou majoránkou — 30 Kč",
-            "0, 25 l Hovězí vývar s masem,  těstovinou a kořenovou zeleninou — 30 Kč",
-            "130g Vykostěné kuřecí  stehýnko na paprice, kolínka — 159 Kč",
-            "120g Smažené sýrové  duo (eidam, cheddar), smažené hranolky, tatarská omáčka — 169 Kč",
-            "150g Filovaný steak z vepřové panenky, fazolové lusky se slaninou a česnekem, brambůrky Grenaille, omáčka demi glace — 179 Kč",
-            "350g Francouzské  brambory s uzeným masem zapečené sýrem, nakládaný okurek — 159 Kč",
-            "140g Bacon Burger –  hovězí maso zapečené sýrem Maasdamer, pečená křupavá slanina, zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka, domácí bulka, hranolky — 189 Kč",
-            "180g Domácí pečená sekaná,  bramborová kaše, silná masová šťáva, sterilovaný okurek — 169 Kč"
+            "0, 25 l Dršťková  polévka — 30 Kč",
+            "0, 25 l  Hovězí vývar s masem, těstovinou a kořenovou zeleninou — 30 Kč",
+            "180g Anglická vepřová játra, smažené hranolky, tatarská omáčka — 169 Kč",
+            "150g Smažený  stehenní kuřecí řízek nakládaný v podmáslí, vařené brambory s petrželkou, okurkový salát — 169 Kč",
+            "160g Steak z  vepřové krkovice se silnou masovou omáčkou, pečené brambory s majoránkou a česnekem — 169 Kč",
+            "150g Pečené kachní prso s máslovou čočkou Dal Makhani, lehká curry omáčka — 169 Kč",
+            "120g Anglický roastbeef, pečená kořenová zelenina s rozmarýnem, steakové hranolky, dip z  dijonské hořčice a medu — 189 Kč",
+            "180g Domácí pečená sekaná, bramborová kaše, silná masová šťáva, sterilovaný  okurek — 169 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Minestrone — 40 Kč",
+            "A) Zeleninový  salát s černou čočkou beluga (BZL) (9) — 130 Kč",
+            "B) Halušky se  zelím a grilovaným tempehem, sypané jarní cibulkou (1a, 6) — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Kukuřičný krém  - krutony — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina,  kuřecí maso, kořenová zelenina — 49 Kč",
-            "🔸Fusilli  s lososem - losos, brokolice, hrášek, citron, petrželka, smetana — 239 Kč",
-            "🔸Melanzane all Parmigiana - zapékaný lilek, mozzarella, Grana Padano,  rajčatová omáčka, bazalka, kváskový chléb, mix listových salátů — 219 Kč",
-            "🔸Smažené kuře - smažené kuřecí paličky, kuřecí křídla  a prso, pečené americké brambory, coleslaw, sweet chilli majonéza — 199 Kč",
-            "🔸Vepřové výpečky - smetanový špenát,  bramborový knedlík, křupavá cibulka — 189 Kč",
-            "🔸Salát s teriyaki kuřecím prsem a rýžovými nudlemi - červené zelí, mungo, mrkev,  rukola, polníček, arašídy, koriandr — 179 Kč"
+            "🍵 Kukuřičný krém -  krutony — 49 Kč",
+            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová  zelenina — 49 Kč",
+            "🔸Fusilli s lososem - losos, brokolice, hrášek, citron,  petrželka, smetana — 239 Kč",
+            "🔸Melanzane all Parmigiana - zapékaný lilek, mozzarella, Grana Padano, rajčatová omáčka, bazalka, kváskový chléb, mix listových  salátů — 219 Kč",
+            "🔸Smažené kuře - smažené kuřecí paličky, kuřecí křídla a prso, pečené americké brambory, coleslaw, sweet chilli majonéza — 199 Kč",
+            "🔸Vepřové výpečky -  smetanový špenát, bramborový knedlík, křupavá cibulka — 189 Kč",
+            "🔸Salát s teriyaki kuřecím prsem a rýžovými nudlemi - červené  zelí, mungo, mrkev, rukola, polníček, arašídy, koriandr — 179 Kč"
         ]
     },
     "annapurna": {
@@ -37,10 +39,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
