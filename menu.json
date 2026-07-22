@@ -2,47 +2,48 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25 l Dršťková  polévka — 30 Kč",
-            "0, 25 l  Hovězí vývar s masem, těstovinou a kořenovou zeleninou — 30 Kč",
-            "180g Anglická vepřová játra, smažené hranolky, tatarská omáčka — 169 Kč",
-            "150g Smažený  stehenní kuřecí řízek nakládaný v podmáslí, vařené brambory s petrželkou, okurkový salát — 169 Kč",
-            "160g Steak z  vepřové krkovice se silnou masovou omáčkou, pečené brambory s majoránkou a česnekem — 169 Kč",
-            "150g Pečené kachní prso s máslovou čočkou Dal Makhani, lehká curry omáčka — 169 Kč",
-            "120g Anglický roastbeef, pečená kořenová zelenina s rozmarýnem, steakové hranolky, dip z  dijonské hořčice a medu — 189 Kč",
-            "180g Domácí pečená sekaná, bramborová kaše, silná masová šťáva, sterilovaný  okurek — 169 Kč"
+            "0, 25 l Frankfurtská s párkem  a bramborem — 30 Kč",
+            "0, 25 l Hovězí  vývar s masem, těstovinou a kořenovou zeleninou — 30 Kč",
+            "150g Smažené žampióny, vařené brambory s máslem a pažitkou,  tatarská omáčka — 159 Kč",
+            "150g Vepřové výpečky se špenátem a bramborovým  knedlíkem, silná masová šťáva, smažená cibulka — 169 Kč",
+            "130g Thajské kuřecí Red  curry s kokosovým mlékem, zeleninou, chilli papričkou a koriandrem, jasmínová rýže — 159 Kč",
+            "160g Pašerácký steak z  vepřové kotlety se slaninou a sázeným vejcem, cibulová omáčka, americké brambory — 179 Kč",
+            "140g Zvěřinový guláš, opečená klobáska, zdobený čerstvou cibulí a chilli papričkou,  bramboráčky se slaninou — 189 Kč",
+            "180g Domácí pečená  sekaná, bramborová kaše, silná masová šťáva, sterilovaný okurek — 169 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Minestrone — 40 Kč",
-            "A) Zeleninový  salát s černou čočkou beluga (BZL) (9) — 130 Kč",
-            "B) Halušky se  zelím a grilovaným tempehem, sypané jarní cibulkou (1a, 6) — 150 Kč"
+            "Kapustová s jáhlami — 40 Kč",
+            "A) Marocká cizrna s goji a zeleninovým kuskusem (1a) — 130 Kč",
+            "B) Smažená dýně hokkaido s vídeňským salátem z nových brambor  s cibulkou (BZL) (10) — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
             "🍵 Kukuřičný krém -  krutony — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová  zelenina — 49 Kč",
+            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
             "🔸Fusilli s lososem - losos, brokolice, hrášek, citron,  petrželka, smetana — 239 Kč",
-            "🔸Melanzane all Parmigiana - zapékaný lilek, mozzarella, Grana Padano, rajčatová omáčka, bazalka, kváskový chléb, mix listových  salátů — 219 Kč",
-            "🔸Smažené kuře - smažené kuřecí paličky, kuřecí křídla a prso, pečené americké brambory, coleslaw, sweet chilli majonéza — 199 Kč",
-            "🔸Vepřové výpečky -  smetanový špenát, bramborový knedlík, křupavá cibulka — 189 Kč",
-            "🔸Salát s teriyaki kuřecím prsem a rýžovými nudlemi - červené  zelí, mungo, mrkev, rukola, polníček, arašídy, koriandr — 179 Kč"
+            "🔸Melanzane all Parmigiana  - zapékaný lilek, mozzarella, Grana Padano, rajčatová omáčka, bazalka, kváskový chléb, mix listových salátů — 219 Kč",
+            "🔸Smažené kuře - smažené  kuřecí paličky, kuřecí křídla a prso, pečené americké brambory, coleslaw, sweet chilli majonéza — 199 Kč",
+            "🔸Vepřové výpečky - smetanový špenát,  bramborový knedlík, křupavá cibulka — 189 Kč",
+            "🔸Salát s teriyaki kuřecím prsem a rýžovými nudlemi - červené zelí, mungo, mrkev,  rukola, polníček, arašídy, koriandr — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
         "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
-            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
-            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
-            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
+            "fazolova polevka ≅ cerveny fazole maslo zazvor a trtadicny polevka — 45 Kč",
+            "chicken mango ≅ kureci maso a mango s tredicny nepalivy omacka — 150 Kč",
+            "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
+            "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
         ]
     }
 }
