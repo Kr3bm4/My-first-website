@@ -2,20 +2,20 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0,  25l Gulášová polévka s bramborem — 30 Kč",
-            "0, 25l Drůbeží vývar s masem, zeleninou  a celestinskými nudlemi — 30 Kč",
-            "200g Tortilla s trhaným kuřecím  masem, cheddarem, fazolovou pastou, zeleninou, quacamole, jalapeňos a zakysanou smetanou — 159 Kč",
-            "150g Smažené kuřecí řízečky v mandlové strouhance, šťouchané brambory, listový  salát, hořčičná zálivka — 169 Kč",
-            "230g Bramborové halušky s brynzou a škvařenou uzenou slaninou,  smažená cibulka — 169 Kč",
-            "160g Medailonky z vepřové kotlety, fazolové lusky se slaninou a česnekem, pepřová omáčka, smažené bramborové  hranolky — 169 Kč",
-            "220g Italské těstoviny penne s grilovaným lososem a  smetanovým špenátem, sypané sýrem Grana padano — 189 Kč",
-            "160g Španělský hovězí ptáček s uzeninou, vejcem, špekem  a okurkem, dušená rýže, silná masová šťáva, smažená cibulka — 189 Kč"
+            "0, 25l Hrachová polévka  s opečenou klobásou — 30 Kč",
+            "0, 25l Drůbeží  vývar s masem, zeleninou a celestinskými nudlemi — 30 Kč",
+            "220g Penne „ Carbonara‘‘ anglická slanina, vejce, smetana, sypané  parmazánem — 159 Kč",
+            "135g Kuřecí steak Teryiaki sypaný sezamem, jasmínová rýže — 169 Kč",
+            "180g Smažená vepřová játra, bramborový salát  s majonézou — 159 Kč",
+            "140g Bacon Jam Burger, mleté hovězí maso zapečené  sýrem cheddar, slaninová marmeláda, zauzená BBQ majonéza, nakládaný okurek, listový salát, rajče, smažená cibulka, domácí máslová bulka, hranolky — 189 Kč",
+            "150g Grilovaný  špalík z vepřové panenky, smažené americké brambory, liškové ragů, pečená slanina — 179 Kč",
+            "160g Španělský hovězí ptáček s uzeninou,  vejcem, špekem a okurkem, dušená rýže, silná masová šťáva, smažená cibulka — 189 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "27. 7. – 7. 8. 2026  máme ZAVŘENO — 40 Kč"
+            "27. 7. – 7. 8. 2026 máme  ZAVŘENO — 40 Kč"
         ]
     },
     "8722": {
@@ -23,25 +23,24 @@
         "items": [
             "🍵 Luštěninová polévka — 49 Kč",
             "🍵 Hovězí vývar -  těstovinová rýže Orzo, hovězí maso, kořenová zelenina — 49 Kč",
-            "🔸Pečené kuřecí stehno  na kořenové zelenině, rozmarýnu a bílém vínu, jasmínová rýže, okurek — 179 Kč",
+            "🔸Pečené kuřecí stehno na kořenové zelenině, rozmarýnu  a bílém vínu, jasmínová rýže, okurek — 179 Kč",
             "🔸Smažená gouda, nové brambory s máslem a  petrželkou, tatarka s koprem a kapary — 189 Kč",
-            "🔸Superfood  salát s kuřecím prsem - grilované kuřecí prso, feta, batáty, quinoa, feta, brokolice, granátové jablko, dýňové a slunečnicové semínka, mix listových salátů — 199 Kč",
+            "🔸Superfood salát s kuřecím prsem - grilované kuřecí prso, feta,  batáty, quinoa, feta, brokolice, granátové jablko, dýňové a slunečnicové semínka, mix listových salátů — 199 Kč",
             "🔸Roastbeef sendvič - roastbeef, sýr asiago, karamelizovaná cibulka, pečené cherry rajče, hořčičná majonéza, mix  listových salátů, hranolky — 219 Kč",
-            "🔸Tagliatelle s pomulu taženým kachním ragů, Grana Padano, petržel — 239 Kč"
+            "🔸Tagliatelle s  pomulu taženým kachním ragů, Grana Padano, petržel — 239 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
         "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
-            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
-            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
-            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
+            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
+            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
+            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
+            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
         ]
     }
 }
