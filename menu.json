@@ -2,46 +2,45 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Pórková s bramborem a  julliene zeleninou — 30 Kč",
-            "0,  25l Česneková polévka s vejcem a praženou šunkou, chlebové krutony — 30 Kč",
-            "130g Kuřecí nudličky na kari a kokosovém  mléce s bambusovými výhonky, jasmínová rýže — 159 Kč",
-            "120g Smažený sýr se šunkou, vařené brambory, domácí tatarská  omáčka — 169 Kč",
-            "150g  Špalík z vepřové panenky protknutý klobáskou, přelitý sýrovou omáčkou, smažené krokety — 179 Kč",
-            "350g  Spaghetti bolognese, hovězí ragú s čerstvými bylinkami v tomatové omáčce, parmazán — 169 Kč",
-            "150g  Double cheese burger, Red Cheddar, anglická slanina, rajče, jalapeňos, nakládaný okurek, smažená cibulka, americký dresink, domácí bulka, hranolky — 189 Kč",
-            "250g Domácí bramborové knedlíky plněné uzeným masem, bílé kysané zelí,  smažená cibulka — 169 Kč"
+            "0, 25l  Selská polévka se žampiony a těstovinou — 30 Kč",
+            "0, 25l Česneková polévka s vejcem a praženou šunkou,  chlebové krutony — 30 Kč",
+            "150g Marinovaná vepřová krkovička v bylinkách, medu a dijonské hořčici na grilu,  pečené selské brambory — 159 Kč",
+            "150g Smažené kuřecí stripsy v cornflakes,  bramborové hranolky, SWEET & CHILLI omáčka — 169 Kč",
+            "250g KRÁLIK NA PAPRICE - pečené králičí  stehno, krémová papriková omáčka, zakysaná smetana, těstoviny — 169 Kč",
+            "140g Quesadilla -  grilovaná pšeničná tortilla plněná trhaným marinovaným vepřovým masem, cheddarem a goudou s BBQ, salátek, guacamole — 169 Kč",
+            "120g Anglický  roastbeef, smažené steakové hranolky, demi glace, tatarská omáčka — 199 Kč",
+            "250g Domácí bramborové knedlíky plněné  uzeným masem, bílé kysané zelí, smažená cibulka — 169 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "27. 7. – 7.  8. 2026 máme ZAVŘENO — 40 Kč"
+            "27. 7. – 7. 8. 2026 máme  ZAVŘENO — 40 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Kapustová polévka - kořenová zelenina,  brambor — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina, kuřecí  maso, kořenová zelenina — 49 Kč",
-            "🔸Spaghetti Aglio Olio s čerstvým tuňákem a citronem  - tuňák žlutoploutvý, česnek, chilli, petrželka, citron — 229 Kč",
-            "🔸Pomalu tažený hovězí krk, pečené americké  brambory, tzatziki, mix listových salátů — 219 Kč",
-            "🔸Kuřecí mango curry - kuřecí prso marinované v jogurtu, česneku a zázvoru, curry, kokosové mléko, jasmínová rýže,  arašídy, koriandr, chilli, jarní cibulka — 199 Kč",
+            "🍵 Kapustová polévka - kořenová  zelenina, brambor — 49 Kč",
+            "🍵  Kuřecí vývar - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Spaghetti Aglio Olio s čerstvým tuňákem a citronem - tuňák žlutoploutvý, česnek, chilli, petrželka,  citron — 229 Kč",
+            "🔸Pomalu tažený  hovězí krk, pečené americké brambory, tzatziki, mix listových salátů — 219 Kč",
+            "🔸Kuřecí mango curry - kuřecí prso marinované v jogurtu, česneku a zázvoru, curry, kokosové mléko,  jasmínová rýže, arašídy, koriandr, chilli, jarní cibulka — 199 Kč",
             "🔸Čevabčiči, hranolky, hořčičná majonéza, červená cibule, mix listových  salátu — 189 Kč",
-            "🔸Smažené cuketové stripsy  v sýrovém těstíčku, feta, meloun, okurek, máta, mix listových salátů, vinaigrette — 179 Kč"
+            "🔸Smažené cuketové stripsy v sýrovém těstíčku, feta, meloun, okurek, máta, mix  listových salátů, vinaigrette — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
         "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
