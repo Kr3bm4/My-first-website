@@ -2,32 +2,32 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0,  25l Bílá fazolová s uzeninou — 30 Kč",
-            "0, 25l  Česneková polévka s vejcem a praženou šunkou, chlebové krutony — 30 Kč",
-            "130g  Námořnický vepřový guláš, bramboráčky se slaninou — 159 Kč",
-            "300g Gnocchi s grilovaným  kuřecím masem, smetanovým špenátem a česnekem, sypané parmazánem — 169 Kč",
-            "1ks Pečené  kuřecí stehýnko, dušená rýže, masová šťáva, sterilovaný okurek — 159 Kč",
-            "150g Grilovaný steak z  vepřové panenky pokládaný na restovaném čerstvém pórku, lanýžové demi glace, pečené bramborové čtvrtky s čerstvými bylinkami — 179 Kč",
-            "180g Fish & chips, hráškové  pyré, citronová majonéza, steakové hranolky — 189 Kč",
+            "0,  25l Česneková polévka s vejcem a praženou šunkou, chlebové krutony — 30 Kč",
+            "0, 25l Tomatová polévka  s bazalkou a zakysanou smetanou — 30 Kč",
+            "180g Smažený květák, vařené brambory  s petrželkou, domácí tatarská omáčka — 169 Kč",
+            "150g Kuřecí steak na grilu restované fazolové  lusky s anglickou slaninou, omáčka demi glace, hranolky — 169 Kč",
+            "150g Mleté masové biftečky, americké  brambory, omáčka z modrého sýru — 169 Kč",
+            "160g  Pečená kachní prsa přelitá omáčkou demi glace, houbový kuba se slaninkou a medvědím česnekem — 169 Kč",
+            "160g Trhané hovězí maso  s omáčkou z portského vína a restované houby, bramborová kaše — 209 Kč",
             "250g Domácí bramborové knedlíky plněné uzeným masem,  bílé kysané zelí, smažená cibulka — 169 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "27. 7. – 7. 8. 2026  máme ZAVŘENO — 40 Kč"
+            "27. 7. – 7. 8. 2026 máme ZAVŘENO — 40 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Kapustová polévka - kořenová zelenina, brambor — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová  zelenina — 49 Kč",
-            "🔸Spaghetti  Aglio Olio s čerstvým tuňákem a citronem - tuňák žlutoploutvý, česnek, chilli, petrželka, citron — 229 Kč",
-            "🔸Pomalu tažený  hovězí krk, pečené americké brambory, tzatziki, mix listových salátů — 219 Kč",
-            "🔸Kuřecí mango curry - kuřecí prso  marinované v jogurtu, česneku a zázvoru, curry, kokosové mléko, jasmínová rýže, arašídy, koriandr, chilli, jarní cibulka — 199 Kč",
-            "🔸Čevabčiči, hranolky,  hořčičná majonéza, červená cibule, mix listových salátu — 189 Kč",
-            "🔸Smažené  cuketové stripsy v sýrovém těstíčku, feta, meloun, okurek, máta, mix listových salátů, vinaigrette — 179 Kč"
+            "🍵 Kapustová polévka - kořenová  zelenina, brambor — 49 Kč",
+            "🍵 Kuřecí vývar - těstovina,  kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Spaghetti Aglio Olio s čerstvým tuňákem a citronem - tuňák žlutoploutvý, česnek, chilli,  petrželka, citron — 229 Kč",
+            "🔸Pomalu tažený hovězí krk, pečené americké brambory, tzatziki, mix listových salátů — 219 Kč",
+            "🔸Kuřecí mango curry - kuřecí prso marinované v jogurtu, česneku a zázvoru, curry, kokosové mléko, jasmínová  rýže, arašídy, koriandr, chilli, jarní cibulka — 199 Kč",
+            "🔸Čevabčiči, hranolky, hořčičná majonéza, červená cibule, mix  listových salátu — 189 Kč",
+            "🔸Smažené cuketové stripsy v sýrovém těstíčku, feta, meloun, okurek,  máta, mix listových salátů, vinaigrette — 179 Kč"
         ]
     },
     "annapurna": {
@@ -38,10 +38,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "fazolova polevka ≅ cerveny fazole maslo zazvor a trtadicny polevka — 45 Kč",
-            "chicken mango ≅ kureci maso a mango s tredicny nepalivy omacka — 150 Kč",
-            "chicken madras ≅ kureci maso rajcata maslo smetana s tradicny paliva omacka — 150 Kč",
-            "vez jalfrezi ≅ cibule paprika brmbory a tradicny nepalivz omacka — 150 Kč"
+            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
+            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
+            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
+            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
         ]
     }
 }
