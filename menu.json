@@ -1,49 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Moravská zelňačka s uzeninou a bramborem — 30 Kč",
-            "0, 25l Masový vývar s kořenovou zeleninou a  drobením — 30 Kč",
-            "150g Smažený vepřový řízek v panko strouhance s tonkatsu omáčkou, pekingským zelím a jasmínovou  rýží — 159 Kč",
-            "150g Kuřecí špíz s anglickou slaninou,  červenou cibulí a klobásou, bouchaný brambor, bylinkovo  - česnekový dip — 169 Kč",
-            "160g Grilovaný steak z vepřové kotlety s cibulovou omáčkou, smažené  bramborové hranolky — 169 Kč",
-            "150g Konfitovaná  vepřová plec na rozmarýnu, kořenové zelenině a červeném víně, tarhoňa s jarní cibulkou — 169 Kč",
-            "140g Kančí  guláš na červeném víně, opečená klobáska, zdobený čerstvou cibulí a chilli papričkou, houskový knedlík — 189 Kč",
-            "350g Boloňské lasagne  zapečené sýrem mozzarella, bazalková omáčka — 169 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Zeleninový vývar  s konopnými semínky 9 — 40 Kč",
-            "O prázdninových pátcích jedeme na pohodu  - jen jedno menu, ale pořádně nadupané. A navíc bez lepku :) — 130 Kč",
-            "Smažený květák  s pečenými bramborami a sojanézou 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Bramborový  krém - krutony — 49 Kč",
-            "🍵 Kuřecí vývar  - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
-            "🔸Salát s krevetami, mangem  a avokádem - mango, avokádo, cherry rajčata, červená cibule, mix salátů, limetkový dresink — 259 Kč",
-            "🔸Pomalu tažený hovězí krk na medu, zázvoru a sójové  omáčce - jasmínová rýže, jarní cibulka, mungo, mrkev, sezam — 219 Kč",
-            "🔸Kuřecí Cordon Bleu - nové brambory s máslem a petrželkou, lanýžová majonéza, mix listových  salátů — 199 Kč",
-            "🔸Spaghetti s pistáciovým pestem - stracciatella, Grana Padano, čerstvá  bazalka — 189 Kč",
-            "🔸Pomalu pečená vepřová pečeně - nové brambory s máslem  a petrželkou, silná vlastní šťáva, okurkový salát — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
