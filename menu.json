@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Maďarská  fazolová — 30 Kč",
-            "0, 25l Francouzská cibulačka s  bílým vínem, krutony — 30 Kč",
-            "200g Jaternicový a jelítkový  prejt, kysané bílé zelí, vařené brambory — 159 Kč",
-            "150g Smažené kuřecí řízečky obalované v  cornflakes, bramborové hranolky, SWEET & CHILLI omáčka — 169 Kč",
-            "150g Vepřové ražniči s paprikou a cibulí, opékané brambory s majoránkou,  česnekový dip ze zakysané smetany — 159 Kč",
-            "160g Filovaný steak z vepřové panenky přelitý omáčkou z Diane (šalotka, česnek, hořčice dijon, žampiony a  smetana), pečené brambůrky Grenaille — 189 Kč",
-            "120g Anglický roastbeef, pečená kořenová  zelenina, smažené hranolky, sýrová majonéza s bazalkou, zeleninový salátek — 199 Kč",
-            "150g Hovězí guláš na  černém pivě s červenou cibulkou a chilli, opečený klobás, špekový knedlík — 189 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Zeleninový krém s krutonky 9 — 40 Kč",
-            "O prázdninových pátcích  jedeme na pohodu - jen jedno menu, ale pořádně nadupané. A navíc bez lepku :) — 130 Kč",
-            "Brokolicové karbanátky s  bramborovým salátem se sojanézou 6 9 10 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Brokolicový  krém - krutony — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina, kuřecí maso,  kořenová zelenina — 49 Kč",
-            "🔸Salát s pečeným lososem - avokádo, okurka, hrášek, ředkvičky, nakládaná  červená cibule, Green Goddess dressing, sezam, mix listových salátů — 229 Kč",
-            "🔸Hoisin vepřový bok - jasmínová rýže,  koriander, mungo, mrkev, chilli, arašídy — 199 Kč",
-            "🔸Grilované kuřecí prso marinované v tymiánu  a citronu, Caesar bramborový salát (brambory grenaille, římské listy, smažené kapary, parmazánové hobliny, citronovo-ančovičkový dresink) — 199 Kč",
-            "🔸Linguine alla ragu bolognese - mletý  hovězí krk a vepřová kotleta, tomato, rozmarýn, šalvěj, bazalka, Grana Padano — 189 Kč",
-            "🔸Smažený květák - nové brambory s máslem a petrželkou, tatarka s koprem a  kapary, mix listových salátů — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
