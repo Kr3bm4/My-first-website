@@ -1,32 +1,46 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "0, 25l  Špenátová s chlebovými krutony — 30 Kč",
+            "0, 25l Kuřecí vývar s kořenovou zeleninou  a kapáním — 30 Kč",
+            "150g Grilovaný kuřecí steak marinovaný  v zeleném pepři, kukuřice na másle, šťouchané brambory — 169 Kč",
+            "100g Smažený hermelín plněný poličanem, vařené brambory s  petrželkou, domácí tatarská omáčka — 169 Kč",
+            "180g Nudličky z vepřové panenky na lesních hřibech a cibuli, domácí bramboráčky — 179 Kč",
+            "150g Kachní prsa na Pekingský způsob s medem,  jasmínová rýže sypaná sezamem — 169 Kč",
+            "140g Jack Daniels´Burger, vyzrálé hovězí maso, anglická slanina, Jack Daniels´ Smooth BBQ,  cheddar, rajče, salát, červená cibule, steakové hranolky, salát coleslaw — 189 Kč",
+            "250g Velký kynutý knedlík plněný trhaným  hovězím masem, svíčková omáčka na smetaně, brusinky — 189 Kč"
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵  Česnekový krém - krutony — 49 Kč",
+            "🍵 Kuřecí vývar -  těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Buddha  Bowl s pečenou zeleninou - hummus, quinoa, pečená brokolice, pečená mrkev, avokádo, okurka, nakládaná červená cibule, granátové jablko, dýňová semínka, tahini dressing — 179 Kč",
+            "🔸Spaghetti s krevetami - rajčatová omáčka, česnek, chilli, petrželka,  citron — 229 Kč",
+            "🔸Italský ptáček - pomalu  tažený trhaný hovězí krk, mortadella, vejce, pancetta, křupavá cibulka, okurek, jasmínová rýže — 219 Kč",
+            "🔸Vepřová porchetta - pomalu pečená roláda z boku a kotlety  s česnekem a bylinkami, hranolky, hrášek dušený v rajčatové omáčce, citronovo-petrželková majonéza — 199 Kč",
+            "🔸Smažené kuřecí stripsy v  cornflakes, bramborová kaše, zelný salát coleslaw — 189 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
-        "items": [
-            "Menu's not checked on weekends — "
-        ]
+        "name": "Annapurna",
+        "items": []
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
