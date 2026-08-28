@@ -2,34 +2,34 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Hrachová  polévka se slaninou — 30 Kč",
+            "0, 25l Zeleninová polévka se   zavářkou — 30 Kč",
             "0, 25l Kuřecí vývar s kořenovou zeleninou a  kapáním — 30 Kč",
-            "130g Kuřecí KUNG PAO,  jasmínová rýže — 159 Kč",
-            "140g Quesadilla - grilovaná pšeničná tortilla plněná marinovaným kuřecím masem,   cheddarem a goudou s BBQ, salátek, guacamole — 169 Kč",
-            "160g  Steak z vepřové krkovice, fazolové lusky se slaninou a česnekem, šťouchané brambory — 169 Kč",
-            "150g Smažený řízek z vepřové kotlety obalované v sezamové strouhance,  domácí bramborový salát s majonézou, citron — 179 Kč",
-            "150g Grilovaný filet  z lososa, citusovo - mrkvové pyré, brambůrky Grenaille, mátový olej — 199 Kč",
-            "250g Velký kynutý knedlík plněný trhaným hovězím  masem, svíčková omáčka na smetaně, brusinky — 189 Kč"
+            "180g Smažená  vepřová játra, vařené brambory, tatarská omáčka — 159 Kč",
+            "150g Smažený řízek z vepřové krkovice marinované v česneku,  vídeňský bramborový salát — 169 Kč",
+            "130g Kuřecí medailonky přelité bazalkovo - rajčatovou  omáčkou, steakové hranolky — 169 Kč",
+            "140g Filovaný steak z vepřové  panenky s pečeným česnekem, tymiánovou omáčkou, brambůrky Grenaille, smažená cibulka — 179 Kč",
+            "150g Chilli con  carne z hovězího masa, kukuřice, červených a černých fazolí, chilli a loupaných rajčat sypané sýrem cheddar, hranolky — 189 Kč",
+            "250g Velký kynutý knedlík plněný trhaným hovězím masem, svíčková omáčka na smetaně,  brusinky — 189 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Mrkvový krém  se zázvorem — 40 Kč",
-            "Citrónové  noky se špenátem, hráškem a černými olivami, sypané konopnými semínky (1a) — 130 Kč",
-            "Katův šleh  se sójovými nudličkami a batátovo-bramborové hranolky (BZL) (6) 6 — 150 Kč"
+            "Česnečka s vegan  \"sýrem — 40 Kč",
+            "O prázdninových pátcích jedeme na pohodu - jen  jedno menu, ale pořádně nadupané. A navíc bez lepku : — 130 Kč",
+            "Zapečené francouzské brambory s uzeným tofu a zeleninou (BZL) (6) 6 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵  Česnekový krém - krutony — 49 Kč",
-            "🍵 Kuřecí vývar  - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
-            "🔸Buddha Bowl s pečenou zeleninou - hummus, quinoa, pečená brokolice, pečená mrkev, avokádo, okurka, nakládaná červená cibule, granátové jablko, dýňová semínka, tahini dressing — 179 Kč",
-            "🔸Spaghetti s krevetami - rajčatová omáčka,  česnek, chilli, petrželka, citron — 229 Kč",
-            "🔸Italský  ptáček - pomalu tažený trhaný hovězí krk, mortadella, vejce, pancetta, křupavá cibulka, okurek, jasmínová rýže — 219 Kč",
-            "🔸Vepřová porchetta -  pomalu pečená roláda z boku a kotlety s česnekem a bylinkami, hranolky, hrášek dušený v rajčatové omáčce, citronovo-petrželková majonéza — 199 Kč",
-            "🔸Smažené kuřecí  stripsy v cornflakes, bramborová kaše, zelný salát coleslaw — 189 Kč"
+            "🍵 Česnekový  krém - krutony — 49 Kč",
+            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
+            "🔸Buddha Bowl s pečenou zeleninou - hummus, quinoa, pečená brokolice, pečená mrkev, avokádo, okurka, nakládaná červená cibule, granátové jablko, dýňová semínka, tahini  dressing — 179 Kč",
+            "🔸Spaghetti s  krevetami - rajčatová omáčka, česnek, chilli, petrželka, citron — 229 Kč",
+            "🔸Italský ptáček - pomalu tažený trhaný hovězí krk, mortadella, vejce, pancetta, křupavá cibulka, okurek, jasmínová rýže — 219 Kč",
+            "🔸Vepřová porchetta - pomalu pečená roláda z boku a kotlety  s česnekem a bylinkami, hranolky, hrášek dušený v rajčatové omáčce, citronovo-petrželková majonéza — 199 Kč",
+            "🔸Smažené kuřecí stripsy v cornflakes, bramborová kaše, zelný salát coleslaw — 189 Kč"
         ]
     },
     "annapurna": {
@@ -39,10 +39,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
-            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
-            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
-            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
+            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
+            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
+            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
+            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
         ]
     }
 }
