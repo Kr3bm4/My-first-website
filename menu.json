@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Zeleninová polévka se   zavářkou — 30 Kč",
-            "0, 25l Kuřecí vývar s kořenovou zeleninou a  kapáním — 30 Kč",
-            "180g Smažená  vepřová játra, vařené brambory, tatarská omáčka — 159 Kč",
-            "150g Smažený řízek z vepřové krkovice marinované v česneku,  vídeňský bramborový salát — 169 Kč",
-            "130g Kuřecí medailonky přelité bazalkovo - rajčatovou  omáčkou, steakové hranolky — 169 Kč",
-            "140g Filovaný steak z vepřové  panenky s pečeným česnekem, tymiánovou omáčkou, brambůrky Grenaille, smažená cibulka — 179 Kč",
-            "150g Chilli con  carne z hovězího masa, kukuřice, červených a černých fazolí, chilli a loupaných rajčat sypané sýrem cheddar, hranolky — 189 Kč",
-            "250g Velký kynutý knedlík plněný trhaným hovězím masem, svíčková omáčka na smetaně,  brusinky — 189 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Česnečka s vegan  \"sýrem — 40 Kč",
-            "O prázdninových pátcích jedeme na pohodu - jen  jedno menu, ale pořádně nadupané. A navíc bez lepku : — 130 Kč",
-            "Zapečené francouzské brambory s uzeným tofu a zeleninou (BZL) (6) 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Česnekový  krém - krutony — 49 Kč",
-            "🍵 Kuřecí vývar - těstovina, kuřecí maso, kořenová zelenina — 49 Kč",
-            "🔸Buddha Bowl s pečenou zeleninou - hummus, quinoa, pečená brokolice, pečená mrkev, avokádo, okurka, nakládaná červená cibule, granátové jablko, dýňová semínka, tahini  dressing — 179 Kč",
-            "🔸Spaghetti s  krevetami - rajčatová omáčka, česnek, chilli, petrželka, citron — 229 Kč",
-            "🔸Italský ptáček - pomalu tažený trhaný hovězí krk, mortadella, vejce, pancetta, křupavá cibulka, okurek, jasmínová rýže — 219 Kč",
-            "🔸Vepřová porchetta - pomalu pečená roláda z boku a kotlety  s česnekem a bylinkami, hranolky, hrášek dušený v rajčatové omáčce, citronovo-petrželková majonéza — 199 Kč",
-            "🔸Smažené kuřecí stripsy v cornflakes, bramborová kaše, zelný salát coleslaw — 189 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
