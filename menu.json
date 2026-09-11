@@ -2,47 +2,48 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Frankfurtská s párkem a bramborem — 30 Kč",
-            "0,  25l Česneková polévka s vejcem, praženou šunkou a bramborem, chlebové krutony — 30 Kč",
-            "130g Kuřecí nudličky s čínskými houbami,  hoisin omáčkou a zeleninou, opečené čínské nudle — 159 Kč",
-            "150g Kuřecí steak na grilu restované fazolové lusky s anglickou slaninou,  omáčka ze zeleného pepře, šťouchané brambory — 169 Kč",
-            "150g Mleté biftečky se sázeným vejcem a dijonskou  omáčkou, americké brambory — 169 Kč",
-            "130g Zvěřinové ragú na červeném  víně, tagliatelle, sypané Grana padano — 179 Kč",
-            "180g Fish & chips, hráškové pyré, citronová majonéza, steakové  hranolky — 189 Kč",
-            "1/4  Pečené kachny, dušené červené zelí, domácí špekový knedlík, masový výpek, smažená cibulka — 199 Kč"
+            "0, 25l  Italská tomatová polévka s čerstvou bazalkou — 30 Kč",
+            "0, 25l  Česneková polévka s vejcem, praženou šunkou a bramborem, chlebové krutony — 30 Kč",
+            "150g Pomalu pečená vepřová krkovička na česneku a černém pivu, smetanový špenát, bramborový knedlík,  smažená cibulka — 159 Kč",
+            "130g Cordon-Bleu  (smažená kuřecí kapsa plněná šunkou a sýrem), vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "300g Mac & cheese - macaroni se sýrem cheddar  s anglickou slaninou — 169 Kč",
+            "140g Filovaný steak z vepřové panenky podávaný na italském rissotu s pestem z Medvědího česneku, sypané sýrem  Grana Padano — 179 Kč",
+            "160g Steak  z nízké hovězí roštěné s omáčkou z portského vína a restované houby, bramborová kaše — 199 Kč",
+            "1/4 Pečené  kachny, dušené červené zelí, domácí špekový knedlík, masový výpek, smažená cibulka — 199 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Bramboračka s  houbami (BZL) (9) 9 — 40 Kč",
-            "Černá čočka beluga se zeleninou  na kokosovém mléce a celozrnnou rýží (BZL) — 130 Kč",
-            "Pivní guláš se seitanem  na cibulce a bramborové knedlíky (1a, 1c, 6) 6 — 150 Kč"
+            "Turecká  z červené čočky (BZL) — 40 Kč",
+            "Zeleninové risotto se slzovkou sypané vegan sýrem, nakládaný okurek (BZL) — 130 Kč",
+            "Celerové řízečky s krémovou bramborovou kaší s petrželkou (BZL) (9) 9 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Krémová luštěninová -  cizrna, fazole, čočka — 49 Kč",
-            "🍵  Hovězí vývar - těstovina, hovězí maso, mrkev — 49 Kč",
-            "🔸Salát s grilovanou vepřovou  panenkou – křupavá pancetta, vejce, cherry rajčata, římský listy, Grana Padano, medovo-hořčičný dressing — 229 Kč",
-            "🔸Kuřecí satay – kuřecí prso v arašídovo-kokosové omáčce,  jasmínová rýže, brokolice, arašídy, koriandr, chilli — 199 Kč",
-            "🔸Křupavé stripsy z tresky – vařené brambory s máslem a petrželkou, tatarka  s koprem a kapary, hrášek, citron — 199 Kč",
-            "🔸Lanýžové linguine – smetanový  lanýžový krém, žampiony, Grana Padano — 189 Kč",
-            "🔸Halušky s  uzeným masem – kysané zelí, smažená cibulka — 179 Kč"
+            "🍵 Krémová luštěninová - cizrna, fazole,  čočka — 49 Kč",
+            "🍵 Hovězí vývar  - těstovina, hovězí maso, mrkev — 49 Kč",
+            "🔸Salát s grilovanou vepřovou panenkou – křupavá pancetta, vejce, cherry rajčata, římský listy, Grana  Padano, medovo-hořčičný dressing — 229 Kč",
+            "🔸Kuřecí  satay – kuřecí prso v arašídovo-kokosové omáčce, jasmínová rýže, brokolice, arašídy, koriandr, chilli — 199 Kč",
+            "🔸Křupavé stripsy z tresky – vařené brambory s  máslem a petrželkou, tatarka s koprem a kapary, hrášek, citron — 199 Kč",
+            "🔸Lanýžové  linguine – smetanový lanýžový krém, žampiony, Grana Padano — 189 Kč",
+            "🔸Halušky s uzeným masem – kysané  zelí, smažená cibulka — 179 Kč"
         ]
     },
     "annapurna": {
         "name": "Annapurna",
+        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
         "items": []
     },
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "dal soup ≅ cocka cesnek zazvor s polevka — 45 Kč",
-            "palak paneer ≅ spenat s indicky syr s tradicny spenatova omacka — 150 Kč",
-            "chicken curry ≅ kureci prsa cesnek zazvor s tradicny curry omacka — 150 Kč",
-            "musterd tikka ≅ grilovany kureci maso s musterd omacka s velmi ostri omacka — 150 Kč"
+            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
+            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
+            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
+            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
         ]
     }
 }
