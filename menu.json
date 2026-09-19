@@ -1,49 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Dršťková  polévka — 30 Kč",
-            "0, 25l Hovězí vývar s  masem, těstovinou a kořenovou zeleninou — 30 Kč",
-            "200g Koprová omáčka, 2ks  zastřené vejce, vařené brambory — 159 Kč",
-            "300g Tortilla plněná kuřecím Gyrosem, ledovým  salátem s rajčátky, okurkem, paprikou a bylinkovým dipem, podávaná s řeckými tzatziky — 169 Kč",
-            "160g Smažený holandský řízek  se sýrem cheddar, domácí bramborová kaše, okurkový salát — 169 Kč",
-            "180g Steak z  vysoké krkovice s houbovou omáčkou portobello, americké brambory — 179 Kč",
-            "150g Chilli z trhaného hovězího masa,  sypané sýrem, steakové hranolky — 199 Kč",
-            "180g Domácí pečená sekaná, bramborová kaše, silná  masová šťáva, sterilovaný okurek — 169 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Hráškový  krém s kukuřičnými kuličkami (BZL) — 40 Kč",
-            "Noky s máslovou dýní, sušenými rajčaty  a jarní cibulkou (1a) — 130 Kč",
-            "Holandský řízek s vegan chedarem a vařené brambory s petrželkou (BZL) (6) 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Valašská kyselice -  brambory, žampiony, kysané zelí 1 7 — 49 Kč",
-            "🍵 Hovězí vývar - těstovina,  hovězí maso, mrkev 1 3 9 — 49 Kč",
-            "🔸 Vídeňský telecí řízek  – vídeňský bramborový salát, citron 1 3 10 — 239 Kč",
-            "🔸 Pomalu pečená vepřová krkovice – dýňové zelí  z Hokkaido, bramborový knedlík, silná vepřová šťáva 1 3 7 9 — 219 Kč",
-            "🔸 Teriyaki kuřecí prso – rýžové nudle,  edamame, mrkev, červené zelí, jarní cibulka, sezam, limetkovo-sójový dressing 1 6 11 — 199 Kč",
-            "🔸 Veggie koprovka – koprová  omáčka, pečené brambory grenaille, vejce na hniličku, žampiony 1 3 7 — 189 Kč",
-            "🔸 Linguine & Meatballs – masové kuličky z hovězího a vepřového masa, rajčatová omáčka,  Grana Padano, mozzarella, bazalka 1 3 7 — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "error": "HTTPSConnectionPool(host='www.indicka-restaurace-annapurna.cz', port=443): Max retries exceeded with url: /MC/HANDLERS/getDocument.php?name=WEEKLY&location=brno&language=cz (Caused by NewConnectionError(\"HTTPSConnection(host='www.indicka-restaurace-annapurna.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
