@@ -1,32 +1,46 @@
 {
     "6956": {
-        "name": "Weekend",
+        "name": "Masný růžek",
         "items": [
-            "Menu's not checked on weekends — "
+            "0, 25l Cibulová krémová polévka se slaninou,  krutony — 30 Kč",
+            "0, 25l Hovězí vývar  s fritátovými nudlemi, masem a zeleninou — 30 Kč",
+            "130g Vykostěné kuřecí stehýnko na  paprice, kolínka — 159 Kč",
+            "120g  Smažený sýr se šunkou, vařené brambory, domácí tatarská omáčka — 169 Kč",
+            "160g Filovaný steak  z vepřové panenky přelitý omáčkou z Diane (šalotka, česnek, hořčice dijon, žampiony a smetana), pečené brambůrky Grenaille — 189 Kč",
+            "150g Zbojnický  skřivan, dušená rýže, silná masová šťáva — 169 Kč",
+            "130g Hovězí burger zapečený sýrem cheddar, habaněro mayo, lyonská  cibule, slaninová marmeláda, rajče, salát, domácí bulka, hranolky — 189 Kč",
+            "180g Domácí pečená sekaná, bramborová kaše, silná masová šťáva,  sterilovaný okurek — 169 Kč"
         ]
     },
     "4108": {
-        "name": "Weekend",
+        "name": "Veg8 Cafe",
         "items": [
-            "Menu's not checked on weekends — "
+            "Pro tento den nebylo zadáno menu. — 40 Kč"
         ]
     },
     "8722": {
-        "name": "Weekend",
+        "name": "Deli-Tree",
         "items": [
-            "Menu's not checked on weekends — "
+            "🍵  Krémová cibulačka – krutony 1 7 — 49 Kč",
+            "🍵 Hovězí vývar – hovězí maso, kořenová zelenina,  nudle 1 3 9 — 49 Kč",
+            "🔸 Dýňová lasagna – Hokkaido  dýně, žampiony, mozzarella, Grana Padano, bešamel, mix listových salátů 1 3 7 — 179 Kč",
+            "🔸 Vídeňská roštěná – šťouchané brambory,  polníček, pickle okurek, silná hovězí šťáva 1 7 9 — 239 Kč",
+            "🔸 Salát se smaženými kuřecími  stripsy – kukuřice, cherry rajčata, karamelizovaná cibule, mix listových salátů, brambory grenaille, česnekový jogurt 1 3 7 — 219 Kč",
+            "🔸 Křupavý Hoisin vepřový  bok – jasmínová rýže, čínské zelí, mrkev, jarní cibulka, koriandr, sezam 1 6 11 — 199 Kč",
+            "🔸 Kuře na paprice  – kuřecí stehno, smetanová papriková omáčka, špecle 1 3 7 — 189 Kč"
         ]
     },
     "annapurna": {
-        "name": "Weekend",
-        "items": [
-            "Menu's not checked on weekends — "
-        ]
+        "name": "Annapurna",
+        "items": []
     },
     "sargam": {
-        "name": "Weekend",
+        "name": "Sargam 2",
         "items": [
-            "Menu's not checked on weekends — "
+            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
+            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
+            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
+            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
         ]
     }
 }
