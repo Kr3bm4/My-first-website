@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Staročeská fazolová s kořenovou zeleninou — 30 Kč",
-            "0, 25l Hovězí vývar s fritátovými nudlemi, masem a  zeleninou — 30 Kč",
-            "150g Jemně pikantní kuřecí flamendr,  domácí bramboráčky — 159 Kč",
-            "150g Přírodní kuřecí plátek zapečený poličanem a hermelínem, dušená rýže, silná  masová šťáva — 169 Kč",
-            "150g Zauzené kachní  prsíčko, červené medové zelí, bramborový knedlík, smažená cibulka — 169 Kč",
-            "150g Grilované  medailonky z vepřové panenky, slaninový chips, smažené hranolky, Cheddarová omáčka — 179 Kč",
-            "150g Smažená hovězí roštěná Porterhouse,  vídeňský bramborový salát — 209 Kč",
-            "180g Domácí pečená sekaná, bramborová kaše, silná masová šťáva, sterilovaný  okurek — 169 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Hlívová dršťková — 40 Kč",
-            "Turecké máslové  fazole a quinoovo-jáhlovými kopečky (BZL) — 130 Kč",
-            "Grilovaný seitan s hořčično-pepřovou omáčkou  a pečenými bramborami (1a, 6, 10) 1 6 10 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Krémová  cibulačka – krutony 1 7 — 49 Kč",
-            "🍵 Hovězí vývar  – hovězí maso, kořenová zelenina, nudle 1 3 9 — 49 Kč",
-            "🔸 Dýňová lasagna –  Hokkaido dýně, žampiony, mozzarella, Grana Padano, bešamel, mix listových salátů 1 3 7 — 179 Kč",
-            "🔸 Vídeňská roštěná – šťouchané brambory, polníček, pickle okurek,  silná hovězí šťáva 1 7 9 — 239 Kč",
-            "🔸 Salát se smaženými kuřecími stripsy – kukuřice,  cherry rajčata, karamelizovaná cibule, mix listových salátů, brambory grenaille, česnekový jogurt 1 3 7 — 219 Kč",
-            "🔸 Křupavý Hoisin vepřový bok – jasmínová  rýže, čínské zelí, mrkev, jarní cibulka, koriandr, sezam 1 6 11 — 199 Kč",
-            "🔸 Kuře na paprice – kuřecí stehno, smetanová papriková omáčka,  špecle 1 3 7 — 189 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
