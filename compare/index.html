@@ -42,7 +42,7 @@
         </header>
 
         <main class="flex-grow">
-            <!-- Input Areas -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                     <div class="flex justify-between items-center mb-2">
@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <!-- Action Bar -->
+
             <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-8 border-b border-gray-200">
                 <div class="flex items-center gap-2">
                     <button onclick="switchTexts()" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">
@@ -79,7 +79,7 @@
                     Compare
                 </button>
 
-                <!-- View Mode Toggle -->
+
                 <div class="flex items-center bg-gray-200 p-1 rounded-lg text-xs font-semibold">
                     <button id="btnModeLines" onclick="setMode('lines')" class="px-3 py-1.5 rounded-md bg-white text-gray-900 shadow-sm transition-all">
                         Line-by-Line
@@ -90,14 +90,14 @@
                 </div>
             </div>
 
-            <!-- Results Section -->
+
             <div id="resultContainer" class="hidden">
                 <div class="flex flex-wrap justify-between items-center mb-4 gap-2">
                     <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-500">Results</h2>
                     <div id="diffSummary" class="flex gap-4 text-xs font-medium"></div>
                 </div>
 
-                <!-- Mode 1: Side-by-Side Line View -->
+
                 <div id="lineViewContainer" class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
                     <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                         <div class="overflow-x-auto">
@@ -115,12 +115,11 @@
                     </div>
                 </div>
 
-                <!-- Mode 2: Inline Merged View -->
+
                 <div id="inlineViewContainer" class="hidden p-6 bg-white border border-gray-200 rounded-lg shadow-sm overflow-x-auto">
                     <pre id="inlineOutput" class="mono-font text-sm leading-relaxed whitespace-pre-wrap break-words"></pre>
                 </div>
 
-                <!-- Legend -->
                 <div class="mt-4 flex flex-wrap gap-6 text-xs font-medium text-gray-600">
                     <span class="flex items-center"><span class="w-3 h-3 bg-green-200 border border-green-300 mr-2 rounded"></span> Added</span>
                     <span class="flex items-center"><span class="w-3 h-3 bg-red-200 border border-red-300 mr-2 rounded"></span> Deleted</span>
