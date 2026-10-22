@@ -1,96 +1,460 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diff Tool | Krebs Laboratories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
     <style>
-        .copy-card:active { transform: scale(1); transition: 0.1s; }
+        body { font-family: 'Inter', sans-serif; }
+        .mono-font { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+        .empty-line-pattern {
+            background-color: #f3f4f6;
+            background-image: repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 6px,
+                rgba(209, 213, 219, 0.4) 6px,
+                rgba(209, 213, 219, 0.4) 12px
+            );
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed min-h-screen flex flex-col">
 
-    <div class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
-        <header class="mb-12">
-            <a href="/home/" class="text-blue-600 hover:underline text-sm mb-4 inline-block">← Return home</a>
-            <h1 class="text-4xl font-bold tracking-tight">Diff Tool</h1>
+    <div class="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex-grow w-full flex flex-col">
+        
+        <header class="mb-12 border-b border-gray-200 pb-8">
+            <a href="/home/" class="text-blue-600 hover:underline text-sm font-medium mb-4 inline-block">← Return home</a>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Diff Tool</h1>
+            <p class="mt-4 text-xl text-gray-600 font-light">Compare two texts inline or line-by-line</p>
         </header>
 
-        <main>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <main class="flex-grow">
+            <!-- Input Areas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Original text</label>
-                    <textarea id="text1" class="w-full editor-box p-4 border border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="Copy/Paste the old version here..."></textarea>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="text1" class="block text-xs font-semibold uppercase tracking-wider text-gray-500">Original text</label>
+                        <span id="stat1" class="text-xs text-gray-400">0 lines • 0 chars</span>
+                    </div>
+                    <textarea id="text1" 
+                        class="w-full h-48 p-4 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white mono-font text-sm resize-y" 
+                        placeholder="Paste or type the original version here..."></textarea>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Updated text</label>
-                    <textarea id="text2" class="w-full editor-box p-4 border border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="Copy/Paste the updated version here..."></textarea>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="text2" class="block text-xs font-semibold uppercase tracking-wider text-gray-500">Updated text</label>
+                        <span id="stat2" class="text-xs text-gray-400">0 lines • 0 chars</span>
+                    </div>
+                    <textarea id="text2" 
+                        class="w-full h-48 p-4 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white mono-font text-sm resize-y" 
+                        placeholder="Paste or type the updated version here..."></textarea>
                 </div>
             </div>
 
-            <div class="flex justify-center mb-12">
-                <button onclick="compareTexts()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transform transition active:scale-95">
+            <!-- Action Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-8 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <button onclick="switchTexts()" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">
+                        ⇄ Switch texts
+                    </button>
+                    <button onclick="clearAll()" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-red-400 hover:text-red-600 transition-colors shadow-sm">
+                        Clear all
+                    </button>
+                </div>
+
+                <button onclick="compareTexts()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-8 rounded-lg shadow-sm transform transition active:scale-95">
                     Compare
                 </button>
+
+                <!-- View Mode Toggle -->
+                <div class="flex items-center bg-gray-200 p-1 rounded-lg text-xs font-semibold">
+                    <button id="btnModeLines" onclick="setMode('lines')" class="px-3 py-1.5 rounded-md bg-white text-gray-900 shadow-sm transition-all">
+                        Line-by-Line
+                    </button>
+                    <button id="btnModeInline" onclick="setMode('inline')" class="px-3 py-1.5 rounded-md text-gray-600 hover:text-gray-900 transition-all">
+                        Inline
+                    </button>
+                </div>
             </div>
 
+            <!-- Results Section -->
             <div id="resultContainer" class="hidden">
-                <h2 class="text-xl font-bold mb-4">Results</h2>
-                <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm overflow-x-auto">
-                    <pre id="output" class="text-sm leading-relaxed"></pre>
+                <div class="flex flex-wrap justify-between items-center mb-4 gap-2">
+                    <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-500">Results</h2>
+                    <div id="diffSummary" class="flex gap-4 text-xs font-medium"></div>
                 </div>
-                <div class="mt-4 flex gap-4 text-xs font-medium">
-                    <span class="flex items-center text-green-700"><span class="w-3 h-3 bg-green-200 border border-green-300 mr-2 rounded"></span> Added</span>
-                    <span class="flex items-center text-red-700"><span class="w-3 h-3 bg-red-200 border border-red-300 mr-2 rounded"></span> Deleted</span>
+
+                <!-- Mode 1: Side-by-Side Line View -->
+                <div id="lineViewContainer" class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                        <div class="overflow-x-auto">
+                            <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 text-xs font-semibold uppercase tracking-wider text-gray-400">Original</div>
+                            <table class="w-full mono-font text-sm border-collapse">
+                                <tbody id="lineOutputLeft"></tbody>
+                            </table>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 text-xs font-semibold uppercase tracking-wider text-gray-400">Updated</div>
+                            <table class="w-full mono-font text-sm border-collapse">
+                                <tbody id="lineOutputRight"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mode 2: Inline Merged View -->
+                <div id="inlineViewContainer" class="hidden p-6 bg-white border border-gray-200 rounded-lg shadow-sm overflow-x-auto">
+                    <pre id="inlineOutput" class="mono-font text-sm leading-relaxed whitespace-pre-wrap break-words"></pre>
+                </div>
+
+                <!-- Legend -->
+                <div class="mt-4 flex flex-wrap gap-6 text-xs font-medium text-gray-600">
+                    <span class="flex items-center"><span class="w-3 h-3 bg-green-200 border border-green-300 mr-2 rounded"></span> Added</span>
+                    <span class="flex items-center"><span class="w-3 h-3 bg-red-200 border border-red-300 mr-2 rounded"></span> Deleted</span>
+                    <span id="legendModified" class="flex items-center"><span class="w-3 h-3 bg-yellow-100 border border-yellow-300 mr-2 rounded"></span> Modified line</span>
                 </div>
             </div>
         </main>
 
         <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
-            © 2026 Built & Maintained by <a href="https://linkedin.com/in/martin-krebs" class="text-blue-600 hover:underline">Martin Krebs</a>.  <br>
+            © 2026 Built & Maintained by <a href="https://linkedin.com/in/martin-krebs" class="text-blue-600 hover:underline">Martin Krebs</a>. <br>
             Experimental Web Lab • Thank you, Tailwind CSS.
         </footer>     
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.1.0/diff.min.js"></script>
     <script>
-        function compareTexts() {
-            const text1 = document.getElementById('text1').value;
-            const text2 = document.getElementById('text2').value;
-            const output = document.getElementById('output');
-            const resultContainer = document.getElementById('resultContainer');
+        let currentMode = 'lines';
+        let hasCompared = false;
 
+        const text1El = document.getElementById('text1');
+        const text2El = document.getElementById('text2');
+
+        function escapeHtml(str) {
+            return str
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function updateStats() {
+            const val1 = text1El.value;
+            const val2 = text2El.value;
+            const lines1 = val1 ? val1.split(/\r\n|\r|\n/).length : 0;
+            const lines2 = val2 ? val2.split(/\r\n|\r|\n/).length : 0;
+            document.getElementById('stat1').textContent = `${lines1} ${lines1 === 1 ? 'line' : 'lines'} • ${val1.length} chars`;
+            document.getElementById('stat2').textContent = `${lines2} ${lines2 === 1 ? 'line' : 'lines'} • ${val2.length} chars`;
+        }
+
+        function setMode(mode) {
+            currentMode = mode;
+            const btnLines = document.getElementById('btnModeLines');
+            const btnInline = document.getElementById('btnModeInline');
+            const lineView = document.getElementById('lineViewContainer');
+            const inlineView = document.getElementById('inlineViewContainer');
+            const legendModified = document.getElementById('legendModified');
+
+            if (mode === 'lines') {
+                btnLines.className = 'px-3 py-1.5 rounded-md bg-white text-gray-900 shadow-sm transition-all';
+                btnInline.className = 'px-3 py-1.5 rounded-md text-gray-600 hover:text-gray-900 transition-all';
+                lineView.classList.remove('hidden');
+                inlineView.classList.add('hidden');
+                legendModified.classList.remove('hidden');
+            } else {
+                btnInline.className = 'px-3 py-1.5 rounded-md bg-white text-gray-900 shadow-sm transition-all';
+                btnLines.className = 'px-3 py-1.5 rounded-md text-gray-600 hover:text-gray-900 transition-all';
+                inlineView.classList.remove('hidden');
+                lineView.classList.add('hidden');
+                legendModified.classList.add('hidden');
+            }
+
+            if (hasCompared) {
+                compareTexts();
+            }
+        }
+
+        function switchTexts() {
+            const temp = text1El.value;
+            text1El.value = text2El.value;
+            text2El.value = temp;
+            updateStats();
+            if (hasCompared) compareTexts();
+        }
+
+        function clearAll() {
+            text1El.value = '';
+            text2El.value = '';
+            hasCompared = false;
+            updateStats();
+            document.getElementById('resultContainer').classList.add('hidden');
+        }
+
+        function lineSimilarity(a, b) {
+            if (a === b) return 1;
+            if (!a.length || !b.length) return 0;
+            const parts = Diff.diffChars(a, b);
+            let common = 0;
+            parts.forEach(p => {
+                if (!p.added && !p.removed) common += p.value.length;
+            });
+            return (2 * common) / (a.length + b.length);
+        }
+
+        function alignLineBlocks(removedLines, addedLines) {
+            const n = removedLines.length;
+            const m = addedLines.length;
+
+            if (n * m > 2500) {
+                const aligned = [];
+                const maxLen = Math.max(n, m);
+                for (let i = 0; i < maxLen; i++) {
+                    aligned.push({
+                        left: i < n ? removedLines[i] : null,
+                        right: i < m ? addedLines[i] : null
+                    });
+                }
+                return aligned;
+            }
+
+            const dp = Array.from({ length: n + 1 }, () => Array(m + 1).fill(0));
+            const simMatrix = Array.from({ length: n }, () => Array(m).fill(0));
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < m; j++) {
+                    simMatrix[i][j] = lineSimilarity(removedLines[i], addedLines[j]);
+                }
+            }
+
+            const threshold = 0.35;
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= m; j++) {
+                    const sim = simMatrix[i - 1][j - 1];
+                    const pairScore = sim >= threshold ? sim : -1;
+                    dp[i][j] = Math.max(
+                        dp[i - 1][j],
+                        dp[i][j - 1],
+                        pairScore > 0 ? dp[i - 1][j - 1] + pairScore : -1
+                    );
+                }
+            }
+
+            const result = [];
+            let i = n, j = m;
+            while (i > 0 || j > 0) {
+                if (i > 0 && j > 0) {
+                    const sim = simMatrix[i - 1][j - 1];
+                    const pairScore = sim >= threshold ? sim : -1;
+                    if (pairScore > 0 && Math.abs(dp[i][j] - (dp[i - 1][j - 1] + pairScore)) < 1e-9) {
+                        result.unshift({ left: removedLines[i - 1], right: addedLines[j - 1] });
+                        i--;
+                        j--;
+                        continue;
+                    }
+                }
+                if (i > 0 && (j === 0 || dp[i - 1][j] >= dp[i][j - 1])) {
+                    result.unshift({ left: removedLines[i - 1], right: null });
+                    i--;
+                } else {
+                    result.unshift({ left: null, right: addedLines[j - 1] });
+                    j--;
+                }
+            }
+            return result;
+        }
+
+        function renderInlineView(text1, text2) {
+            const inlineOutput = document.getElementById('inlineOutput');
             const diff = Diff.diffChars(text1, text2);
-            
-            output.innerHTML = '';
-            resultContainer.classList.remove('hidden');
+            inlineOutput.innerHTML = '';
+
+            let addedCount = 0;
+            let removedCount = 0;
 
             diff.forEach((part) => {
                 const span = document.createElement('span');
-                if (part.added) span.className = 'bg-green-200 text-green-800';
-                if (part.removed) span.className = 'bg-red-200 text-red-800';
+                if (part.added) {
+                    span.className = 'bg-green-200 text-green-900 rounded-sm';
+                    addedCount += part.value.length;
+                } else if (part.removed) {
+                    span.className = 'bg-red-200 text-red-900 rounded-sm';
+                    removedCount += part.value.length;
+                }
                 span.appendChild(document.createTextNode(part.value));
-                output.appendChild(span);
+                inlineOutput.appendChild(span);
             });
+
+            document.getElementById('diffSummary').innerHTML = `
+                <span class="text-green-700">+${addedCount} chars</span>
+                <span class="text-red-700">−${removedCount} chars</span>
+            `;
         }
 
-        const textAreas = [document.getElementById('text1'), document.getElementById('text2')]; 
-        textAreas.forEach(area => {
-            area.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
-                    if (event.shiftKey) {
-                        return;
-                    } 
-                    else {
-                        event.preventDefault();
-                        compareTexts();
-                    }
+        function renderLineView(text1, text2) {
+            const leftTbody = document.getElementById('lineOutputLeft');
+            const rightTbody = document.getElementById('lineOutputRight');
+            leftTbody.innerHTML = '';
+            rightTbody.innerHTML = '';
+
+            const lines1 = text1.split(/\r\n|\r|\n/);
+            const lines2 = text2.split(/\r\n|\r|\n/);
+
+            const lineDiff = Diff.diffArrays(lines1, lines2);
+            const rows = [];
+
+            let idx = 0;
+            while (idx < lineDiff.length) {
+                const part = lineDiff[idx];
+
+                if (!part.added && !part.removed) {
+                    part.value.forEach(line => rows.push({ left: line, right: line }));
+                    idx++;
+                } else if (part.removed && idx + 1 < lineDiff.length && lineDiff[idx + 1].added) {
+                    const aligned = alignLineBlocks(part.value, lineDiff[idx + 1].value);
+                    rows.push(...aligned);
+                    idx += 2;
+                } else if (part.removed) {
+                    part.value.forEach(line => rows.push({ left: line, right: null }));
+                    idx++;
+                } else if (part.added) {
+                    part.value.forEach(line => rows.push({ left: null, right: line }));
+                    idx++;
+                }
+            }
+
+            let leftLineNum = 1;
+            let rightLineNum = 1;
+            let addedLines = 0;
+            let removedLines = 0;
+            let modifiedLines = 0;
+
+            let leftHtml = '';
+            let rightHtml = '';
+
+            rows.forEach(row => {
+                const hasLeft = row.left !== null;
+                const hasRight = row.right !== null;
+
+                if (hasLeft && hasRight && row.left === row.right) {
+                    const safeText = escapeHtml(row.left) || '&nbsp;';
+                    leftHtml += `
+                        <tr class="border-b border-gray-100">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-gray-400 select-none bg-gray-50 border-r border-gray-100">${leftLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-gray-700">${safeText}</td>
+                        </tr>`;
+                    rightHtml += `
+                        <tr class="border-b border-gray-100">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-gray-400 select-none bg-gray-50 border-r border-gray-100">${rightLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-gray-700">${safeText}</td>
+                        </tr>`;
+                } else if (hasLeft && hasRight) {
+                    modifiedLines++;
+                    const charDiff = Diff.diffChars(row.left, row.right);
+                    let lContent = '';
+                    let rContent = '';
+
+                    charDiff.forEach(p => {
+                        const escaped = escapeHtml(p.value);
+                        if (p.removed) {
+                            lContent += `<span class="bg-red-200 text-red-900 font-semibold rounded-sm">${escaped}</span>`;
+                        } else if (p.added) {
+                            rContent += `<span class="bg-green-200 text-green-900 font-semibold rounded-sm">${escaped}</span>`;
+                        } else {
+                            lContent += escaped;
+                            rContent += escaped;
+                        }
+                    });
+
+                    leftHtml += `
+                        <tr class="border-b border-gray-100 bg-yellow-50">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-yellow-700 font-medium select-none bg-yellow-100 border-r border-yellow-200">${leftLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-gray-900">${lContent || '&nbsp;'}</td>
+                        </tr>`;
+                    rightHtml += `
+                        <tr class="border-b border-gray-100 bg-yellow-50">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-yellow-700 font-medium select-none bg-yellow-100 border-r border-yellow-200">${rightLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-gray-900">${rContent || '&nbsp;'}</td>
+                        </tr>`;
+                } else if (hasLeft && !hasRight) {
+                    removedLines++;
+                    const safeLeft = escapeHtml(row.left);
+                    leftHtml += `
+                        <tr class="border-b border-gray-100 bg-red-50">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-red-600 font-medium select-none bg-red-100 border-r border-red-200">${leftLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-red-900"><span class="bg-red-200 rounded-sm">${safeLeft}</span>${!safeLeft ? '&nbsp;' : ''}</td>
+                        </tr>`;
+                    rightHtml += `
+                        <tr class="border-b border-gray-100 empty-line-pattern">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-gray-300 select-none bg-gray-100 border-r border-gray-200">&nbsp;</td>
+                            <td class="px-3 py-1 whitespace-pre select-none">&nbsp;</td>
+                        </tr>`;
+                } else if (!hasLeft && hasRight) {
+                    addedLines++;
+                    const safeRight = escapeHtml(row.right);
+                    leftHtml += `
+                        <tr class="border-b border-gray-100 empty-line-pattern">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-gray-300 select-none bg-gray-100 border-r border-gray-200">&nbsp;</td>
+                            <td class="px-3 py-1 whitespace-pre select-none">&nbsp;</td>
+                        </tr>`;
+                    rightHtml += `
+                        <tr class="border-b border-gray-100 bg-green-50">
+                            <td class="w-10 px-2 py-1 text-right text-xs text-green-600 font-medium select-none bg-green-100 border-r border-green-200">${rightLineNum++}</td>
+                            <td class="px-3 py-1 whitespace-pre text-green-900"><span class="bg-green-200 rounded-sm">${safeRight}</span>${!safeRight ? '&nbsp;' : ''}</td>
+                        </tr>`;
+                }
+            });
+
+            leftTbody.innerHTML = leftHtml;
+            rightTbody.innerHTML = rightHtml;
+
+            document.getElementById('diffSummary').innerHTML = `
+                <span class="text-yellow-700">${modifiedLines} modified</span>
+                <span class="text-green-700">+${addedLines} added</span>
+                <span class="text-red-700">−${removedLines} deleted</span>
+            `;
+        }
+
+        function compareTexts() {
+            hasCompared = true;
+            const text1 = text1El.value;
+            const text2 = text2El.value;
+            document.getElementById('resultContainer').classList.remove('hidden');
+
+            if (currentMode === 'lines') {
+                renderLineView(text1, text2);
+            } else {
+                renderInlineView(text1, text2);
+            }
+        }
+
+        [text1El, text2El].forEach(area => {
+            area.addEventListener('input', () => {
+                updateStats();
+                if (hasCompared) compareTexts();
+            });
+            area.addEventListener('keydown', (event) => {
+                if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
+                    event.preventDefault();
+                    compareTexts();
                 }
             });
         });
+
+        updateStats();
     </script>
 </body>
 </html>
