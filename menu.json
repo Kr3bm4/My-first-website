@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Italská  tomatová polévka s čerstvou bazalkou — 30 Kč",
-            "0, 25l Česneková polévka s vejcem,  praženou šunkou a bramborem, chlebové krutony — 30 Kč",
-            "220g Penne  „ Carbonara‘‘ anglická slanina, vejce, smetana, sypané parmazánem — 159 Kč",
-            "150g Kuřecí steak gratinovaný cheddarem, slaninový chips, bramborové krokety, zeleninový salátek z čerstvé  zeleniny — 169 Kč",
-            "150g Smažené kuřecí řízečky obalované v cornflakes strouhance, hranolky, BBQ  majonéza, zeleninový salátek — 169 Kč",
-            "450g Uzená vepřová žebírka pečená v domácí BBQ marinádě, Coleslaw, čerstvý chléb — 189 Kč",
-            "120g Anglický roastbeef, pečená kořenová zelenina s rozmarýnem,  steakové hranolky, dip z dijonské hořčice a medu — 199 Kč",
-            "160g Španělský vepřový ptáček s uzeninou, vejcem, špekem a okurkem, divoká  rýže, smažená cibulka — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Kapustová  s bramborem — 40 Kč",
-            "Cizrnový falafel s jemným dipem sriracha a bramborovo-zeleninové pyré 9 11 — 130 Kč",
-            "Zapečené enchiladas s uzeným tofu, zeleninou a  vegan sýrem 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Dýňový krém  s kokosovým mlékem – zázvor, curry, krutony 1 7 — 49 Kč",
-            "🍵 Kuřecí  vývar – nudle, kořenová zelenina 1 3 9 — 49 Kč",
-            "🔸 Steak z tuňáka v sezamové krustě  – jasmínová rýže, ananasová salsa s chilli a koriandrem, edamame, mango-limetkový dresink 4 6 11 — 249 Kč",
-            "🔸 Hovězí moussaka – zapékané ragú z  hovězího krku, brambory, lilek, cibule, bešamel, mix listových salátů 1 7 — 209 Kč",
-            "🔸 Piri-piri kuřecí steak – kuřecí prso  marinované v chilli, paprice, česneku a limetě, hranolky, mix listových salátů, limet-koriandrová majonéza 3 10 — 199 Kč",
-            "🔸 Řízečky z vepřové panenky – bramborový  salát se zakysanou smetanou, okurkem, jarní cibulkou, koprem, česnekem a citronem 1 3 7 — 189 Kč",
-            "🔸Linguine s pistáciovým pestem a  stracciatellou – pistacie, bazalka, Grana Padano 1 7 8 — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
