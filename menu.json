@@ -2,32 +2,34 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l  Hráškový krém s opraženou šunkou,  krutony — 30 Kč",
-            "0,  25l Cibulačka s uzeným masem a kořenovou zeleninou — 30 Kč",
-            "130g Kuřecí směs  WOK s koriandrem, restované čínské nudle — 159 Kč",
-            "120g Smažený sýr  Cheddar se slaninou, smažené hranolky, domácí tatarská omáčka — 169 Kč",
-            "150g Grilovaný steak z vepřové panenky, pečený lilek a  cuketa, omáčka z modrého sýru, americké brambory s majoránkou — 179 Kč",
-            "150g Kachní prsa  na Pekingský způsob s medem, jasmínová rýže sypaná sezamem — 169 Kč",
-            "150g Burger s vyzrálým hovězím masem, slaninovou majonézou, double  cheese, cibulové chutney, rukola, domácí bulka — 189 Kč",
-            "200g Vyzrálý hovězí Rump steak  Uruguay, pepřová omáčka,  americké brambory — 229 Kč"
+            "0, 25l Moravská gulášová polévka — 30 Kč",
+            "0, 25l Cibulačka s  uzeným masem a kořenovou zeleninou — 30 Kč",
+            "1/4ks Pečené kuře  ala bažant, pečená divoká rýže — 159 Kč",
+            "150g Smažení kuřecí rarášci (kuřecí stripsy smažené v těstíčku), smažené  hranolky, domácí remuláda — 169 Kč",
+            "150g Kuřecí steak na grilu restované  fazolové lusky s anglickou slaninou, omáčka demi glace, šťouchané brambory — 179 Kč",
+            "150g Grilované vepřové biftečky s houbovou omáčkou, restovaná růžičková kapusta, smažené bramborové  krokety — 169 Kč",
+            "150g Kančí výpečky, dušené  kysané zelí, houskový knedlík, smažená cibulka — 189 Kč",
+            "200g  Vyzrálý hovězí Rump steak Uruguay, pepřová omáčka,  americké brambory — 229 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Žampiónový krém s rostlinnou smetanou a  kukuřičnými kuličkami — 40 Kč",
+            "Marocká cizrna s  goji a zeleninovou rýží — 130 Kč",
+            "Neapolská zeleninová pizza  s vegan chedarem — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Květákový  krém – krutony 1 7 — 49 Kč",
-            "🍵 Kuřecí vývar – nudle,  kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
-            "🔸 Hovězí krk na červeném víně –  krémová parmazánová polenta, pečená kořenová zelenina, silná vinná šťáva, petrželkový olej 7 9 12 — 239 Kč",
-            "🔸 Kuřecí  Sweet Chilli – křupavé kousky kuřecího prsa ve sladkokyselé omáčce, jasmínová rýže, mungo salát s mrkví, jarní cibulkou a koriandrem, sezam 1 6 11 — 199 Kč",
-            "🔸 Čevapčiči –  šťouchané brambory grenaille, hořčičná majonéza, nakládaná červená cibule, mix listových salátů 3 10 — 199 Kč",
-            "🔸 Smažená gouda  – vařené brambory grenaille s máslem a petrželkou, domácí tatarská omáčka s koprem a kapary, mix listových salátů 1 3 7 10 — 189 Kč",
-            "🔸 Penne s  ovčím sýrem a křupavým guanciale – omáčka z ovčího sýru Pecorino Toscano, křupavý italský špek guanciale, čerstvě mletý černý pepř 1 7 — 179 Kč"
+            "🍵 Květákový krém  – krutony 1 7 — 49 Kč",
+            "🍵 Kuřecí vývar – nudle, kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
+            "🔸 Hovězí krk na  červeném víně – krémová parmazánová polenta, pečená kořenová zelenina, silná vinná šťáva, petrželkový olej 7 9 12 — 239 Kč",
+            "🔸  Kuřecí Sweet Chilli – křupavé kousky kuřecího prsa ve sladkokyselé omáčce, jasmínová rýže, mungo salát s mrkví, jarní cibulkou a koriandrem, sezam 1 6 11 — 199 Kč",
+            "🔸 Čevapčiči – šťouchané  brambory grenaille, hořčičná majonéza, nakládaná červená cibule, mix listových salátů 3 10 — 199 Kč",
+            "🔸 Smažená gouda – vařené brambory grenaille s máslem a petrželkou, domácí tatarská omáčka s koprem a kapary,  mix listových salátů 1 3 7 10 — 189 Kč",
+            "🔸 Penne s ovčím sýrem a křupavým guanciale – omáčka z ovčího sýru Pecorino Toscano, křupavý italský  špek guanciale, čerstvě mletý černý pepř 1 7 — 179 Kč"
         ]
     },
     "annapurna": {
@@ -37,10 +39,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
