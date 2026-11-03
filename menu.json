@@ -2,32 +2,34 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l  Kulajda s houbami, bramborem a vejcem — 30 Kč",
-            "0, 25l Kuřecí vývar s masem, kořenovou zeleninou  a těstovinou — 30 Kč",
-            "250g Domácí  bramborové knedlíky plněné uzeným masem, bílé kysané zelí, smažená cibulka — 169 Kč",
-            "120g  Smažený sýr Blaťácké zlato, vařené brambory, domácí tatarská omáčka — 169 Kč",
-            "150g Filovaná kachní prsíčka sous vide s hořčicovo-medovou  omáčkou, glazovaná šalotka, šťouchané brambory — 169 Kč",
-            "150g Krůtí steak  Teriyaki sypaný bílým sezamem, jasmínová rýže, lehký zeleninový salátek — 179 Kč",
-            "140g Bacon Burger – hovězí maso zapečené chedarem, pečená křupavá slanina,  zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka, domácí bulka, hranolky — 189 Kč",
-            "150g Plzeňský vepřový  guláš zdobený čerstvou cibulí a chilli papričkou, domácí bramboráčky — 159 Kč"
+            "0, 25l Mexická fazolová s uzeninou,  chilli a čerstvým koriandrem — 30 Kč",
+            "0, 25l Kuřecí vývar s  masem, kořenovou zeleninou a těstovinou — 30 Kč",
+            "350g Boloňské  lasagne zapečené sýrem mozzarella, bazalková omáčka — 169 Kč",
+            "160g Dřevorubecký steak z krkovičky na grilu, zapečený červenou  cibulí a hermelínem, smažené hranolky, silná masová šťáva z pečeného česneku — 169 Kč",
+            "200g Smažené řízkové duo (vepřová kotleta, kuřecí prsa), lehký bramborový salát bez majonézy — 179 Kč",
+            "230g Bramborové halušky s brynzou a škvařenou uzenou slaninou, smažená cibulka — 169 Kč",
+            "250g Kuřecí supreme Sous-vide na  restované cuketě a cibuli, bramborovo - dýňové pyré — 189 Kč",
+            "150g Plzeňský vepřový guláš zdobený čerstvou cibulí  a chilli papričkou, domácí bramboráčky — 159 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Mrkvovo-čočkový  krém — 40 Kč",
+            "Slaný italský koláč z polenty s olivami, sušenými rajčaty a čerstvými hráškovými klíčky + pomodoro salátek — 130 Kč",
+            "Zapečená tortilla s grilovaným seitanem, zeleninou, vegan sýrem a česnekovým dipem 6 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Houbová s kroupami –  mix hub, kroupy, kořenová zelenina 1 9 — 49 Kč",
+            "🍵 Houbová s kroupami – mix hub, kroupy,  kořenová zelenina 1 9 — 49 Kč",
             "🍵 Kuřecí vývar – nudle, kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
-            "🔸 Roastbeef salát s  pečenou dýní – pečená dýně Hokkaido, čočka beluga, mix listových salátů, nakládaná červená cibule, dýňová a lněná semínka, medovo-hořčičný dresink 10 — 239 Kč",
-            "🔸 16 hrs Pulled Pork  – 16 hodin pomalu tažené vepřové v korejské sladko-pikantní marinádě, jasmínová rýže, červené zelí, mrkev, jarní cibulka, koriandr 6 — 199 Kč",
-            "🔸 Kuřecí Cordon Bleu –  plněný italskou dušenou šunkou Paganini a sýrem Provolone, šťouchané brambory grenaille, medovo-hořčičná majonéza, mix listových salátů 1 3 7 10 — 199 Kč",
-            "🔸 Cuketovo-mrkvové placičky s balkánským sýrem – brambory  grenaille s máslem a petrželkou, mix listových salátů, limetkovo-mátový jogurt 1 3 7 — 189 Kč",
-            "🔸 Linguine al ragu alla Bolognese - pomalu tažené ragú z mletého hovězího krku a vepřové  kotlety, Gran Padano 1 7 9 12 — 179 Kč"
+            "🔸 Roastbeef salát s pečenou dýní  – pečená dýně Hokkaido, čočka beluga, mix listových salátů, nakládaná červená cibule, dýňová a lněná semínka, medovo-hořčičný dresink 10 — 239 Kč",
+            "🔸 16 hrs Pulled Pork – 16 hodin pomalu tažené vepřové v korejské sladko-pikantní marinádě, jasmínová rýže, červené zelí, mrkev, jarní cibulka, koriandr 6 — 199 Kč",
+            "🔸 Kuřecí Cordon Bleu – plněný italskou  dušenou šunkou Paganini a sýrem Provolone, šťouchané brambory grenaille, medovo-hořčičná majonéza, mix listových salátů 1 3 7 10 — 199 Kč",
+            "🔸 Cuketovo-mrkvové placičky s balkánským sýrem – brambory grenaille s máslem a petrželkou, mix listových salátů, limetkovo-mátový jogurt 1 3 7 — 189 Kč",
+            "🔸 Linguine al ragu alla Bolognese - pomalu tažené ragú z mletého hovězího krku a  vepřové kotlety, Gran Padano 1 7 9 12 — 179 Kč"
         ]
     },
     "annapurna": {
@@ -37,10 +39,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
