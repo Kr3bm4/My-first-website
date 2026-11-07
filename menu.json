@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0,  25l Bramborovo - brokolicový krém, chlebové krutony — 30 Kč",
-            "0,  25l Kuřecí vývar s masem, kořenovou zeleninou a těstovinou — 30 Kč",
-            "180g Smažená vepřová játra, bramborový salát s majonézou — 159 Kč",
-            "150g Kuřecí medailonky  na žampiónech, divoká rýže — 169 Kč",
-            "150g Přírodní vepřová kapsa plněná nivou a šunkou, šťouchané brambory s jarní cibulkou, silná masová  šťáva — 169 Kč",
-            "150g Hovězí dušené maso ve  vlastní šťávě se slaninou, houskový knedlík — 189 Kč",
-            "220g Italské těstoviny penne s grilovaným lososem a smetanovým špenátem, sypané sýrem Grana padano — 199 Kč",
-            "150g Plzeňský vepřový guláš zdobený  čerstvou cibulí a chilli papričkou, domácí bramboráčky — 159 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Fazolková na kyselo  s bramborami — 40 Kč",
-            "Květákové ragú s hráškem  a basmati rýží — 130 Kč",
-            "Zapečené \"šunkofleky\" s uzeným tofu, zeleninou a  vegan sýrem 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Houbová s kroupami – mix hub, kroupy, kořenová  zelenina 1 9 — 49 Kč",
-            "🍵 Kuřecí vývar – nudle, kořenová zelenina,  kuřecí maso 1 3 9 — 49 Kč",
-            "🔸 Roastbeef salát s pečenou dýní – pečená dýně Hokkaido, čočka beluga, mix listových salátů,  nakládaná červená cibule, dýňová a lněná semínka, medovo-hořčičný dresink 10 — 239 Kč",
-            "🔸 16 hrs Pulled Pork – 16 hodin pomalu tažené vepřové v korejské sladko-pikantní marinádě, jasmínová rýže,  červené zelí, mrkev, jarní cibulka, koriandr 6 — 199 Kč",
-            "🔸 Kuřecí Cordon Bleu – plněný italskou dušenou šunkou Paganini a sýrem  Provolone, šťouchané brambory grenaille, medovo-hořčičná majonéza, mix listových salátů 1 3 7 10 — 199 Kč",
-            "🔸 Cuketovo-mrkvové placičky s balkánským sýrem – brambory grenaille s  máslem a petrželkou, mix listových salátů, limetkovo-mátový jogurt 1 3 7 — 189 Kč",
-            "🔸 Linguine al ragu alla Bolognese - pomalu tažené  ragú z mletého hovězího krku a vepřové kotlety, Gran Padano 1 7 9 12 — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
