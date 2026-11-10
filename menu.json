@@ -2,32 +2,34 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l Hrstková polévka s párkem a kořenovou  zeleninou — 30 Kč",
-            "0, 25l Masový  vývar s játrovou rýží, těstovinou a kořenovou zeleninou — 30 Kč",
-            "130g  Kuřecí Thai WOK, jasmínová rýže — 169 Kč",
-            "120g  Smažený sýr se šunkou, vařené brambory, domácí tatarská omáčka — 169 Kč",
-            "350g Francouzské brambory s uzeným masem zapečené sýrem, nakládaný  okurek — 169 Kč",
-            "200g Grilovaný steak z vepřové krkovice, sázené vejce,  smetanová slaninová omáčka, pečené brambory s majoránkou a česnekem — 179 Kč",
-            "150g Hovězí American burger, domácí bulka, rajče, nakládaný okurek, sýr cheddar, pečená slanina, zauzená majonéza, smažené hranolky — 189 Kč",
-            "? Svatomartinské pečené kachny,  kysané bílé zelí se špekem, domácí houskový knedlík — 259 Kč"
+            "0, 25l Dýňový krém s praženými  slunečnicovými semínky — 30 Kč",
+            "0, 25l Masový vývar s játrovou rýží, těstovinou a kořenovou zeleninou — 30 Kč",
+            "120g Quesadillas  plněná kuřecím masem, sýrem cheddar, mexickou chilli salsou, zeleninou, zakysaná smetana a quacamole — 169 Kč",
+            "150g Grilovaný kuřecí steak se sušenými rajčaty zapečený sýrem, brambůrky  Grenaille — 169 Kč",
+            "160g Smažené řízečky z vepřové kotlety nakládané v podmáslí, vařené brambory s  petrželkou, okurkový salát — 179 Kč",
+            "150g Medailonky z vepřové panenky po myslivecku se žampióny,  anglickou slaninou a rozmarýnem, divoké koření, steakové hranolky — 179 Kč",
+            "100g Hovězí roastbeef v silné masové šťávě, smetanový křen, brusinky, americké  brambory — 189 Kč",
+            "? Svatomartinské pečené kachny, kysané bílé zelí se špekem, domácí houskový  knedlík — 259 Kč"
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Uzená s  adzuki fazolemi — 40 Kč",
+            "Noky se špagetovou dýní, sušenými rajčaty a jarní cibulkou, sypané praženými dýňovými semínky (1a) — 130 Kč",
+            "Cizrnová palačinka s hummusem a grilovanou zeleninou  + hráškový dip (11) 11 — 150 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
             "🍵 Mexická fazolová polévka - tomato, koriandr — 49 Kč",
-            "🍵 Kuřecí vývar – nudle, kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
-            "🔸 Kachní ragù tagliatelle – pomalu tažené kachní ragù, čerstvé vaječné  tagliatelle, kořenová zelenina, bílé víno, rozmarýn, smetana, Grana Padano 1 3 7 9 12 — 239 Kč",
-            "🔸 Sýrové špecle Quattro Formaggi – krémová omáčka ze čtyř italských sýrů (Pecorino, Taleggio, Mozzarella a Grana Padano),  pečená dýně, smažená šalvěj, dýňová semínka 1 3 7 — 199 Kč",
-            "🔸 Kuřecí mango curry – kuřecí prso marinované v jogurtu, zázvoru a česneku, rajčatovo-mangová curry omáčka, jasmínová rýže, jarní cibulka,  koriandr, arašídy, chilli 5 7 — 199 Kč",
-            "🔸 Vepřové výpečky –  dušený listový špenát, bramborové knedlíky, křupavá cibulka, silná masová šťáva 1 3 — 189 Kč",
-            "🔸 Japonské karbanátky  Menchi Katsu – z mletého hovězího a vepřového masa v panko strouhance, brambory grenaille, jarní cibulka, sezam, nakládané červené zelí, wasabi majonéza 1 3 7 10 11 — 179 Kč"
+            "🍵 Kuřecí vývar – nudle,  kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
+            "🔸 Kachní ragù tagliatelle – pomalu tažené kachní ragù, čerstvé vaječné tagliatelle, kořenová zelenina, bílé víno,  rozmarýn, smetana, Grana Padano 1 3 7 9 12 — 239 Kč",
+            "🔸 Sýrové špecle Quattro Formaggi – krémová omáčka ze čtyř italských sýrů  (Pecorino, Taleggio, Mozzarella a Grana Padano), pečená dýně, smažená šalvěj, dýňová semínka 1 3 7 — 199 Kč",
+            "🔸 Kuřecí mango curry – kuřecí prso marinované v jogurtu, zázvoru a česneku, rajčatovo-mangová curry omáčka, jasmínová rýže, jarní cibulka, koriandr, arašídy,  chilli 5 7 — 199 Kč",
+            "🔸 Vepřové výpečky – dušený listový špenát, bramborové knedlíky, křupavá  cibulka, silná masová šťáva 1 3 — 189 Kč",
+            "🔸 Japonské karbanátky Menchi Katsu – z mletého hovězího a vepřového  masa v panko strouhance, brambory grenaille, jarní cibulka, sezam, nakládané červené zelí, wasabi majonéza 1 3 7 10 11 — 179 Kč"
         ]
     },
     "annapurna": {
@@ -37,10 +39,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
