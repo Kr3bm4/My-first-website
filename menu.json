@@ -2,30 +2,19 @@
     "6956": {
         "name": "Masný růžek",
         "items": [
-            "0, 25l  Špenátový krém s kapaním — 30 Kč",
-            "0, 25l Moravská česnečka s vejcem, praženou šunkou a  bramborem, chlebové krutony — 30 Kč",
-            "150g Kuřecí špíz s anglickou slaninou,  červenou cibulí a klobásou, bouchaný brambor, bylinkovo  - česnekový dip — 169 Kč",
-            "120g  Smažené sýrové duo (eidam, cheddar), smažené hranolky, tatarská omáčka — 169 Kč",
-            "350g Milánské lasagne z kuřecího masa zapečené sýrem, bazalková  omáčka — 169 Kč",
-            "150g Grilovaný steak z vepřové panenky, pečený lilek a cuketa, omáčka ze smetany, loupaných rajčat a modrého sýru, americké brambory s  majoránkou — 179 Kč",
-            "140g Bacon Burger – hovězí maso zapečené chedarem, pečená křupavá slanina, sázené vejce, zauzená BBQ majonéza, okurek, listový salát, rajče, smažená cibulka,  domácí bulka, hranolky — 189 Kč",
-            "200g Grilovaný  steak z vepřové kotlety, pepřová omáčka, steakové hranolky — 179 Kč"
+            "STÁTNÍ SVÁTEK - OTEVŘENO  12:00-22:00 — "
         ]
     },
     "4108": {
         "name": "Veg8 Cafe",
         "items": [
-            "Pro tento den nebylo zadáno menu. — 40 Kč"
+            "Státní svátek -  ZAVŘENO — 40 Kč"
         ]
     },
     "8722": {
         "name": "Deli-Tree",
         "items": [
-            "🍵 Kulajda –  brambory, vejce, žampiony, kopr 1 7 — 49 Kč",
-            "🍵 Kuřecí vývar – nudle, kořenová zelenina,  kuřecí maso 1 3 9 — 49 Kč",
-            "🔸  Pomalu tažený hovězí krk - houbové kroupotto, Grana Padano, estragon, petrželový chips 1 7 — 219 Kč",
-            "🔸 Smažený kuřecí řízek alla Parmigiana -  smažené kuřecí prso zapečené mozzarellou, Grana Padanem, tomato omáčkou a bazalkou, šťouchané brambory, mix listových salátů 1 3 7 — 199 Kč",
-            "🔸 Meatballs ve smetanové omáčce - masové koule z mletého vepřového a  hovězího masa, hranolky, smetanová omáčka, brusinky 1 3 7 10 — 189 Kč"
+            "Pro tento den nebylo zadáno menu. — "
         ]
     },
     "annapurna": {
@@ -35,10 +24,10 @@
     "sargam": {
         "name": "Sargam 2",
         "items": [
-            "tomato soup ≅ cerstvy rajcata maslo s smetana s tradicny polevka — 45 Kč",
-            "mix vegitable ≅ michani zelenina s tredicny curry omacka — 150 Kč",
-            "butter chicken ≅ kureci maso maslo smetana s tradicny butter omacka — 150 Kč",
-            "chicken tikka ≅ grilovany kureci maso na tandoor s velmy paliva omacka — 150 Kč"
+            "chicken soup ≅ kureci  cesnek ,maslo s indicky kureni s polevka — 45 Kč",
+            "dal makhni ≅ indicky cocka s maslo a dtradicny curry omacka — 150 Kč",
+            "chicken korma ≅ kureci maso kesu kokos a tradicny korma omacka — 150 Kč",
+            "chicken vindalu ≅ kureci prsa cesnek zazvor rajcata s velmi palivy curry omacka — 150 Kč"
         ]
     }
 }
