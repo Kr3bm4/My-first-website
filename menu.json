@@ -1,48 +1,32 @@
 {
     "6956": {
-        "name": "Masný růžek",
+        "name": "Weekend",
         "items": [
-            "0, 25l Cibulová krémová polévka, chlebové krutony — 30 Kč",
-            "0, 25l Hovězí vývar s játrovým knedlíčkem,  nudlemi a kořenovou zeleninou — 30 Kč",
-            "150g Kuřecí katův šleh, smažené hranolky — 159 Kč",
-            "160g Smažený  vepřový mletý máslový řízek plněný anglickou slaninou a jarní cibulkou, bramborová kaše, okurkový salát — 169 Kč",
-            "160g Křenová omáčka s uzeným masem, houskový knedlík — 159 Kč",
-            "160g Grilovaná kachní prsa, teriyaki omáčka s kořenovou  zeleninou a arašídy, restované čínské nudle — 179 Kč",
-            "300g  Tagliatelle s lososem, loupanými rajčaty, černými olivami, kapary a bazalkou, grana padano — 199 Kč",
-            "160g Španělský vepřový ptáček  s uzeninou, vejcem, špekem a okurkem, divoká rýže, smažená cibulka — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "4108": {
-        "name": "Veg8 Cafe",
+        "name": "Weekend",
         "items": [
-            "Cibulačka s  krutony — 40 Kč",
-            "Krémové italské risotto s  hráškem, tofu a vegan parmazánem (BZL) 6 — 130 Kč",
-            "Pivní guláš se seitanem a cibulí,  houskový knedlík (1a, 1c, 6) 1 1 6 — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "8722": {
-        "name": "Deli-Tree",
+        "name": "Weekend",
         "items": [
-            "🍵 Frankfurtská polévka –  párek, brambor 1 7 — 49 Kč",
-            "🍵 Kuřecí vývar –  nudle, kořenová zelenina, kuřecí maso 1 3 9 — 49 Kč",
-            "🔸 Pečený losos – bramborová kaše, mačkaný hrášek,  pečená mrkev 4 7 — 249 Kč",
-            "🔸 Hovězí guláš – hovězí kližka, karlovarský knedlík, červená cibule,  chilli, jarní cibulka, petrželka 1 3 7 — 219 Kč",
-            "🔸 Korejské křupavé kuřecí – smažené kuřecí prso v pikantní medovo-gochujangová  omáčce, jasmínová rýže, zelný salát s mrkví a mungo klíčky, sezam 1 6 11 — 199 Kč",
-            "🔸 Zapékané brambory – ragu z mletého hovězího  a vepřového masa, pancetta, mortadella, bešamel, mozzarella, mix listových salátů 7 — 189 Kč",
-            "🔸 Linguine s tyrolským speckem a žampiony – rajčatovo-smetanová omáčka, Grana Padano,  petrželka 1 7 — 179 Kč"
+            "Menu's not checked on weekends — "
         ]
     },
     "annapurna": {
-        "name": "Annapurna",
-        "items": []
+        "name": "Weekend",
+        "items": [
+            "Menu's not checked on weekends — "
+        ]
     },
     "sargam": {
-        "name": "Sargam 2",
+        "name": "Weekend",
         "items": [
-            "chicken soup ≅ kureci cesnek s tradicny polevka — 45 Kč",
-            "Chicken KORMA ≅ kureci prsa maslo smetana s trdicny korma omacka — 150 Kč",
-            "chicken tikka masala ≅ kureci maso paprika cesnek zazvor s trdicny palivy omacka — 150 Kč",
-            "gobhi masala ≅ cersvy kvetak ,paprika cesnet ,zazvor s cerveny palivy omacka — 150 Kč"
+            "Menu's not checked on weekends — "
         ]
     }
 }
